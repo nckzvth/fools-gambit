@@ -1,0 +1,423 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://foolsgambit.dev/schemas/run_state.schema.json",
+  "title": "Fool's Gambit - RunState",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "phase",
+    "runLengthTarget",
+    "fateCap",
+    "player",
+    "decks",
+    "floor",
+    "room",
+    "majors",
+    "lastRoomWasFlee",
+    "rules"
+  ],
+  "properties": {
+    "phase": { "$ref": "#/$defs/PhaseId" },
+    "runLengthTarget": { "type": "integer", "enum": [7, 14, 21] },
+    "fateCap": { "type": "integer", "const": 10 },
+
+    "player": { "$ref": "#/$defs/PlayerState" },
+    "decks": { "$ref": "#/$defs/DeckState" },
+    "floor": { "$ref": "#/$defs/FloorState" },
+    "room": { "$ref": "#/$defs/RoomState" },
+    "majors": { "$ref": "#/$defs/MajorsState" },
+
+    "lastRoomWasFlee": { "type": "boolean" },
+
+    "rules": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["weaponRestrictionMode", "orderConstraint"],
+      "properties": {
+        "weaponRestrictionMode": { "$ref": "#/$defs/WeaponRestrictionMode" },
+        "orderConstraint": { "$ref": "#/$defs/OrderConstraintState" }
+      }
+    },
+
+    "debug": {
+      "type": "object",
+      "additionalProperties": true,
+      "description": "Optional dev-only fields. Must be excluded from parity hashes."
+    }
+  },
+
+  "$defs": {
+    "PhaseId": {
+      "type": "string",
+      "enum": [
+        "RunInit",
+        "FloorStart",
+        "RoomReveal",
+        "RoomChoice",
+        "EngageSetup",
+        "PreResolveWindow",
+        "ResolveCommit",
+        "ResolveExecute",
+        "RoomEnd",
+        "BossStart",
+        "BossRoomLoop",
+        "FloorVictory",
+        "RunVictory",
+        "RunDefeat"
+      ]
+    },
+
+    "MajorId": {
+      "type": "string",
+      "enum": [
+        "magician",
+        "high_priestess",
+        "empress",
+        "emperor",
+        "hierophant",
+        "lovers",
+        "chariot",
+        "strength",
+        "hermit",
+        "wheel",
+        "justice",
+        "hanged_man",
+        "death",
+        "temperance",
+        "devil",
+        "tower",
+        "star",
+        "moon",
+        "sun",
+        "judgement",
+        "world"
+      ]
+    },
+
+    "CardId": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Opaque stable identifier for a Minor card instance."
+    },
+
+    "Orientation": {
+      "type": "string",
+      "enum": ["upright", "reversed"]
+    },
+
+    "MinorSuit": {
+      "type": "string",
+      "enum": ["pentacles", "cups", "wands", "swords"]
+    },
+
+    "CourtFace": {
+      "type": "string",
+      "enum": ["page", "knight", "queen", "king"]
+    },
+
+    "MinorRank": {
+      "oneOf": [
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["kind", "value"],
+          "properties": {
+            "kind": { "const": "number" },
+            "value": { "type": "integer", "minimum": 2, "maximum": 10 }
+          }
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["kind"],
+          "properties": {
+            "kind": { "const": "ace" }
+          }
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["kind", "face"],
+          "properties": {
+            "kind": { "const": "court" },
+            "face": { "$ref": "#/$defs/CourtFace" }
+          }
+        }
+      ]
+    },
+
+    "MinorCard": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "suit", "rank", "orientation"],
+      "properties": {
+        "id": { "$ref": "#/$defs/CardId" },
+        "suit": { "$ref": "#/$defs/MinorSuit" },
+        "rank": { "$ref": "#/$defs/MinorRank" },
+        "orientation": { "$ref": "#/$defs/Orientation" }
+      }
+    },
+
+    "CardRegistry": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["minors"],
+      "properties": {
+        "minors": {
+          "type": "object",
+          "description": "Normalized Minor card instances by id.",
+          "additionalProperties": { "$ref": "#/$defs/MinorCard" }
+        }
+      }
+    },
+
+    "EquipmentWeapon": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["cardId", "value", "lastHelpedDefeatValue", "tuckedEnemyIds"],
+      "properties": {
+        "cardId": { "$ref": "#/$defs/CardId" },
+        "value": { "type": "integer", "minimum": 2, "maximum": 10 },
+        "lastHelpedDefeatValue": {
+          "type": ["integer", "null"],
+          "minimum": 11,
+          "maximum": 16
+        },
+        "tuckedEnemyIds": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/CardId" }
+        }
+      }
+    },
+
+    "EquipmentArmor": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["cardId", "value"],
+      "properties": {
+        "cardId": { "$ref": "#/$defs/CardId" },
+        "value": { "type": "integer", "minimum": 8, "maximum": 10 }
+      }
+    },
+
+    "EquipmentSpell": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["cardId", "value"],
+      "properties": {
+        "cardId": { "$ref": "#/$defs/CardId" },
+        "value": { "type": "integer", "minimum": 2, "maximum": 10 }
+      }
+    },
+
+    "PlayerBuffs": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["cheatWeaponNextEnemyFight", "cheatWeaponThisRoom"],
+      "properties": {
+        "cheatWeaponNextEnemyFight": { "type": "boolean" },
+        "cheatWeaponThisRoom": { "type": "boolean" }
+      }
+    },
+
+    "PlayerState": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["hp", "maxHp", "gold", "fate", "weapon", "armor", "spell", "buffs"],
+      "properties": {
+        "hp": { "type": "integer", "minimum": 0, "maximum": 999 },
+        "maxHp": { "type": "integer", "minimum": 1, "maximum": 999 },
+        "gold": { "type": "integer", "minimum": 0, "maximum": 9999 },
+        "fate": { "type": "integer", "minimum": 0, "maximum": 10 },
+
+        "weapon": { "anyOf": [{ "$ref": "#/$defs/EquipmentWeapon" }, { "type": "null" }] },
+        "armor": { "anyOf": [{ "$ref": "#/$defs/EquipmentArmor" }, { "type": "null" }] },
+        "spell": { "anyOf": [{ "$ref": "#/$defs/EquipmentSpell" }, { "type": "null" }] },
+
+        "buffs": { "$ref": "#/$defs/PlayerBuffs" }
+      }
+    },
+
+    "DeckState": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["cards", "minorDeck", "majorDeck"],
+      "properties": {
+        "cards": { "$ref": "#/$defs/CardRegistry" },
+        "minorDeck": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/CardId" }
+        },
+        "majorDeck": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/MajorId" },
+          "minItems": 0,
+          "maxItems": 21
+        }
+      }
+    },
+
+    "OrderConstraintKind": {
+      "type": "string",
+      "enum": ["NONE", "LEFT_TO_RIGHT", "RIGHT_TO_LEFT", "SUIT_ORDER", "ASC_ORDERING_VALUE"]
+    },
+
+    "OrderConstraintState": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["kind", "requiresChooseCarriedFirst", "scopeMajorId"],
+      "properties": {
+        "kind": { "$ref": "#/$defs/OrderConstraintKind" },
+        "requiresChooseCarriedFirst": { "type": "boolean" },
+        "scopeMajorId": {
+          "type": ["string", "null"],
+          "description": "MajorId that imposed the constraint, if any.",
+          "enum": [
+            null,
+            "magician",
+            "high_priestess",
+            "empress",
+            "emperor",
+            "hierophant",
+            "lovers",
+            "chariot",
+            "strength",
+            "hermit",
+            "wheel",
+            "justice",
+            "hanged_man",
+            "death",
+            "temperance",
+            "devil",
+            "tower",
+            "star",
+            "moon",
+            "sun",
+            "judgement",
+            "world"
+          ]
+        }
+      }
+    },
+
+    "WeaponRestrictionMode": {
+      "type": "string",
+      "enum": ["DEFAULT", "STRICT"]
+    },
+
+    "FloorState": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "floorNumber",
+        "activeMajorId",
+        "engagedRoomsCompleted",
+        "floorDiscard",
+        "bossMode",
+        "bossRoomsRequired",
+        "bossRoomsCompleted",
+        "bossDeck"
+      ],
+      "properties": {
+        "floorNumber": { "type": "integer", "minimum": 1, "maximum": 21 },
+        "activeMajorId": { "$ref": "#/$defs/MajorId" },
+        "engagedRoomsCompleted": { "type": "integer", "minimum": 0, "maximum": 999 },
+
+        "floorDiscard": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/CardId" }
+        },
+
+        "bossMode": { "type": "boolean" },
+        "bossRoomsRequired": { "type": "integer", "minimum": 0, "maximum": 4 },
+        "bossRoomsCompleted": { "type": "integer", "minimum": 0, "maximum": 4 },
+
+        "bossDeck": {
+          "type": ["array", "null"],
+          "items": { "$ref": "#/$defs/CardId" },
+          "description": "Null until boss starts; otherwise a shuffled deck built from floorDiscard."
+        }
+      }
+    },
+
+    "RoomSlots": {
+      "type": "array",
+      "minItems": 4,
+      "maxItems": 4,
+      "items": { "anyOf": [{ "$ref": "#/$defs/CardId" }, { "type": "null" }] }
+    },
+
+    "ResolvedMask": {
+      "type": "array",
+      "minItems": 4,
+      "maxItems": 4,
+      "items": { "type": "boolean" }
+    },
+
+    "PendingCleanses": {
+      "type": "array",
+      "minItems": 4,
+      "maxItems": 4,
+      "items": { "type": "boolean" },
+      "description": "Index-aligned to room slots. True means 'resolve as upright next time this slot's card is resolved' (cleared on use or if card leaves)."
+    },
+
+    "DisabledFateActions": {
+      "type": "array",
+      "items": { "type": "string", "enum": ["CLEANSE", "REROLL"] },
+      "uniqueItems": true
+    },
+
+    "RoomState": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "slots",
+        "resolvedMask",
+        "carriedIndex",
+        "leapUsed",
+        "healingUsedThisRoom",
+        "pendingCleanses",
+        "disabledFateActionsThisRoom",
+        "hangedManTriggeredThisRoom"
+      ],
+      "properties": {
+        "slots": { "$ref": "#/$defs/RoomSlots" },
+        "resolvedMask": { "$ref": "#/$defs/ResolvedMask" },
+        "carriedIndex": { "type": ["integer", "null"], "minimum": 0, "maximum": 3 },
+
+        "leapUsed": { "type": "boolean" },
+        "healingUsedThisRoom": { "type": "boolean" },
+
+        "pendingCleanses": { "$ref": "#/$defs/PendingCleanses" },
+        "disabledFateActionsThisRoom": { "$ref": "#/$defs/DisabledFateActions" },
+
+        "hangedManTriggeredThisRoom": { "type": "boolean" }
+      }
+    },
+
+    "MajorsState": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["claimed", "attuned", "spentThisFloor"],
+      "properties": {
+        "claimed": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/MajorId" },
+          "uniqueItems": true
+        },
+        "attuned": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/MajorId" },
+          "maxItems": 3,
+          "uniqueItems": true
+        },
+        "spentThisFloor": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/MajorId" },
+          "uniqueItems": true
+        }
+      }
+    }
+  }
+}

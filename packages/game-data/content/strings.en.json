@@ -87,5 +87,29 @@
 
   "majors.world.name": "The World",
   "majors.world.shadow": "Shadow: After revealing 4 cards, reorder room cards by value (low to high).",
-  "majors.world.gift": "Gift: Reorder the 4 revealed room cards however you like."
+  "majors.world.gift": "Gift: Reorder the 4 revealed room cards however you like.",
+
+  "majors.empress.shadowPrompt": "Choose one:",
+  "majors.empress.pay5": "Pay 5 Gold",
+  "majors.empress.take3": "Take 3 damage",
+  "majors.empress.giftPrompt": "Choose one:",
+  "majors.empress.giftPay5Heal5": "Pay 5 Gold to heal 5",
+  "majors.empress.giftTake3Gain5": "Take 3 damage to gain 5 Gold",
+
+  "majors.temperance.giftPrompt": "Choose one:",
+  "majors.temperance.pay5Heal5": "Pay 5 Gold to heal 5",
+  "majors.temperance.take3Gain5": "Take 3 damage to gain 5 Gold",
+
+  "majors.devil.bargainPrompt": "Bargain:",
+  "majors.devil.take3Gain5": "Take 3 damage to gain 5 Gold",
+  "majors.devil.giftPrompt": "Choose one:",
+  "majors.devil.giftPay8Heal8": "Pay 8 Gold to heal 8",
+  "majors.devil.giftTake4Gain8": "Take 4 damage to gain 8 Gold",
+
+  "majors.sun.shadowPrompt": "Choose one:",
+  "majors.sun.pay2": "Pay 2 Gold",
+  "majors.sun.take1": "Take 1 damage",
+  "majors.sun.giftPrompt": "Choose one:",
+  "majors.sun.pay5Heal5": "Pay 5 Gold to heal 5",
+  "majors.sun.take3Gain5": "Take 3 damage to gain 5 Gold"
 }

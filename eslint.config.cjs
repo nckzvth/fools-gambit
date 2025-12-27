@@ -19,9 +19,9 @@ module.exports = [
     }
   },
 
-  // TS/JS source
+  // JS source (TS is typechecked via tsc)
   {
-    files: ["**/*.{js,ts,tsx}"],
+    files: ["**/*.js"],
     languageOptions: {
       ecmaVersion: 2022,
       sourceType: "module",

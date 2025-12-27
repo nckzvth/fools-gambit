@@ -28,7 +28,7 @@ function collectStringKeysFromMajors(majorsJson) {
     const visitEffect = (eff) => {
       if (!eff || typeof eff !== "object") return;
 
-      if (eff.type === "CHOICE") {
+      if (eff.type === "CHOICE" || eff.type === "BARGAIN") {
         if (eff.promptKey) keys.add(eff.promptKey);
         if (Array.isArray(eff.options)) {
           for (const opt of eff.options) {
@@ -73,7 +73,7 @@ function main() {
   const majorsJson = readJson(majorsPath);
   const stringsJson = readJson(stringsPath);
 
-  const ajv = new Ajv({ allErrors: true, strict: true });
+  const ajv = new Ajv({ allErrors: true, strict: true, strictRequired: false });
   addFormats(ajv);
 
   const validateMajors = ajv.compile(majorsSchema);

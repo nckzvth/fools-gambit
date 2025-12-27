@@ -14,14 +14,13 @@
     },
     "checkpoints": {
       "type": "array",
-      "description": "Optional parity checkpoints for fast comparison. Hash excludes any nondeterministic fields by rule (see hashing section).",
       "items": {
         "type": "object",
         "additionalProperties": false,
         "required": ["stepIndex", "stateHash"],
         "properties": {
           "stepIndex": { "type": "integer", "minimum": 0 },
-          "stateHash": { "type": "string" }
+          "stateHash": { "type": "string", "minLength": 8 }
         }
       }
     }
@@ -30,12 +29,12 @@
     "Header": {
       "type": "object",
       "additionalProperties": false,
-      "required": ["engineVersion", "contentVersion", "saveVersion", "specVersion"],
+      "required": ["engineVersion", "contentVersion", "specVersion", "createdAtUTC"],
       "properties": {
-        "engineVersion": { "type": "string" },
-        "contentVersion": { "type": "string" },
-        "saveVersion": { "type": "integer", "minimum": 1 },
-        "specVersion": { "type": "string", "const": "v1.1" }
+        "engineVersion": { "type": "string", "minLength": 1 },
+        "contentVersion": { "type": "string", "minLength": 1 },
+        "specVersion": { "type": "string", "const": "v1.1" },
+        "createdAtUTC": { "type": "string", "minLength": 10 }
       }
     },
 
@@ -58,15 +57,18 @@
 
         "USE_SPELL_CLEANSE",
         "USE_SPELL_REROLL",
+
         "USE_MAJOR_GIFT",
 
         "COMMIT_RESOLVE",
-
         "ACE_CHOICE",
         "ENEMY_FIGHT_CHOICE",
         "SWORDS_AMBUSH_BLOCK_CHOICE",
         "CUPS_8_10_CHOICE",
-        "BARGAIN_CHOICE"
+        "BARGAIN_CHOICE",
+
+        "REORDER_TOP3",
+        "REORDER_ROOM4"
       ]
     },
 
@@ -76,11 +78,32 @@
       "required": ["type"],
       "properties": {
         "type": { "$ref": "#/$defs/ActionType" },
+
+        "seed": { "type": "integer" },
+        "runLengthTarget": { "type": "integer", "enum": [7, 14, 21] },
+
+        "majorIds": {
+          "type": "array",
+          "items": { "type": "string" },
+          "maxItems": 3
+        },
+
         "slotIndex": { "type": "integer", "minimum": 0, "maximum": 3 },
-        "majorIds": { "type": "array", "items": { "type": "string" }, "maxItems": 3 },
+
         "majorId": { "type": "string" },
-        "choice": { "type": "string" },
-        "mode": { "type": "string" }
+
+        "optionId": { "type": "string" },
+
+        "enemyMode": { "type": "string", "enum": ["barehand", "weapon"] },
+        "block": { "type": "boolean" },
+        "cupsChoice": { "type": "string", "enum": ["heal", "equipArmor"] },
+        "bargainChoice": { "type": "string", "enum": ["pay", "takeDamage"] },
+
+        "order": {
+          "type": "array",
+          "items": { "type": "integer", "minimum": 0 },
+          "description": "Permutation for reorder actions (top3 or room4)."
+        }
       }
     }
   }

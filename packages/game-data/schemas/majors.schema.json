@@ -1,18 +1,15 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://foolsgambit.dev/schemas/majors.schema.json",
-  "title": "Fool's Gambit - Majors Content Bundle",
+  "title": "Fool's Gambit - Majors Content",
   "type": "object",
   "additionalProperties": false,
-  "required": ["contentVersion", "majors", "stringsNamespace"],
+  "required": ["contentVersion", "majors"],
   "properties": {
     "contentVersion": {
       "type": "string",
-      "description": "Semver or immutable hash for this content bundle, e.g. 1.1.0 or sha256:...."
-    },
-    "stringsNamespace": {
-      "type": "string",
-      "description": "Namespace/prefix used for string keys, e.g. 'majors.'"
+      "minLength": 1,
+      "description": "Bump/change whenever majors or referenced strings change."
     },
     "majors": {
       "type": "array",
@@ -48,28 +45,27 @@
         "world"
       ]
     },
-
     "HookId": {
       "type": "string",
       "enum": [
         "FLOOR_START",
         "ROOM_REVEALED",
-        "ENGAGE_START",
         "ORDER_CONSTRAINT",
         "BEFORE_FIRST_RESOLVE_ATTEMPT",
         "AFTER_FIRST_RESOLUTION"
       ]
     },
+    "StringKey": { "type": "string", "minLength": 1 },
 
-    "ScopeId": {
-      "type": "string",
-      "enum": ["THIS_ROOM", "THIS_FLOOR", "PERSIST_UNTIL_USED"]
-    },
-
-    "StringKey": {
-      "type": "string",
-      "minLength": 1,
-      "description": "Key into strings bundle, e.g. 'majors.magician.name'."
+    "MajorUi": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["nameKey", "shadowSummaryKey", "giftSummaryKey"],
+      "properties": {
+        "nameKey": { "$ref": "#/$defs/StringKey" },
+        "shadowSummaryKey": { "$ref": "#/$defs/StringKey" },
+        "giftSummaryKey": { "$ref": "#/$defs/StringKey" }
+      }
     },
 
     "MajorShadow": {
@@ -85,142 +81,172 @@
     "MajorGift": {
       "type": "object",
       "additionalProperties": false,
-      "required": ["availability", "effect"],
+      "required": ["effect"],
       "properties": {
-        "availability": {
-          "type": "string",
-          "enum": ["ATTUNED_ONCE_PER_FLOOR"],
-          "description": "Gift is usable once per floor if attuned, plus a separate on-claim free use handled by engine rules."
-        },
         "effect": { "$ref": "#/$defs/EffectNode" }
-      }
-    },
-
-    "MajorUI": {
-      "type": "object",
-      "additionalProperties": false,
-      "required": ["nameKey", "shadowSummaryKey", "giftSummaryKey"],
-      "properties": {
-        "nameKey": { "$ref": "#/$defs/StringKey" },
-        "shadowSummaryKey": { "$ref": "#/$defs/StringKey" },
-        "giftSummaryKey": { "$ref": "#/$defs/StringKey" }
       }
     },
 
     "MajorDefinition": {
       "type": "object",
       "additionalProperties": false,
-      "required": ["id", "shadow", "gift", "ui"],
+      "required": ["id", "ui", "shadow", "gift"],
       "properties": {
         "id": { "$ref": "#/$defs/MajorId" },
+        "ui": { "$ref": "#/$defs/MajorUi" },
         "shadow": { "$ref": "#/$defs/MajorShadow" },
-        "gift": { "$ref": "#/$defs/MajorGift" },
-        "ui": { "$ref": "#/$defs/MajorUI" }
+        "gift": { "$ref": "#/$defs/MajorGift" }
       }
     },
 
-    "TargetFilter": {
+    "SelectorKind": {
       "type": "string",
-      "enum": ["ANY", "EFFECTIVE_REVERSED_ONLY"]
+      "enum": [
+        "PLAYER_CHOICE",
+        "RANDOM",
+        "LEFTMOST",
+        "HIGHEST_VALUE",
+        "IF_ENEMY_PRESENT_PLAYER_CHOICE",
+        "IF_ANY_REVERSED_PLAYER_CHOICE"
+      ]
     },
 
-    "TargetSelector": {
+    "Selector": {
       "type": "object",
       "additionalProperties": false,
       "required": ["kind"],
       "properties": {
-        "kind": {
-          "type": "string",
-          "enum": ["PLAYER_CHOICE", "RANDOM", "LEFTMOST", "HIGHEST_ORDERING_VALUE"]
-        },
-        "filter": { "$ref": "#/$defs/TargetFilter" },
-        "tieBreak": {
-          "type": "string",
-          "enum": ["PLAYER_CHOICE"],
-          "description": "Only meaningful for HIGHEST_ORDERING_VALUE ties."
-        }
+        "kind": { "$ref": "#/$defs/SelectorKind" },
+        "tieBreak": { "type": "string", "enum": ["PLAYER_CHOICE"] }
       }
     },
 
-    "BargainOption": {
-      "type": "object",
-      "additionalProperties": false,
-      "properties": {
-        "payGold": { "type": "integer", "minimum": 0 },
-        "takeDamage": { "type": "integer", "minimum": 0 },
-        "heal": { "type": "integer", "minimum": 0 },
-        "gainGold": { "type": "integer", "minimum": 0 }
-      },
-      "description": "Engine must enforce option validity (e.g., if payGold > player.gold then option is not selectable)."
-    },
-
-    "OrderConstraintKind": {
+    "EffectType": {
       "type": "string",
-      "enum": ["LEFT_TO_RIGHT", "RIGHT_TO_LEFT", "SUIT_ORDER", "ASC_ORDERING_VALUE"]
-    },
+      "enum": [
+        "NOOP",
+        "SEQUENCE",
+        "CHOICE",
+        "CONDITIONAL",
 
-    "EffectNode": {
-      "oneOf": [
-        { "$ref": "#/$defs/EffectSequence" },
-        { "$ref": "#/$defs/EffectChoice" },
-        { "$ref": "#/$defs/EffectConditional" },
-        { "$ref": "#/$defs/EffectNoop" },
+        "REROLL_REVEALED",
+        "EXILE_REPLACE_REVEALED",
+        "CLEANSE_REVEALED",
 
-        { "$ref": "#/$defs/EffectRerollRevealed" },
-        { "$ref": "#/$defs/EffectExileReplaceRevealed" },
-        { "$ref": "#/$defs/EffectCleanseRevealed" },
+        "PEEK_TOP_N",
+        "REORDER_TOP_N",
+        "REORDER_ROOM_BY_VALUE",
+        "REORDER_ROOM_ARBITRARY",
 
-        { "$ref": "#/$defs/EffectPeekTopNMinor" },
-        { "$ref": "#/$defs/EffectReorderRoomByValue" },
-        { "$ref": "#/$defs/EffectReorderRoomArbitrary" },
+        "BARGAIN",
 
-        { "$ref": "#/$defs/EffectBargain" },
-        { "$ref": "#/$defs/EffectDisableFateAction" },
-
-        { "$ref": "#/$defs/EffectSetWeaponRestrictionMode" },
-        { "$ref": "#/$defs/EffectSetOrderConstraint" },
-
-        { "$ref": "#/$defs/EffectForcedExileOnFirstResolveAttempt" },
-        { "$ref": "#/$defs/EffectGrantCheatWeapon" }
+        "DISABLE_FATE_ACTION",
+        "SET_WEAPON_RESTRICTION_MODE",
+        "SET_ORDER_CONSTRAINT",
+        "SET_FLOOR_PARAM",
+        "FORCED_EXILE_FIRST_RESOLVE_ATTEMPT"
       ]
     },
 
-    "EffectNoop": {
+    "EffectNode": {
       "type": "object",
       "additionalProperties": false,
       "required": ["type"],
       "properties": {
-        "type": { "const": "NOOP" }
-      }
-    },
+        "type": { "$ref": "#/$defs/EffectType" },
 
-    "EffectSequence": {
-      "type": "object",
-      "additionalProperties": false,
-      "required": ["type", "effects"],
-      "properties": {
-        "type": { "const": "SEQUENCE" },
         "effects": {
           "type": "array",
-          "minItems": 1,
           "items": { "$ref": "#/$defs/EffectNode" }
-        }
-      }
-    },
+        },
 
-    "EffectChoice": {
-      "type": "object",
-      "additionalProperties": false,
-      "required": ["type", "promptKey", "options"],
-      "properties": {
-        "type": { "const": "CHOICE" },
         "promptKey": { "$ref": "#/$defs/StringKey" },
         "options": {
           "type": "array",
-          "minItems": 2,
           "items": { "$ref": "#/$defs/ChoiceOption" }
+        },
+
+        "if": { "$ref": "#/$defs/Predicate" },
+        "then": { "$ref": "#/$defs/EffectNode" },
+        "else": { "$ref": "#/$defs/EffectNode" },
+
+        "selector": { "$ref": "#/$defs/Selector" },
+
+        "n": { "type": "integer", "enum": [3] },
+        "canReorder": { "type": "boolean" },
+
+        "fateAction": { "type": "string", "enum": ["CLEANSE", "REROLL"] },
+        "scope": { "type": "string", "enum": ["THIS_ROOM", "THIS_FLOOR"] },
+
+        "weaponRestrictionMode": { "type": "string", "enum": ["DEFAULT", "STRICT"] },
+
+        "orderConstraint": {
+          "type": "string",
+          "enum": ["NONE", "LEFT_TO_RIGHT", "RIGHT_TO_LEFT", "SUIT_ORDER", "ASC_VALUE"]
+        },
+        "requiresChooseCarriedFirst": { "type": "boolean" },
+
+        "paramKey": { "type": "string", "minLength": 1 },
+        "paramValue": { "type": "string", "minLength": 1 },
+
+        "bargainOptions": {
+          "type": "array",
+          "minItems": 2,
+          "items": { "$ref": "#/$defs/BargainOption" }
         }
-      }
+      },
+      "allOf": [
+        {
+          "if": { "properties": { "type": { "const": "SEQUENCE" } } },
+          "then": { "required": ["effects"] }
+        },
+        {
+          "if": { "properties": { "type": { "const": "CHOICE" } } },
+          "then": { "required": ["promptKey", "options"] }
+        },
+        {
+          "if": { "properties": { "type": { "const": "CONDITIONAL" } } },
+          "then": { "required": ["if", "then", "else"] }
+        },
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "enum": ["REROLL_REVEALED", "EXILE_REPLACE_REVEALED", "CLEANSE_REVEALED"]
+              }
+            }
+          },
+          "then": { "required": ["selector"] }
+        },
+        {
+          "if": { "properties": { "type": { "const": "PEEK_TOP_N" } } },
+          "then": { "required": ["n", "canReorder"] }
+        },
+        {
+          "if": { "properties": { "type": { "const": "REORDER_TOP_N" } } },
+          "then": { "required": ["n"] }
+        },
+        {
+          "if": { "properties": { "type": { "const": "DISABLE_FATE_ACTION" } } },
+          "then": { "required": ["fateAction", "scope"] }
+        },
+        {
+          "if": { "properties": { "type": { "const": "SET_WEAPON_RESTRICTION_MODE" } } },
+          "then": { "required": ["weaponRestrictionMode", "scope"] }
+        },
+        {
+          "if": { "properties": { "type": { "const": "SET_ORDER_CONSTRAINT" } } },
+          "then": { "required": ["orderConstraint", "requiresChooseCarriedFirst", "scope"] }
+        },
+        {
+          "if": { "properties": { "type": { "const": "SET_FLOOR_PARAM" } } },
+          "then": { "required": ["paramKey", "paramValue", "scope"] }
+        },
+        {
+          "if": { "properties": { "type": { "const": "BARGAIN" } } },
+          "then": { "required": ["promptKey", "options"] }
+        }
+      ]
     },
 
     "ChoiceOption": {
@@ -233,186 +259,27 @@
       }
     },
 
+    "BargainOption": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "payGold": { "type": "integer", "minimum": 0, "maximum": 9999 },
+        "takeDamage": { "type": "integer", "minimum": 0, "maximum": 999 },
+        "heal": { "type": "integer", "minimum": 0, "maximum": 999 },
+        "gainGold": { "type": "integer", "minimum": 0, "maximum": 9999 }
+      }
+    },
+
     "Predicate": {
       "type": "object",
       "additionalProperties": false,
-      "required": ["type"],
+      "required": ["kind"],
       "properties": {
-        "type": {
+        "kind": {
           "type": "string",
           "enum": ["ROOM_HAS_ENEMY", "ROOM_HAS_ANY_EFFECTIVE_REVERSED", "PLAYER_GOLD_AT_LEAST"]
         },
-        "amount": {
-          "type": "integer",
-          "minimum": 0,
-          "description": "Used only for PLAYER_GOLD_AT_LEAST."
-        }
-      }
-    },
-
-    "EffectConditional": {
-      "type": "object",
-      "additionalProperties": false,
-      "required": ["type", "predicate", "then", "else"],
-      "properties": {
-        "type": { "const": "CONDITIONAL" },
-        "predicate": { "$ref": "#/$defs/Predicate" },
-        "then": { "$ref": "#/$defs/EffectNode" },
-        "else": { "$ref": "#/$defs/EffectNode" }
-      }
-    },
-
-    "EffectRerollRevealed": {
-      "type": "object",
-      "additionalProperties": false,
-      "required": ["type", "target"],
-      "properties": {
-        "type": { "const": "REROLL_REVEALED_CARD" },
-        "target": { "$ref": "#/$defs/TargetSelector" }
-      }
-    },
-
-    "EffectExileReplaceRevealed": {
-      "type": "object",
-      "additionalProperties": false,
-      "required": ["type", "target"],
-      "properties": {
-        "type": { "const": "EXILE_REPLACE_REVEALED_CARD" },
-        "target": { "$ref": "#/$defs/TargetSelector" }
-      }
-    },
-
-    "EffectCleanseRevealed": {
-      "type": "object",
-      "additionalProperties": false,
-      "required": ["type", "target"],
-      "properties": {
-        "type": { "const": "CLEANSE_REVEALED_CARD" },
-        "target": {
-          "allOf": [
-            { "$ref": "#/$defs/TargetSelector" },
-            {
-            "type": "object",
-              "properties": {
-                "filter": { "const": "EFFECTIVE_REVERSED_ONLY" }
-
-              }
-            }
-          ]
-        }
-      }
-    },
-
-    "EffectPeekTopNMinor": {
-      "type": "object",
-      "additionalProperties": false,
-      "required": ["type", "n", "canReorder"],
-      "properties": {
-        "type": { "const": "PEEK_TOP_N_MINOR" },
-        "n": { "type": "integer", "enum": [3] },
-        "canReorder": { "type": "boolean" }
-      }
-    },
-
-    "EffectReorderRoomByValue": {
-      "type": "object",
-      "additionalProperties": false,
-      "required": ["type", "direction", "stableTies"],
-      "properties": {
-        "type": { "const": "REORDER_ROOM_BY_VALUE" },
-        "direction": { "type": "string", "enum": ["ASC"] },
-        "stableTies": { "type": "boolean", "const": true }
-      }
-    },
-
-    "EffectReorderRoomArbitrary": {
-      "type": "object",
-      "additionalProperties": false,
-      "required": ["type"],
-      "properties": {
-        "type": { "const": "REORDER_ROOM_ARBITRARY" }
-      }
-    },
-
-    "EffectBargain": {
-      "type": "object",
-      "additionalProperties": false,
-      "required": ["type", "options"],
-      "properties": {
-        "type": { "const": "BARGAIN" },
-        "options": {
-          "type": "array",
-          "minItems": 1,
-          "items": { "$ref": "#/$defs/BargainOption" }
-        }
-      }
-    },
-
-    "FateActionKind": {
-      "type": "string",
-      "enum": ["CLEANSE", "REROLL"]
-    },
-
-    "EffectDisableFateAction": {
-      "type": "object",
-      "additionalProperties": false,
-      "required": ["type", "action", "scope"],
-      "properties": {
-        "type": { "const": "DISABLE_FATE_ACTION" },
-        "action": { "$ref": "#/$defs/FateActionKind" },
-        "scope": { "$ref": "#/$defs/ScopeId" }
-      }
-    },
-
-    "WeaponRestrictionMode": {
-      "type": "string",
-      "enum": ["DEFAULT", "STRICT"]
-    },
-
-    "EffectSetWeaponRestrictionMode": {
-      "type": "object",
-      "additionalProperties": false,
-      "required": ["type", "mode", "scope"],
-      "properties": {
-        "type": { "const": "SET_WEAPON_RESTRICTION_MODE" },
-        "mode": { "$ref": "#/$defs/WeaponRestrictionMode" },
-        "scope": { "type": "string", "enum": ["THIS_FLOOR"] }
-      }
-    },
-
-    "EffectSetOrderConstraint": {
-      "type": "object",
-      "additionalProperties": false,
-      "required": ["type", "constraint", "requiresChooseCarriedFirst", "scope"],
-      "properties": {
-        "type": { "const": "SET_ORDER_CONSTRAINT" },
-        "constraint": { "$ref": "#/$defs/OrderConstraintKind" },
-        "requiresChooseCarriedFirst": { "type": "boolean", "const": true },
-        "scope": { "type": "string", "enum": ["THIS_FLOOR"] }
-      }
-    },
-
-    "EffectForcedExileOnFirstResolveAttempt": {
-      "type": "object",
-      "additionalProperties": false,
-      "required": ["type"],
-      "properties": {
-        "type": { "const": "FORCED_EXILE_ON_FIRST_RESOLVE_ATTEMPT" }
-      }
-    },
-
-    "CheatWeaponScope": {
-      "type": "string",
-      "enum": ["NEXT_ENEMY_FIGHT_THIS_ROOM", "NEXT_ENEMY_FIGHT_PERSIST"]
-    },
-
-    "EffectGrantCheatWeapon": {
-      "type": "object",
-      "additionalProperties": false,
-      "required": ["type", "scope"],
-      "properties": {
-        "type": { "const": "GRANT_CHEAT_WEAPON" },
-        "scope": { "$ref": "#/$defs/CheatWeaponScope" }
+        "value": { "type": "integer", "minimum": 0, "maximum": 9999 }
       }
     }
   }
