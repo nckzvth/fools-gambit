@@ -4,10 +4,15 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "dev": "echo \"(setup Vite later)\"",
-    "build": "echo \"(setup Vite later)\""
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview --port 4173"
   },
   "dependencies": {
-    "@fg/game-core": "0.1.0"
+    "@fg/game-core": "0.1.0",
+    "pixi.js": "^8.0.0"
+  },
+  "devDependencies": {
+    "vite": "^5.0.0"
   }
 }
