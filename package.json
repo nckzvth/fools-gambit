@@ -12,6 +12,7 @@
     "format": "prettier -w .",
     "test": "vitest run",
     "validate:content": "node ./packages/game-data/scripts/validate-content.mjs",
+    "generate:replays": "npm run build -w @fg/game-core && npm run generate:replays -w @fg/game-core",
     "dev:web": "npm run dev -w @fg/web-client",
     "build:web": "npm run build -w @fg/web-client"
   },

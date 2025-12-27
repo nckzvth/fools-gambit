@@ -1,0 +1,7965 @@
+{
+  "format": "fg-replay-corpus",
+  "corpusVersion": 1,
+  "createdAtUTC": "2025-12-27T00:00:00.000Z",
+  "engineVersion": "0.1.0",
+  "contentVersion": "1.1.0",
+  "specVersion": "v1.1",
+  "runs": [
+    {
+      "header": {
+        "engineVersion": "0.1.0",
+        "contentVersion": "1.1.0",
+        "specVersion": "v1.1",
+        "createdAtUTC": "2025-12-27T00:00:00.000Z"
+      },
+      "seed": 10000,
+      "actions": [
+        {
+          "type": "START_RUN",
+          "seed": 10000,
+          "runLengthTarget": 7
+        },
+        {
+          "type": "SELECT_ATTUNEMENT",
+          "majorIds": []
+        },
+        {
+          "type": "CHOOSE_ENGAGE"
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 0
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 1
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 2
+        }
+      ],
+      "checkpoints": [
+        {
+          "stepIndex": 0,
+          "stateHash": "604d758efc79e0f1a463691e8d94b50dd7178a9ec642b3ece81c2232b4ca5a1e"
+        }
+      ]
+    },
+    {
+      "header": {
+        "engineVersion": "0.1.0",
+        "contentVersion": "1.1.0",
+        "specVersion": "v1.1",
+        "createdAtUTC": "2025-12-27T00:00:00.000Z"
+      },
+      "seed": 10001,
+      "actions": [
+        {
+          "type": "START_RUN",
+          "seed": 10001,
+          "runLengthTarget": 7
+        },
+        {
+          "type": "SELECT_ATTUNEMENT",
+          "majorIds": []
+        },
+        {
+          "type": "CHOOSE_ENGAGE"
+        },
+        {
+          "type": "SELECT_CARRIED_CARD",
+          "slotIndex": 0
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 1
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 2
+        },
+        {
+          "type": "CUPS_8_10_CHOICE",
+          "cupsChoice": "heal"
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 3
+        },
+        {
+          "type": "CHOOSE_ENGAGE"
+        },
+        {
+          "type": "SELECT_CARRIED_CARD",
+          "slotIndex": 0
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 2
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 3
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 1
+        }
+      ],
+      "checkpoints": [
+        {
+          "stepIndex": 0,
+          "stateHash": "9e5c3518e5bb1cc1880e764cd8a00df4e97b82ed215690a345d8aa8e25802d88"
+        },
+        {
+          "stepIndex": 9,
+          "stateHash": "93d60f27bc7570d694aa1ca7b283d5b75a79d38a169d5a8926f01b98a51646e4"
+        }
+      ]
+    },
+    {
+      "header": {
+        "engineVersion": "0.1.0",
+        "contentVersion": "1.1.0",
+        "specVersion": "v1.1",
+        "createdAtUTC": "2025-12-27T00:00:00.000Z"
+      },
+      "seed": 10002,
+      "actions": [
+        {
+          "type": "START_RUN",
+          "seed": 10002,
+          "runLengthTarget": 7
+        },
+        {
+          "type": "SELECT_ATTUNEMENT",
+          "majorIds": []
+        },
+        {
+          "type": "CHOOSE_ENGAGE"
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 0
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 1
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 2
+        },
+        {
+          "type": "CHOOSE_ENGAGE"
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 0
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 1
+        }
+      ],
+      "checkpoints": [
+        {
+          "stepIndex": 0,
+          "stateHash": "6ffe980f34503519cc0169191319d9e27fc55db62c163d561afcc8ec05b66ca4"
+        }
+      ]
+    },
+    {
+      "header": {
+        "engineVersion": "0.1.0",
+        "contentVersion": "1.1.0",
+        "specVersion": "v1.1",
+        "createdAtUTC": "2025-12-27T00:00:00.000Z"
+      },
+      "seed": 10003,
+      "actions": [
+        {
+          "type": "START_RUN",
+          "seed": 10003,
+          "runLengthTarget": 7
+        },
+        {
+          "type": "SELECT_ATTUNEMENT",
+          "majorIds": []
+        },
+        {
+          "type": "CHOOSE_ENGAGE"
+        },
+        {
+          "type": "SELECT_CARRIED_CARD",
+          "slotIndex": 0
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 1
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 2
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 3
+        },
+        {
+          "type": "CHOOSE_ENGAGE"
+        },
+        {
+          "type": "SELECT_CARRIED_CARD",
+          "slotIndex": 0
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 1
+        }
+      ],
+      "checkpoints": [
+        {
+          "stepIndex": 0,
+          "stateHash": "b76dfc0c1ad3ab0ac61fb405c0df34e665553ac1476889631f64d833ae7b08f6"
+        },
+        {
+          "stepIndex": 9,
+          "stateHash": "5e7fc3612e09851fc2743ccd0de04fc04d2d848e8a490648fd0cd5908a906c60"
+        }
+      ]
+    },
+    {
+      "header": {
+        "engineVersion": "0.1.0",
+        "contentVersion": "1.1.0",
+        "specVersion": "v1.1",
+        "createdAtUTC": "2025-12-27T00:00:00.000Z"
+      },
+      "seed": 10004,
+      "actions": [
+        {
+          "type": "START_RUN",
+          "seed": 10004,
+          "runLengthTarget": 7
+        },
+        {
+          "type": "SELECT_ATTUNEMENT",
+          "majorIds": []
+        },
+        {
+          "type": "CHOOSE_ENGAGE"
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 0
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 1
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 2
+        }
+      ],
+      "checkpoints": [
+        {
+          "stepIndex": 0,
+          "stateHash": "44e03cb3519fbf4843424b6d3979711e3b5a0cd0dae89a070857f4117d7650f1"
+        }
+      ]
+    },
+    {
+      "header": {
+        "engineVersion": "0.1.0",
+        "contentVersion": "1.1.0",
+        "specVersion": "v1.1",
+        "createdAtUTC": "2025-12-27T00:00:00.000Z"
+      },
+      "seed": 10005,
+      "actions": [
+        {
+          "type": "START_RUN",
+          "seed": 10005,
+          "runLengthTarget": 7
+        },
+        {
+          "type": "SELECT_ATTUNEMENT",
+          "majorIds": []
+        },
+        {
+          "type": "CHOOSE_ENGAGE"
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 0
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 1
+        }
+      ],
+      "checkpoints": [
+        {
+          "stepIndex": 0,
+          "stateHash": "ea41ba94cbd5e8353b25f02dce5f7fb790662102cdfcc234417db147ccecf582"
+        }
+      ]
+    },
+    {
+      "header": {
+        "engineVersion": "0.1.0",
+        "contentVersion": "1.1.0",
+        "specVersion": "v1.1",
+        "createdAtUTC": "2025-12-27T00:00:00.000Z"
+      },
+      "seed": 10006,
+      "actions": [
+        {
+          "type": "START_RUN",
+          "seed": 10006,
+          "runLengthTarget": 7
+        },
+        {
+          "type": "SELECT_ATTUNEMENT",
+          "majorIds": []
+        },
+        {
+          "type": "USE_MAJOR_GIFT",
+          "majorId": "high_priestess",
+          "slotIndex": 0
+        },
+        {
+          "type": "CHOOSE_ENGAGE"
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 0
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 1
+        },
+        {
+          "type": "ENEMY_FIGHT_CHOICE",
+          "enemyMode": "weapon"
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 2
+        },
+        {
+          "type": "ENEMY_FIGHT_CHOICE",
+          "enemyMode": "weapon"
+        },
+        {
+          "type": "USE_MAJOR_GIFT",
+          "majorId": "high_priestess",
+          "slotIndex": 0
+        },
+        {
+          "type": "CHOOSE_ENGAGE"
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 0
+        }
+      ],
+      "checkpoints": [
+        {
+          "stepIndex": 0,
+          "stateHash": "090f457cc342beb48813d7e5ff8710ad461257a69ce29fce9b052c62e5f71d6a"
+        },
+        {
+          "stepIndex": 9,
+          "stateHash": "2c03f6c30eec42ae72ec962caac2af4e0e039c924d7408bc058496640145127c"
+        }
+      ]
+    },
+    {
+      "header": {
+        "engineVersion": "0.1.0",
+        "contentVersion": "1.1.0",
+        "specVersion": "v1.1",
+        "createdAtUTC": "2025-12-27T00:00:00.000Z"
+      },
+      "seed": 10007,
+      "actions": [
+        {
+          "type": "START_RUN",
+          "seed": 10007,
+          "runLengthTarget": 7
+        },
+        {
+          "type": "SELECT_ATTUNEMENT",
+          "majorIds": []
+        },
+        {
+          "type": "CHOOSE_ENGAGE"
+        },
+        {
+          "type": "SELECT_CARRIED_CARD",
+          "slotIndex": 0
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 1
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 2
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 3
+        }
+      ],
+      "checkpoints": [
+        {
+          "stepIndex": 0,
+          "stateHash": "c92ab0ef5ec05746da0d44798dade6877c60d96f71e0f2324bb3da7f599a4414"
+        }
+      ]
+    },
+    {
+      "header": {
+        "engineVersion": "0.1.0",
+        "contentVersion": "1.1.0",
+        "specVersion": "v1.1",
+        "createdAtUTC": "2025-12-27T00:00:00.000Z"
+      },
+      "seed": 10008,
+      "actions": [
+        {
+          "type": "START_RUN",
+          "seed": 10008,
+          "runLengthTarget": 7
+        },
+        {
+          "type": "SELECT_ATTUNEMENT",
+          "majorIds": []
+        },
+        {
+          "type": "CHOOSE_ENGAGE"
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 0
+        },
+        {
+          "type": "CUPS_8_10_CHOICE",
+          "cupsChoice": "heal"
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 1
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 2
+        },
+        {
+          "type": "ACE_CHOICE",
+          "optionId": "cheat_weapon_free"
+        },
+        {
+          "type": "CHOOSE_ENGAGE"
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 0
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 1
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 2
+        },
+        {
+          "type": "CHOOSE_ENGAGE"
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 0
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 1
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 2
+        },
+        {
+          "type": "USE_MAJOR_GIFT",
+          "majorId": "judgement",
+          "slotIndex": 0
+        },
+        {
+          "type": "CHOOSE_ENGAGE"
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 0
+        },
+        {
+          "type": "SWORDS_AMBUSH_BLOCK_CHOICE",
+          "block": true
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 1
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 2
+        },
+        {
+          "type": "ENEMY_FIGHT_CHOICE",
+          "enemyMode": "weapon"
+        }
+      ],
+      "checkpoints": [
+        {
+          "stepIndex": 0,
+          "stateHash": "472d5d71f56730395d9c25ed4d65887fee6c391582796f469995281438af79fa"
+        },
+        {
+          "stepIndex": 9,
+          "stateHash": "4868fad418973949575aef152cc32e1b17980350e7812438871b83469736daa6"
+        },
+        {
+          "stepIndex": 19,
+          "stateHash": "2aabc4194acbde2cbc3d9d5f17d68628a182eacf1602c5f3247047cbc6335fa0"
+        }
+      ]
+    },
+    {
+      "header": {
+        "engineVersion": "0.1.0",
+        "contentVersion": "1.1.0",
+        "specVersion": "v1.1",
+        "createdAtUTC": "2025-12-27T00:00:00.000Z"
+      },
+      "seed": 10009,
+      "actions": [
+        {
+          "type": "START_RUN",
+          "seed": 10009,
+          "runLengthTarget": 7
+        },
+        {
+          "type": "SELECT_ATTUNEMENT",
+          "majorIds": []
+        },
+        {
+          "type": "CHOOSE_ENGAGE"
+        },
+        {
+          "type": "SELECT_CARRIED_CARD",
+          "slotIndex": 0
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 1
+        },
+        {
+          "type": "ACE_CHOICE",
+          "optionId": "cheat_weapon_free"
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 3
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 2
+        },
+        {
+          "type": "CHOOSE_ENGAGE"
+        },
+        {
+          "type": "SELECT_CARRIED_CARD",
+          "slotIndex": 0
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 3
+        },
+        {
+          "type": "ACE_CHOICE",
+          "optionId": "exile_replace_free",
+          "slotIndex": 0
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 1
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 2
+        }
+      ],
+      "checkpoints": [
+        {
+          "stepIndex": 0,
+          "stateHash": "5f4a3d46006c6f5cf67a915f6a11f270b880bc4513512054cedd0e9194339647"
+        },
+        {
+          "stepIndex": 9,
+          "stateHash": "5170f5f5bc365c44e652c91d6c1bd7c11af73cd5b64380ae7a77586041686232"
+        }
+      ]
+    },
+    {
+      "header": {
+        "engineVersion": "0.1.0",
+        "contentVersion": "1.1.0",
+        "specVersion": "v1.1",
+        "createdAtUTC": "2025-12-27T00:00:00.000Z"
+      },
+      "seed": 10010,
+      "actions": [
+        {
+          "type": "START_RUN",
+          "seed": 10010,
+          "runLengthTarget": 7
+        },
+        {
+          "type": "SELECT_ATTUNEMENT",
+          "majorIds": []
+        },
+        {
+          "type": "CHOOSE_ENGAGE"
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 0
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 1
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 2
+        },
+        {
+          "type": "CHOOSE_ENGAGE"
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 0
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 1
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 2
+        },
+        {
+          "type": "ACE_CHOICE",
+          "optionId": "pay5_heal5"
+        },
+        {
+          "type": "CHOOSE_ENGAGE"
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 0
+        },
+        {
+          "type": "ACE_CHOICE",
+          "optionId": "cheat_weapon_free"
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 1
+        },
+        {
+          "type": "ENEMY_FIGHT_CHOICE",
+          "enemyMode": "weapon"
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 2
+        },
+        {
+          "type": "CHOOSE_ENGAGE"
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 0
+        },
+        {
+          "type": "ENEMY_FIGHT_CHOICE",
+          "enemyMode": "weapon"
+        }
+      ],
+      "checkpoints": [
+        {
+          "stepIndex": 0,
+          "stateHash": "39ef32420838886539dfe47e3ccbc5e71f94f93568b3bc5923736fd8b13c63aa"
+        },
+        {
+          "stepIndex": 9,
+          "stateHash": "2cfb202696172c43ab0c97ea0b35962dd8c367cc6d485a4e281729943f7ca387"
+        },
+        {
+          "stepIndex": 19,
+          "stateHash": "acce30cba944d813d7ee4ae03842458edf4a876b1683c6828b911697cfee9ec9"
+        }
+      ]
+    },
+    {
+      "header": {
+        "engineVersion": "0.1.0",
+        "contentVersion": "1.1.0",
+        "specVersion": "v1.1",
+        "createdAtUTC": "2025-12-27T00:00:00.000Z"
+      },
+      "seed": 10011,
+      "actions": [
+        {
+          "type": "START_RUN",
+          "seed": 10011,
+          "runLengthTarget": 7
+        },
+        {
+          "type": "SELECT_ATTUNEMENT",
+          "majorIds": []
+        },
+        {
+          "type": "CHOOSE_ENGAGE"
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 0
+        },
+        {
+          "type": "ACE_CHOICE",
+          "optionId": "gain5_take3"
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 1
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 2
+        },
+        {
+          "type": "USE_MAJOR_GIFT",
+          "majorId": "judgement",
+          "slotIndex": 0
+        },
+        {
+          "type": "CHOOSE_ENGAGE"
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 0
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 1
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 2
+        },
+        {
+          "type": "CHOOSE_ENGAGE"
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 0
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 1
+        }
+      ],
+      "checkpoints": [
+        {
+          "stepIndex": 0,
+          "stateHash": "36afe7ccc2ff1a501207aed194ed8cd20190f93dca7733c353a0465f23bf2bce"
+        },
+        {
+          "stepIndex": 9,
+          "stateHash": "381616d931882c251cb7704f6191405abfe9f434bc6924a5eb9ad585068cda2f"
+        }
+      ]
+    },
+    {
+      "header": {
+        "engineVersion": "0.1.0",
+        "contentVersion": "1.1.0",
+        "specVersion": "v1.1",
+        "createdAtUTC": "2025-12-27T00:00:00.000Z"
+      },
+      "seed": 10012,
+      "actions": [
+        {
+          "type": "START_RUN",
+          "seed": 10012,
+          "runLengthTarget": 7
+        },
+        {
+          "type": "SELECT_ATTUNEMENT",
+          "majorIds": []
+        },
+        {
+          "type": "CHOOSE_ENGAGE"
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 0
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 1
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 2
+        },
+        {
+          "type": "CHOOSE_ENGAGE"
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 0
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 1
+        }
+      ],
+      "checkpoints": [
+        {
+          "stepIndex": 0,
+          "stateHash": "9fded77e5f77bfc4dfe6a992e76339222153abb943ea45c825e53daf58d64917"
+        }
+      ]
+    },
+    {
+      "header": {
+        "engineVersion": "0.1.0",
+        "contentVersion": "1.1.0",
+        "specVersion": "v1.1",
+        "createdAtUTC": "2025-12-27T00:00:00.000Z"
+      },
+      "seed": 10013,
+      "actions": [
+        {
+          "type": "START_RUN",
+          "seed": 10013,
+          "runLengthTarget": 7
+        },
+        {
+          "type": "SELECT_ATTUNEMENT",
+          "majorIds": []
+        },
+        {
+          "type": "CHOOSE_ENGAGE"
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 0
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 1
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 2
+        },
+        {
+          "type": "ENEMY_FIGHT_CHOICE",
+          "enemyMode": "weapon"
+        },
+        {
+          "type": "CHOOSE_ENGAGE"
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 0
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 1
+        }
+      ],
+      "checkpoints": [
+        {
+          "stepIndex": 0,
+          "stateHash": "90ef0fe98813eb29724e015a4a4a0b38235cd59826048961b5795e25d4307a2b"
+        },
+        {
+          "stepIndex": 9,
+          "stateHash": "d8f5600fe292721141f53e6dbf2e17948518beb307b2f5f3bc13252144d141df"
+        }
+      ]
+    },
+    {
+      "header": {
+        "engineVersion": "0.1.0",
+        "contentVersion": "1.1.0",
+        "specVersion": "v1.1",
+        "createdAtUTC": "2025-12-27T00:00:00.000Z"
+      },
+      "seed": 10014,
+      "actions": [
+        {
+          "type": "START_RUN",
+          "seed": 10014,
+          "runLengthTarget": 7
+        },
+        {
+          "type": "SELECT_ATTUNEMENT",
+          "majorIds": []
+        },
+        {
+          "type": "CHOOSE_ENGAGE"
+        },
+        {
+          "type": "SELECT_CARRIED_CARD",
+          "slotIndex": 0
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 1
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 3
+        },
+        {
+          "type": "CUPS_8_10_CHOICE",
+          "cupsChoice": "heal"
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 2
+        },
+        {
+          "type": "CHOOSE_ENGAGE"
+        },
+        {
+          "type": "SELECT_CARRIED_CARD",
+          "slotIndex": 0
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 1
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 2
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 3
+        },
+        {
+          "type": "CHOOSE_ENGAGE"
+        },
+        {
+          "type": "SELECT_CARRIED_CARD",
+          "slotIndex": 0
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 2
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 3
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 1
+        },
+        {
+          "type": "ENEMY_FIGHT_CHOICE",
+          "enemyMode": "weapon"
+        },
+        {
+          "type": "CHOOSE_ENGAGE"
+        },
+        {
+          "type": "SELECT_CARRIED_CARD",
+          "slotIndex": 0
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 3
+        },
+        {
+          "type": "SWORDS_AMBUSH_BLOCK_CHOICE",
+          "block": true
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 1
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 2
+        },
+        {
+          "type": "ENEMY_FIGHT_CHOICE",
+          "enemyMode": "weapon"
+        }
+      ],
+      "checkpoints": [
+        {
+          "stepIndex": 0,
+          "stateHash": "c1f28b01fce4bdc77b61fd83533da43eef044d7265aa72e5f5a346d4b3943a2a"
+        },
+        {
+          "stepIndex": 9,
+          "stateHash": "be6d6814d6719f743cc69beba68d7c3427977a771598e44e7fbfb42986d876a9"
+        },
+        {
+          "stepIndex": 19,
+          "stateHash": "9b853c7d513d57f980118676ab57fc709a09cf39c37741e6e1b4e4fb00032e9f"
+        }
+      ]
+    },
+    {
+      "header": {
+        "engineVersion": "0.1.0",
+        "contentVersion": "1.1.0",
+        "specVersion": "v1.1",
+        "createdAtUTC": "2025-12-27T00:00:00.000Z"
+      },
+      "seed": 10015,
+      "actions": [
+        {
+          "type": "START_RUN",
+          "seed": 10015,
+          "runLengthTarget": 7
+        },
+        {
+          "type": "SELECT_ATTUNEMENT",
+          "majorIds": []
+        },
+        {
+          "type": "USE_MAJOR_GIFT",
+          "majorId": "chariot",
+          "optionId": "majors.chariot.leftToRight"
+        },
+        {
+          "type": "CHOOSE_ENGAGE"
+        },
+        {
+          "type": "SELECT_CARRIED_CARD",
+          "slotIndex": 0
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 1
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 2
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 3
+        },
+        {
+          "type": "ACE_CHOICE",
+          "optionId": "cheat_weapon_free"
+        },
+        {
+          "type": "CHOOSE_ENGAGE"
+        },
+        {
+          "type": "SELECT_CARRIED_CARD",
+          "slotIndex": 0
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 1
+        }
+      ],
+      "checkpoints": [
+        {
+          "stepIndex": 0,
+          "stateHash": "7bf67572db965619e1ded212656fc30481e75749cf79ad7ab00dbe72d22d0fb4"
+        },
+        {
+          "stepIndex": 9,
+          "stateHash": "880f953f4817c9f0fb79c0cd23a3ed5c3433c73d5fe064bb544c6163e4bc0977"
+        }
+      ]
+    },
+    {
+      "header": {
+        "engineVersion": "0.1.0",
+        "contentVersion": "1.1.0",
+        "specVersion": "v1.1",
+        "createdAtUTC": "2025-12-27T00:00:00.000Z"
+      },
+      "seed": 10016,
+      "actions": [
+        {
+          "type": "START_RUN",
+          "seed": 10016,
+          "runLengthTarget": 7
+        },
+        {
+          "type": "SELECT_ATTUNEMENT",
+          "majorIds": []
+        },
+        {
+          "type": "USE_MAJOR_GIFT",
+          "majorId": "star",
+          "slotIndex": 1
+        },
+        {
+          "type": "CHOOSE_ENGAGE"
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 0
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 1
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 2
+        },
+        {
+          "type": "USE_MAJOR_GIFT",
+          "majorId": "star",
+          "slotIndex": 0
+        },
+        {
+          "type": "CHOOSE_ENGAGE"
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 0
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 1
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 2
+        },
+        {
+          "type": "USE_MAJOR_GIFT",
+          "majorId": "star",
+          "slotIndex": 1
+        },
+        {
+          "type": "CHOOSE_ENGAGE"
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 0
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 1
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 2
+        },
+        {
+          "type": "ENEMY_FIGHT_CHOICE",
+          "enemyMode": "weapon"
+        },
+        {
+          "type": "USE_MAJOR_GIFT",
+          "majorId": "star",
+          "slotIndex": 0
+        },
+        {
+          "type": "CHOOSE_ENGAGE"
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 0
+        },
+        {
+          "type": "CUPS_8_10_CHOICE",
+          "cupsChoice": "heal"
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 1
+        },
+        {
+          "type": "ENEMY_FIGHT_CHOICE",
+          "enemyMode": "weapon"
+        }
+      ],
+      "checkpoints": [
+        {
+          "stepIndex": 0,
+          "stateHash": "8ea6440b9a56357558384e1b53373dec9f4ce0be42b369140db0c78adda8c27a"
+        },
+        {
+          "stepIndex": 9,
+          "stateHash": "045e1710ab57c8281710fb89811aa249fd9d13f915ea1f0613f531a53be50f05"
+        },
+        {
+          "stepIndex": 19,
+          "stateHash": "494eabc6aeb1733770422614be0837845e91c0b2d8f4c558cf96de5b5adcc910"
+        }
+      ]
+    },
+    {
+      "header": {
+        "engineVersion": "0.1.0",
+        "contentVersion": "1.1.0",
+        "specVersion": "v1.1",
+        "createdAtUTC": "2025-12-27T00:00:00.000Z"
+      },
+      "seed": 10017,
+      "actions": [
+        {
+          "type": "START_RUN",
+          "seed": 10017,
+          "runLengthTarget": 7
+        },
+        {
+          "type": "SELECT_ATTUNEMENT",
+          "majorIds": []
+        },
+        {
+          "type": "CHOOSE_ENGAGE"
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 0
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 1
+        }
+      ],
+      "checkpoints": [
+        {
+          "stepIndex": 0,
+          "stateHash": "91f70dd41ed7bad5534ff96ecb5e383697aa0f231c6296b2d0fa580813c42fbf"
+        }
+      ]
+    },
+    {
+      "header": {
+        "engineVersion": "0.1.0",
+        "contentVersion": "1.1.0",
+        "specVersion": "v1.1",
+        "createdAtUTC": "2025-12-27T00:00:00.000Z"
+      },
+      "seed": 10018,
+      "actions": [
+        {
+          "type": "START_RUN",
+          "seed": 10018,
+          "runLengthTarget": 7
+        },
+        {
+          "type": "SELECT_ATTUNEMENT",
+          "majorIds": []
+        },
+        {
+          "type": "CHOOSE_ENGAGE"
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 0
+        },
+        {
+          "type": "BARGAIN_CHOICE",
+          "bargainChoice": "takeDamage"
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 1
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 2
+        },
+        {
+          "type": "CHOOSE_ENGAGE"
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 0
+        },
+        {
+          "type": "BARGAIN_CHOICE",
+          "bargainChoice": "pay"
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 1
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 2
+        }
+      ],
+      "checkpoints": [
+        {
+          "stepIndex": 0,
+          "stateHash": "ef1cc57bd3fa81230826f4fe003ff2f9011f437717f5ea370a5b7c42af004770"
+        },
+        {
+          "stepIndex": 9,
+          "stateHash": "5413f5ec977c39a61af0413b736f210266d2761f458f870ecf4809a9f6b21516"
+        }
+      ]
+    },
+    {
+      "header": {
+        "engineVersion": "0.1.0",
+        "contentVersion": "1.1.0",
+        "specVersion": "v1.1",
+        "createdAtUTC": "2025-12-27T00:00:00.000Z"
+      },
+      "seed": 10019,
+      "actions": [
+        {
+          "type": "START_RUN",
+          "seed": 10019,
+          "runLengthTarget": 7
+        },
+        {
+          "type": "SELECT_ATTUNEMENT",
+          "majorIds": []
+        },
+        {
+          "type": "USE_MAJOR_GIFT",
+          "majorId": "high_priestess",
+          "slotIndex": 0
+        },
+        {
+          "type": "CHOOSE_ENGAGE"
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 0
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 1
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 2
+        },
+        {
+          "type": "USE_MAJOR_GIFT",
+          "majorId": "high_priestess",
+          "slotIndex": 0
+        },
+        {
+          "type": "CHOOSE_ENGAGE"
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 0
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 1
+        }
+      ],
+      "checkpoints": [
+        {
+          "stepIndex": 0,
+          "stateHash": "6038b16acaa39e0bfa31972b47d842650fe3e20b0cdd8d59ca38a8e45dd7610d"
+        },
+        {
+          "stepIndex": 9,
+          "stateHash": "50b741d639a4d2d66700ed7871c0c9b546d4e053f73509e989566e7e4a3178ab"
+        }
+      ]
+    },
+    {
+      "header": {
+        "engineVersion": "0.1.0",
+        "contentVersion": "1.1.0",
+        "specVersion": "v1.1",
+        "createdAtUTC": "2025-12-27T00:00:00.000Z"
+      },
+      "seed": 10020,
+      "actions": [
+        {
+          "type": "START_RUN",
+          "seed": 10020,
+          "runLengthTarget": 7
+        },
+        {
+          "type": "SELECT_ATTUNEMENT",
+          "majorIds": []
+        },
+        {
+          "type": "CHOOSE_ENGAGE"
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 0
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 1
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 2
+        },
+        {
+          "type": "CHOOSE_ENGAGE"
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 0
+        }
+      ],
+      "checkpoints": [
+        {
+          "stepIndex": 0,
+          "stateHash": "2a40c6ddab1c648ab79c3d652c1bc5c2c2f41c6eab7a10ea12daa53301619040"
+        }
+      ]
+    },
+    {
+      "header": {
+        "engineVersion": "0.1.0",
+        "contentVersion": "1.1.0",
+        "specVersion": "v1.1",
+        "createdAtUTC": "2025-12-27T00:00:00.000Z"
+      },
+      "seed": 10021,
+      "actions": [
+        {
+          "type": "START_RUN",
+          "seed": 10021,
+          "runLengthTarget": 7
+        },
+        {
+          "type": "SELECT_ATTUNEMENT",
+          "majorIds": []
+        },
+        {
+          "type": "USE_MAJOR_GIFT",
+          "majorId": "high_priestess",
+          "slotIndex": 0
+        },
+        {
+          "type": "CHOOSE_ENGAGE"
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 0
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 1
+        },
+        {
+          "type": "ACE_CHOICE",
+          "optionId": "gain5_take3"
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 2
+        },
+        {
+          "type": "USE_MAJOR_GIFT",
+          "majorId": "high_priestess",
+          "slotIndex": 0
+        },
+        {
+          "type": "CHOOSE_ENGAGE"
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 0
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 1
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 2
+        },
+        {
+          "type": "USE_MAJOR_GIFT",
+          "majorId": "high_priestess",
+          "slotIndex": 0
+        },
+        {
+          "type": "CHOOSE_ENGAGE"
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 0
+        }
+      ],
+      "checkpoints": [
+        {
+          "stepIndex": 0,
+          "stateHash": "cc7d3cdac715d87e848275a50a4ea78dc47441ca42131144795308df4d4f01df"
+        },
+        {
+          "stepIndex": 9,
+          "stateHash": "cb9dc19934f52068b432b16914eb0d90cc72aa29c8ce888cb646b2b7afa58255"
+        }
+      ]
+    },
+    {
+      "header": {
+        "engineVersion": "0.1.0",
+        "contentVersion": "1.1.0",
+        "specVersion": "v1.1",
+        "createdAtUTC": "2025-12-27T00:00:00.000Z"
+      },
+      "seed": 10022,
+      "actions": [
+        {
+          "type": "START_RUN",
+          "seed": 10022,
+          "runLengthTarget": 7
+        },
+        {
+          "type": "SELECT_ATTUNEMENT",
+          "majorIds": []
+        },
+        {
+          "type": "USE_MAJOR_GIFT",
+          "majorId": "devil",
+          "optionId": "majors.devil.exileOption"
+        },
+        {
+          "type": "USE_MAJOR_GIFT",
+          "majorId": "devil",
+          "slotIndex": 0
+        },
+        {
+          "type": "CHOOSE_ENGAGE"
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 0
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 1
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 2
+        },
+        {
+          "type": "USE_MAJOR_GIFT",
+          "majorId": "devil",
+          "optionId": "majors.devil.exileOption"
+        },
+        {
+          "type": "USE_MAJOR_GIFT",
+          "majorId": "devil",
+          "slotIndex": 0
+        },
+        {
+          "type": "CHOOSE_ENGAGE"
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 0
+        },
+        {
+          "type": "ACE_CHOICE",
+          "optionId": "cheat_weapon_free"
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 1
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 2
+        },
+        {
+          "type": "USE_MAJOR_GIFT",
+          "majorId": "devil",
+          "optionId": "majors.devil.exileOption"
+        },
+        {
+          "type": "USE_MAJOR_GIFT",
+          "majorId": "devil",
+          "slotIndex": 0
+        },
+        {
+          "type": "CHOOSE_ENGAGE"
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 0
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 1
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 2
+        }
+      ],
+      "checkpoints": [
+        {
+          "stepIndex": 0,
+          "stateHash": "a4500cfd70ce959206bcba8e76e6a8510e7de4c701620510ce5e9d78debc12e6"
+        },
+        {
+          "stepIndex": 9,
+          "stateHash": "084fe2eb77a8d861dd26694bcc48f0d0582dee97312dcc4ce5432635bd8a0ef8"
+        },
+        {
+          "stepIndex": 19,
+          "stateHash": "a30ab13affc58c5174e1095888bdd499702cf2c4a30e07018836febb29412140"
+        }
+      ]
+    },
+    {
+      "header": {
+        "engineVersion": "0.1.0",
+        "contentVersion": "1.1.0",
+        "specVersion": "v1.1",
+        "createdAtUTC": "2025-12-27T00:00:00.000Z"
+      },
+      "seed": 10023,
+      "actions": [
+        {
+          "type": "START_RUN",
+          "seed": 10023,
+          "runLengthTarget": 7
+        },
+        {
+          "type": "SELECT_ATTUNEMENT",
+          "majorIds": []
+        },
+        {
+          "type": "BARGAIN_CHOICE",
+          "bargainChoice": "takeDamage"
+        },
+        {
+          "type": "CHOOSE_ENGAGE"
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 0
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 1
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 2
+        },
+        {
+          "type": "CHOOSE_ENGAGE"
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 0
+        },
+        {
+          "type": "SWORDS_AMBUSH_BLOCK_CHOICE",
+          "block": true
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 1
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 2
+        },
+        {
+          "type": "ENEMY_FIGHT_CHOICE",
+          "enemyMode": "weapon"
+        },
+        {
+          "type": "CHOOSE_ENGAGE"
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 0
+        },
+        {
+          "type": "SWORDS_AMBUSH_BLOCK_CHOICE",
+          "block": true
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 1
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 2
+        },
+        {
+          "type": "CHOOSE_ENGAGE"
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 0
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 1
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 2
+        },
+        {
+          "type": "CHOOSE_ENGAGE"
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 0
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 1
+        },
+        {
+          "type": "SWORDS_AMBUSH_BLOCK_CHOICE",
+          "block": true
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 2
+        },
+        {
+          "type": "CHOOSE_ENGAGE"
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 0
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 1
+        },
+        {
+          "type": "ENEMY_FIGHT_CHOICE",
+          "enemyMode": "weapon"
+        }
+      ],
+      "checkpoints": [
+        {
+          "stepIndex": 0,
+          "stateHash": "d92923c4e91dcd6c35b7143fccc5edf31476d8dc8083c7e03c26c5a462d57edc"
+        },
+        {
+          "stepIndex": 9,
+          "stateHash": "103e6f6dcbd93d042b7f8122e0161e7f02f0f0ec2b4472f795d8d02d503045d0"
+        },
+        {
+          "stepIndex": 19,
+          "stateHash": "cddd43856245f210c1a8cddb547d18963ede8626c14443adc7e97e34f07fcaac"
+        },
+        {
+          "stepIndex": 29,
+          "stateHash": "5bc6164b01c0611480c131a9f94b7b528aea35c94df867b58fd9e7e5c34de24e"
+        }
+      ]
+    },
+    {
+      "header": {
+        "engineVersion": "0.1.0",
+        "contentVersion": "1.1.0",
+        "specVersion": "v1.1",
+        "createdAtUTC": "2025-12-27T00:00:00.000Z"
+      },
+      "seed": 10024,
+      "actions": [
+        {
+          "type": "START_RUN",
+          "seed": 10024,
+          "runLengthTarget": 7
+        },
+        {
+          "type": "SELECT_ATTUNEMENT",
+          "majorIds": []
+        },
+        {
+          "type": "USE_MAJOR_GIFT",
+          "majorId": "star",
+          "slotIndex": 0
+        },
+        {
+          "type": "CHOOSE_ENGAGE"
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 0
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 1
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 2
+        }
+      ],
+      "checkpoints": [
+        {
+          "stepIndex": 0,
+          "stateHash": "5bf92c7fbe0c3944d3ef2791f33f7059c28918e8b21597de3ba677b7b1265681"
+        }
+      ]
+    },
+    {
+      "header": {
+        "engineVersion": "0.1.0",
+        "contentVersion": "1.1.0",
+        "specVersion": "v1.1",
+        "createdAtUTC": "2025-12-27T00:00:00.000Z"
+      },
+      "seed": 10025,
+      "actions": [
+        {
+          "type": "START_RUN",
+          "seed": 10025,
+          "runLengthTarget": 7
+        },
+        {
+          "type": "SELECT_ATTUNEMENT",
+          "majorIds": []
+        },
+        {
+          "type": "CHOOSE_ENGAGE"
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 0
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 1
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 2
+        },
+        {
+          "type": "CHOOSE_ENGAGE"
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 0
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 1
+        }
+      ],
+      "checkpoints": [
+        {
+          "stepIndex": 0,
+          "stateHash": "062c7983c457cb9a30c82db5734fadbcff79e84f0bb80ffd456a69708d879911"
+        }
+      ]
+    },
+    {
+      "header": {
+        "engineVersion": "0.1.0",
+        "contentVersion": "1.1.0",
+        "specVersion": "v1.1",
+        "createdAtUTC": "2025-12-27T00:00:00.000Z"
+      },
+      "seed": 10026,
+      "actions": [
+        {
+          "type": "START_RUN",
+          "seed": 10026,
+          "runLengthTarget": 7
+        },
+        {
+          "type": "SELECT_ATTUNEMENT",
+          "majorIds": []
+        },
+        {
+          "type": "USE_MAJOR_GIFT",
+          "majorId": "judgement",
+          "slotIndex": 0
+        },
+        {
+          "type": "CHOOSE_ENGAGE"
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 0
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 1
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 2
+        },
+        {
+          "type": "USE_MAJOR_GIFT",
+          "majorId": "judgement",
+          "slotIndex": 0
+        },
+        {
+          "type": "CHOOSE_ENGAGE"
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 0
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 1
+        }
+      ],
+      "checkpoints": [
+        {
+          "stepIndex": 0,
+          "stateHash": "6ab61b37bb4b71c5d00f6ae08cc1dcadfac3226477ed517b3afc4fc8e8ee5701"
+        },
+        {
+          "stepIndex": 9,
+          "stateHash": "b99736c2dfba21f4e8764c64759149fb4863821d6b875491d3dbb3dc976060c0"
+        }
+      ]
+    },
+    {
+      "header": {
+        "engineVersion": "0.1.0",
+        "contentVersion": "1.1.0",
+        "specVersion": "v1.1",
+        "createdAtUTC": "2025-12-27T00:00:00.000Z"
+      },
+      "seed": 10027,
+      "actions": [
+        {
+          "type": "START_RUN",
+          "seed": 10027,
+          "runLengthTarget": 7
+        },
+        {
+          "type": "SELECT_ATTUNEMENT",
+          "majorIds": []
+        },
+        {
+          "type": "CHOOSE_ENGAGE"
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 0
+        },
+        {
+          "type": "ACE_CHOICE",
+          "optionId": "cheat_weapon_free"
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 1
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 2
+        },
+        {
+          "type": "ENEMY_FIGHT_CHOICE",
+          "enemyMode": "weapon"
+        },
+        {
+          "type": "CHOOSE_ENGAGE"
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 0
+        },
+        {
+          "type": "SWORDS_AMBUSH_BLOCK_CHOICE",
+          "block": true
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 1
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 2
+        },
+        {
+          "type": "CHOOSE_ENGAGE"
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 0
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 1
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 2
+        },
+        {
+          "type": "CHOOSE_ENGAGE"
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 0
+        },
+        {
+          "type": "ENEMY_FIGHT_CHOICE",
+          "enemyMode": "weapon"
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 1
+        },
+        {
+          "type": "ENEMY_FIGHT_CHOICE",
+          "enemyMode": "weapon"
+        }
+      ],
+      "checkpoints": [
+        {
+          "stepIndex": 0,
+          "stateHash": "91671a7e7bb90836ffb9101cceda98ac57a864e065d0b10489b6c87e4b265fea"
+        },
+        {
+          "stepIndex": 9,
+          "stateHash": "7a28ef1efe137a17c5c14837ef0c9b641c2dfd5761793df05ab2e552af29bdaf"
+        },
+        {
+          "stepIndex": 19,
+          "stateHash": "f835de7557f16c6e1fe93c1ce17f35c609e582e231106e29a1b66ba20c78a6a3"
+        }
+      ]
+    },
+    {
+      "header": {
+        "engineVersion": "0.1.0",
+        "contentVersion": "1.1.0",
+        "specVersion": "v1.1",
+        "createdAtUTC": "2025-12-27T00:00:00.000Z"
+      },
+      "seed": 10028,
+      "actions": [
+        {
+          "type": "START_RUN",
+          "seed": 10028,
+          "runLengthTarget": 7
+        },
+        {
+          "type": "SELECT_ATTUNEMENT",
+          "majorIds": []
+        },
+        {
+          "type": "CHOOSE_ENGAGE"
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 0
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 1
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 2
+        },
+        {
+          "type": "CHOOSE_ENGAGE"
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 0
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 1
+        }
+      ],
+      "checkpoints": [
+        {
+          "stepIndex": 0,
+          "stateHash": "2c294e5c43900722d99eba020434a21e91755a68af689b6297269e7e4d702804"
+        }
+      ]
+    },
+    {
+      "header": {
+        "engineVersion": "0.1.0",
+        "contentVersion": "1.1.0",
+        "specVersion": "v1.1",
+        "createdAtUTC": "2025-12-27T00:00:00.000Z"
+      },
+      "seed": 10029,
+      "actions": [
+        {
+          "type": "START_RUN",
+          "seed": 10029,
+          "runLengthTarget": 7
+        },
+        {
+          "type": "SELECT_ATTUNEMENT",
+          "majorIds": []
+        },
+        {
+          "type": "CHOOSE_ENGAGE"
+        },
+        {
+          "type": "SELECT_CARRIED_CARD",
+          "slotIndex": 0
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 1
+        },
+        {
+          "type": "ACE_CHOICE",
+          "optionId": "cheat_weapon_free"
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 2
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 3
+        },
+        {
+          "type": "CHOOSE_ENGAGE"
+        },
+        {
+          "type": "SELECT_CARRIED_CARD",
+          "slotIndex": 0
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 1
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 2
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 3
+        },
+        {
+          "type": "CHOOSE_ENGAGE"
+        },
+        {
+          "type": "SELECT_CARRIED_CARD",
+          "slotIndex": 0
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 1
+        }
+      ],
+      "checkpoints": [
+        {
+          "stepIndex": 0,
+          "stateHash": "fa1479c9652269e2c199979b1ea56a8bba12014f2977adc9ab56ab5ebb9badf3"
+        },
+        {
+          "stepIndex": 9,
+          "stateHash": "24b85b77aa1efdafdc0cdcdf8894ff2fe8b7f7dcd6917edb43b57e12757fc9e2"
+        }
+      ]
+    },
+    {
+      "header": {
+        "engineVersion": "0.1.0",
+        "contentVersion": "1.1.0",
+        "specVersion": "v1.1",
+        "createdAtUTC": "2025-12-27T00:00:00.000Z"
+      },
+      "seed": 10030,
+      "actions": [
+        {
+          "type": "START_RUN",
+          "seed": 10030,
+          "runLengthTarget": 7
+        },
+        {
+          "type": "SELECT_ATTUNEMENT",
+          "majorIds": []
+        },
+        {
+          "type": "CHOOSE_ENGAGE"
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 0
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 1
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 2
+        },
+        {
+          "type": "CHOOSE_ENGAGE"
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 0
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 1
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 2
+        },
+        {
+          "type": "SWORDS_AMBUSH_BLOCK_CHOICE",
+          "block": true
+        }
+      ],
+      "checkpoints": [
+        {
+          "stepIndex": 0,
+          "stateHash": "c18d002b0940c4a06fc8cf6581e88b57b51757e017c7d2caf264276c30fb9d37"
+        },
+        {
+          "stepIndex": 9,
+          "stateHash": "a6b5cf51285af3550093b6c40d5066695cdc42b4314acaa3f4fa03a1a2ce0a05"
+        }
+      ]
+    },
+    {
+      "header": {
+        "engineVersion": "0.1.0",
+        "contentVersion": "1.1.0",
+        "specVersion": "v1.1",
+        "createdAtUTC": "2025-12-27T00:00:00.000Z"
+      },
+      "seed": 10031,
+      "actions": [
+        {
+          "type": "START_RUN",
+          "seed": 10031,
+          "runLengthTarget": 7
+        },
+        {
+          "type": "SELECT_ATTUNEMENT",
+          "majorIds": []
+        },
+        {
+          "type": "USE_MAJOR_GIFT",
+          "majorId": "magician",
+          "slotIndex": 0
+        },
+        {
+          "type": "CHOOSE_ENGAGE"
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 0
+        },
+        {
+          "type": "ACE_CHOICE",
+          "optionId": "gain5_take3"
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 1
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 2
+        },
+        {
+          "type": "USE_MAJOR_GIFT",
+          "majorId": "magician",
+          "slotIndex": 0
+        },
+        {
+          "type": "CHOOSE_ENGAGE"
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 0
+        }
+      ],
+      "checkpoints": [
+        {
+          "stepIndex": 0,
+          "stateHash": "3fd904533e47602620d35bbfe414d4333f2b1c9cd80c849891988c1e0ca08165"
+        },
+        {
+          "stepIndex": 9,
+          "stateHash": "02ca1fcde05c794703b97324af557e7d217d9d0379f403626a6ca737eac65ba2"
+        }
+      ]
+    },
+    {
+      "header": {
+        "engineVersion": "0.1.0",
+        "contentVersion": "1.1.0",
+        "specVersion": "v1.1",
+        "createdAtUTC": "2025-12-27T00:00:00.000Z"
+      },
+      "seed": 10032,
+      "actions": [
+        {
+          "type": "START_RUN",
+          "seed": 10032,
+          "runLengthTarget": 7
+        },
+        {
+          "type": "SELECT_ATTUNEMENT",
+          "majorIds": []
+        },
+        {
+          "type": "CHOOSE_ENGAGE"
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 0
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 0
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 1
+        },
+        {
+          "type": "ACE_CHOICE",
+          "optionId": "heal_to_full"
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 2
+        },
+        {
+          "type": "CHOOSE_ENGAGE"
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 0
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 0
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 1
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 2
+        },
+        {
+          "type": "CHOOSE_ENGAGE"
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 0
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 0
+        }
+      ],
+      "checkpoints": [
+        {
+          "stepIndex": 0,
+          "stateHash": "40e67f4bca19192b6c9ccef8312fd0259884e33dbbe1e5b31758c0abc74c712b"
+        },
+        {
+          "stepIndex": 9,
+          "stateHash": "6de5fee0f5da3b8455cd37bd1e6bf95098fd0710976fb06cfddfb64b7b33b084"
+        }
+      ]
+    },
+    {
+      "header": {
+        "engineVersion": "0.1.0",
+        "contentVersion": "1.1.0",
+        "specVersion": "v1.1",
+        "createdAtUTC": "2025-12-27T00:00:00.000Z"
+      },
+      "seed": 10033,
+      "actions": [
+        {
+          "type": "START_RUN",
+          "seed": 10033,
+          "runLengthTarget": 7
+        },
+        {
+          "type": "SELECT_ATTUNEMENT",
+          "majorIds": []
+        },
+        {
+          "type": "CHOOSE_ENGAGE"
+        },
+        {
+          "type": "SELECT_CARRIED_CARD",
+          "slotIndex": 0
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 1
+        },
+        {
+          "type": "CUPS_8_10_CHOICE",
+          "cupsChoice": "heal"
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 2
+        },
+        {
+          "type": "ACE_CHOICE",
+          "optionId": "exile_replace_free",
+          "slotIndex": 0
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 3
+        },
+        {
+          "type": "CHOOSE_ENGAGE"
+        },
+        {
+          "type": "SELECT_CARRIED_CARD",
+          "slotIndex": 0
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 1
+        }
+      ],
+      "checkpoints": [
+        {
+          "stepIndex": 0,
+          "stateHash": "92b9d343f0413143b7eafe16eb8320f0c74a74bc49a37473523f540ddc0f1101"
+        },
+        {
+          "stepIndex": 9,
+          "stateHash": "1b43973af5c7c750e0e61db5c0624e67f6e423144400f0b5c50935d26ec7a7a3"
+        }
+      ]
+    },
+    {
+      "header": {
+        "engineVersion": "0.1.0",
+        "contentVersion": "1.1.0",
+        "specVersion": "v1.1",
+        "createdAtUTC": "2025-12-27T00:00:00.000Z"
+      },
+      "seed": 10034,
+      "actions": [
+        {
+          "type": "START_RUN",
+          "seed": 10034,
+          "runLengthTarget": 7
+        },
+        {
+          "type": "SELECT_ATTUNEMENT",
+          "majorIds": []
+        },
+        {
+          "type": "CHOOSE_ENGAGE"
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 0
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 1
+        }
+      ],
+      "checkpoints": [
+        {
+          "stepIndex": 0,
+          "stateHash": "a69ec7ff882c0ba9f8bfdc671b0677fadf177b46b2b5be8d0aa1c83a6c1d20ef"
+        }
+      ]
+    },
+    {
+      "header": {
+        "engineVersion": "0.1.0",
+        "contentVersion": "1.1.0",
+        "specVersion": "v1.1",
+        "createdAtUTC": "2025-12-27T00:00:00.000Z"
+      },
+      "seed": 10035,
+      "actions": [
+        {
+          "type": "START_RUN",
+          "seed": 10035,
+          "runLengthTarget": 7
+        },
+        {
+          "type": "SELECT_ATTUNEMENT",
+          "majorIds": []
+        },
+        {
+          "type": "CHOOSE_ENGAGE"
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 0
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 1
+        }
+      ],
+      "checkpoints": [
+        {
+          "stepIndex": 0,
+          "stateHash": "ff7a6222cad5833741385d6a326d656ee6a28deb6492728afe76416a9246ab92"
+        }
+      ]
+    },
+    {
+      "header": {
+        "engineVersion": "0.1.0",
+        "contentVersion": "1.1.0",
+        "specVersion": "v1.1",
+        "createdAtUTC": "2025-12-27T00:00:00.000Z"
+      },
+      "seed": 10036,
+      "actions": [
+        {
+          "type": "START_RUN",
+          "seed": 10036,
+          "runLengthTarget": 7
+        },
+        {
+          "type": "SELECT_ATTUNEMENT",
+          "majorIds": []
+        },
+        {
+          "type": "USE_MAJOR_GIFT",
+          "majorId": "star",
+          "slotIndex": 1
+        },
+        {
+          "type": "CHOOSE_ENGAGE"
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 0
+        },
+        {
+          "type": "ACE_CHOICE",
+          "optionId": "heal_to_full"
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 1
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 2
+        }
+      ],
+      "checkpoints": [
+        {
+          "stepIndex": 0,
+          "stateHash": "603f7085708ab6bacb4bf3cd77d11c92f43dab8cf9ae5c9512a8f0e100326606"
+        }
+      ]
+    },
+    {
+      "header": {
+        "engineVersion": "0.1.0",
+        "contentVersion": "1.1.0",
+        "specVersion": "v1.1",
+        "createdAtUTC": "2025-12-27T00:00:00.000Z"
+      },
+      "seed": 10037,
+      "actions": [
+        {
+          "type": "START_RUN",
+          "seed": 10037,
+          "runLengthTarget": 7
+        },
+        {
+          "type": "SELECT_ATTUNEMENT",
+          "majorIds": []
+        },
+        {
+          "type": "CHOOSE_ENGAGE"
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 0
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 1
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 2
+        },
+        {
+          "type": "ACE_CHOICE",
+          "optionId": "exile_replace_free",
+          "slotIndex": 2
+        },
+        {
+          "type": "CHOOSE_ENGAGE"
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 0
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 1
+        }
+      ],
+      "checkpoints": [
+        {
+          "stepIndex": 0,
+          "stateHash": "18af4244b7030734abac680e8caa2258777210f734bad88d4013b304d8d03b67"
+        },
+        {
+          "stepIndex": 9,
+          "stateHash": "95330972e253b81f6de55e7d8e68d8942d1688e98130194414fd83cde8ff2eb4"
+        }
+      ]
+    },
+    {
+      "header": {
+        "engineVersion": "0.1.0",
+        "contentVersion": "1.1.0",
+        "specVersion": "v1.1",
+        "createdAtUTC": "2025-12-27T00:00:00.000Z"
+      },
+      "seed": 10038,
+      "actions": [
+        {
+          "type": "START_RUN",
+          "seed": 10038,
+          "runLengthTarget": 7
+        },
+        {
+          "type": "SELECT_ATTUNEMENT",
+          "majorIds": []
+        },
+        {
+          "type": "USE_MAJOR_GIFT",
+          "majorId": "devil",
+          "optionId": "majors.devil.exileOption"
+        },
+        {
+          "type": "USE_MAJOR_GIFT",
+          "majorId": "devil",
+          "slotIndex": 0
+        },
+        {
+          "type": "CHOOSE_ENGAGE"
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 0
+        },
+        {
+          "type": "ACE_CHOICE",
+          "optionId": "exile_replace_free",
+          "slotIndex": 0
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 1
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 2
+        }
+      ],
+      "checkpoints": [
+        {
+          "stepIndex": 0,
+          "stateHash": "47cd409cc562281b605b9e9401a9f02228e383625a66e985a47ff6fd773ab964"
+        }
+      ]
+    },
+    {
+      "header": {
+        "engineVersion": "0.1.0",
+        "contentVersion": "1.1.0",
+        "specVersion": "v1.1",
+        "createdAtUTC": "2025-12-27T00:00:00.000Z"
+      },
+      "seed": 10039,
+      "actions": [
+        {
+          "type": "START_RUN",
+          "seed": 10039,
+          "runLengthTarget": 7
+        },
+        {
+          "type": "SELECT_ATTUNEMENT",
+          "majorIds": []
+        },
+        {
+          "type": "USE_MAJOR_GIFT",
+          "majorId": "high_priestess",
+          "slotIndex": 0
+        },
+        {
+          "type": "CHOOSE_ENGAGE"
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 0
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 1
+        },
+        {
+          "type": "SWORDS_AMBUSH_BLOCK_CHOICE",
+          "block": true
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 2
+        },
+        {
+          "type": "USE_MAJOR_GIFT",
+          "majorId": "high_priestess",
+          "slotIndex": 0
+        },
+        {
+          "type": "CHOOSE_ENGAGE"
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 0
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 1
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 2
+        },
+        {
+          "type": "ENEMY_FIGHT_CHOICE",
+          "enemyMode": "weapon"
+        },
+        {
+          "type": "USE_MAJOR_GIFT",
+          "majorId": "high_priestess",
+          "slotIndex": 0
+        },
+        {
+          "type": "CHOOSE_ENGAGE"
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 0
+        },
+        {
+          "type": "ENEMY_FIGHT_CHOICE",
+          "enemyMode": "weapon"
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 1
+        },
+        {
+          "type": "SWORDS_AMBUSH_BLOCK_CHOICE",
+          "block": true
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 2
+        }
+      ],
+      "checkpoints": [
+        {
+          "stepIndex": 0,
+          "stateHash": "6dac233edc6e5564a237f662ef844e41a32dcfe313a37ae001df3c0878a7d631"
+        },
+        {
+          "stepIndex": 9,
+          "stateHash": "3634363ef04e271dffc6b3e9141ad709a80ab74a1279b3d2edce3d8068b0d946"
+        },
+        {
+          "stepIndex": 19,
+          "stateHash": "8db529e61d02628e1f87b8a1254c8ce471f4d99666c4d5fbb0c80dd06ea57298"
+        }
+      ]
+    },
+    {
+      "header": {
+        "engineVersion": "0.1.0",
+        "contentVersion": "1.1.0",
+        "specVersion": "v1.1",
+        "createdAtUTC": "2025-12-27T00:00:00.000Z"
+      },
+      "seed": 10040,
+      "actions": [
+        {
+          "type": "START_RUN",
+          "seed": 10040,
+          "runLengthTarget": 7
+        },
+        {
+          "type": "SELECT_ATTUNEMENT",
+          "majorIds": []
+        },
+        {
+          "type": "USE_MAJOR_GIFT",
+          "majorId": "star",
+          "slotIndex": 0
+        },
+        {
+          "type": "CHOOSE_ENGAGE"
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 0
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 1
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 2
+        },
+        {
+          "type": "USE_MAJOR_GIFT",
+          "majorId": "star",
+          "slotIndex": 2
+        },
+        {
+          "type": "CHOOSE_ENGAGE"
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 0
+        },
+        {
+          "type": "ACE_CHOICE",
+          "optionId": "cheat_weapon_free"
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 1
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 2
+        },
+        {
+          "type": "ENEMY_FIGHT_CHOICE",
+          "enemyMode": "weapon"
+        },
+        {
+          "type": "USE_MAJOR_GIFT",
+          "majorId": "star",
+          "slotIndex": 0
+        },
+        {
+          "type": "CHOOSE_ENGAGE"
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 0
+        },
+        {
+          "type": "ENEMY_FIGHT_CHOICE",
+          "enemyMode": "weapon"
+        }
+      ],
+      "checkpoints": [
+        {
+          "stepIndex": 0,
+          "stateHash": "1e71f007a6450fd245e9a2eeb5ea3f1c5510df70e0f847915b8c204313b84142"
+        },
+        {
+          "stepIndex": 9,
+          "stateHash": "89be304d16cea2f7f9efb18c1cabb90c0f4ed098930d27a518bab7775bfcf70c"
+        }
+      ]
+    },
+    {
+      "header": {
+        "engineVersion": "0.1.0",
+        "contentVersion": "1.1.0",
+        "specVersion": "v1.1",
+        "createdAtUTC": "2025-12-27T00:00:00.000Z"
+      },
+      "seed": 10041,
+      "actions": [
+        {
+          "type": "START_RUN",
+          "seed": 10041,
+          "runLengthTarget": 7
+        },
+        {
+          "type": "SELECT_ATTUNEMENT",
+          "majorIds": []
+        },
+        {
+          "type": "CHOOSE_ENGAGE"
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 0
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 1
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 2
+        },
+        {
+          "type": "CHOOSE_ENGAGE"
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 0
+        },
+        {
+          "type": "ACE_CHOICE",
+          "optionId": "gain5_take3"
+        }
+      ],
+      "checkpoints": [
+        {
+          "stepIndex": 0,
+          "stateHash": "fd60d30c7c73cc1e4feb617ee4ad2188d487881690d526b7ace928086fc4110c"
+        }
+      ]
+    },
+    {
+      "header": {
+        "engineVersion": "0.1.0",
+        "contentVersion": "1.1.0",
+        "specVersion": "v1.1",
+        "createdAtUTC": "2025-12-27T00:00:00.000Z"
+      },
+      "seed": 10042,
+      "actions": [
+        {
+          "type": "START_RUN",
+          "seed": 10042,
+          "runLengthTarget": 7
+        },
+        {
+          "type": "SELECT_ATTUNEMENT",
+          "majorIds": []
+        },
+        {
+          "type": "CHOOSE_ENGAGE"
+        },
+        {
+          "type": "SELECT_CARRIED_CARD",
+          "slotIndex": 0
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 2
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 1
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 3
+        },
+        {
+          "type": "CHOOSE_ENGAGE"
+        },
+        {
+          "type": "SELECT_CARRIED_CARD",
+          "slotIndex": 0
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 1
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 2
+        }
+      ],
+      "checkpoints": [
+        {
+          "stepIndex": 0,
+          "stateHash": "cce8011cffd574b7efc4d6b7765c92fd8cd7b239c76caf589dafbc66dd98f7b0"
+        },
+        {
+          "stepIndex": 9,
+          "stateHash": "03d448e7ce1827afd4fad2b946e4109345c4b84b199fa5de9278679ed0ad7dba"
+        }
+      ]
+    },
+    {
+      "header": {
+        "engineVersion": "0.1.0",
+        "contentVersion": "1.1.0",
+        "specVersion": "v1.1",
+        "createdAtUTC": "2025-12-27T00:00:00.000Z"
+      },
+      "seed": 10043,
+      "actions": [
+        {
+          "type": "START_RUN",
+          "seed": 10043,
+          "runLengthTarget": 7
+        },
+        {
+          "type": "SELECT_ATTUNEMENT",
+          "majorIds": []
+        },
+        {
+          "type": "CHOOSE_ENGAGE"
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 0
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 1
+        },
+        {
+          "type": "CUPS_8_10_CHOICE",
+          "cupsChoice": "heal"
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 2
+        },
+        {
+          "type": "CHOOSE_ENGAGE"
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 0
+        }
+      ],
+      "checkpoints": [
+        {
+          "stepIndex": 0,
+          "stateHash": "eba8d9b3abdc283bf652bd7bcc1cd54dd63a98a0bf4e3092a3f0de4ac28d12b4"
+        }
+      ]
+    },
+    {
+      "header": {
+        "engineVersion": "0.1.0",
+        "contentVersion": "1.1.0",
+        "specVersion": "v1.1",
+        "createdAtUTC": "2025-12-27T00:00:00.000Z"
+      },
+      "seed": 10044,
+      "actions": [
+        {
+          "type": "START_RUN",
+          "seed": 10044,
+          "runLengthTarget": 7
+        },
+        {
+          "type": "SELECT_ATTUNEMENT",
+          "majorIds": []
+        },
+        {
+          "type": "USE_MAJOR_GIFT",
+          "majorId": "high_priestess",
+          "slotIndex": 0
+        },
+        {
+          "type": "CHOOSE_ENGAGE"
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 0
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 1
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 2
+        },
+        {
+          "type": "ACE_CHOICE",
+          "optionId": "exile_replace_free",
+          "slotIndex": 2
+        },
+        {
+          "type": "USE_MAJOR_GIFT",
+          "majorId": "high_priestess",
+          "slotIndex": 0
+        },
+        {
+          "type": "CHOOSE_ENGAGE"
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 0
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 1
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 2
+        },
+        {
+          "type": "USE_MAJOR_GIFT",
+          "majorId": "high_priestess",
+          "slotIndex": 0
+        },
+        {
+          "type": "CHOOSE_ENGAGE"
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 0
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 1
+        },
+        {
+          "type": "ACE_CHOICE",
+          "optionId": "gain5_take3"
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 2
+        },
+        {
+          "type": "USE_MAJOR_GIFT",
+          "majorId": "high_priestess",
+          "slotIndex": 0
+        },
+        {
+          "type": "CHOOSE_ENGAGE"
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 0
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 1
+        },
+        {
+          "type": "ENEMY_FIGHT_CHOICE",
+          "enemyMode": "weapon"
+        }
+      ],
+      "checkpoints": [
+        {
+          "stepIndex": 0,
+          "stateHash": "92553e81bbbe078ad9b1a5facbd6256fa801ae636b7a90f8ad11354167c9c3db"
+        },
+        {
+          "stepIndex": 9,
+          "stateHash": "379360109dc9b029625acc2f2d680762474379926fde00e5334685efc5707da7"
+        },
+        {
+          "stepIndex": 19,
+          "stateHash": "d83b2b7ab27ef7ce5b3fb950e44d4ff3cb52e4f83e3b95db827d3abdecd2a0a5"
+        }
+      ]
+    },
+    {
+      "header": {
+        "engineVersion": "0.1.0",
+        "contentVersion": "1.1.0",
+        "specVersion": "v1.1",
+        "createdAtUTC": "2025-12-27T00:00:00.000Z"
+      },
+      "seed": 10045,
+      "actions": [
+        {
+          "type": "START_RUN",
+          "seed": 10045,
+          "runLengthTarget": 7
+        },
+        {
+          "type": "SELECT_ATTUNEMENT",
+          "majorIds": []
+        },
+        {
+          "type": "CHOOSE_ENGAGE"
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 0
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 1
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 2
+        },
+        {
+          "type": "USE_MAJOR_GIFT",
+          "majorId": "judgement",
+          "slotIndex": 0
+        },
+        {
+          "type": "CHOOSE_ENGAGE"
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 0
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 1
+        },
+        {
+          "type": "ENEMY_FIGHT_CHOICE",
+          "enemyMode": "weapon"
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 2
+        },
+        {
+          "type": "USE_MAJOR_GIFT",
+          "majorId": "judgement",
+          "slotIndex": 0
+        },
+        {
+          "type": "CHOOSE_ENGAGE"
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 0
+        },
+        {
+          "type": "ENEMY_FIGHT_CHOICE",
+          "enemyMode": "weapon"
+        }
+      ],
+      "checkpoints": [
+        {
+          "stepIndex": 0,
+          "stateHash": "16a40b589a27ec0ee4042a1c998e3295412729dab9702cf6c510005bd7be4d29"
+        },
+        {
+          "stepIndex": 9,
+          "stateHash": "2863a0be6af81b44595b15a235afb889aa65b48b168a8293be26f588a4642b38"
+        }
+      ]
+    },
+    {
+      "header": {
+        "engineVersion": "0.1.0",
+        "contentVersion": "1.1.0",
+        "specVersion": "v1.1",
+        "createdAtUTC": "2025-12-27T00:00:00.000Z"
+      },
+      "seed": 10046,
+      "actions": [
+        {
+          "type": "START_RUN",
+          "seed": 10046,
+          "runLengthTarget": 7
+        },
+        {
+          "type": "SELECT_ATTUNEMENT",
+          "majorIds": []
+        },
+        {
+          "type": "USE_MAJOR_GIFT",
+          "majorId": "judgement",
+          "slotIndex": 0
+        },
+        {
+          "type": "CHOOSE_ENGAGE"
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 0
+        },
+        {
+          "type": "ACE_CHOICE",
+          "optionId": "exile_replace_free",
+          "slotIndex": 0
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 1
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 2
+        },
+        {
+          "type": "CHOOSE_ENGAGE"
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 0
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 1
+        }
+      ],
+      "checkpoints": [
+        {
+          "stepIndex": 0,
+          "stateHash": "29c31830253fdb46702f77f9cbd9f72c877175c7e4970eaedeb976404133c590"
+        },
+        {
+          "stepIndex": 9,
+          "stateHash": "60e82a0e428bccd52fe5c26f12a3ee5f903d18b5d1912888e92878a40dd87851"
+        }
+      ]
+    },
+    {
+      "header": {
+        "engineVersion": "0.1.0",
+        "contentVersion": "1.1.0",
+        "specVersion": "v1.1",
+        "createdAtUTC": "2025-12-27T00:00:00.000Z"
+      },
+      "seed": 10047,
+      "actions": [
+        {
+          "type": "START_RUN",
+          "seed": 10047,
+          "runLengthTarget": 7
+        },
+        {
+          "type": "SELECT_ATTUNEMENT",
+          "majorIds": []
+        },
+        {
+          "type": "CHOOSE_ENGAGE"
+        },
+        {
+          "type": "SELECT_CARRIED_CARD",
+          "slotIndex": 0
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 2
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 3
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 1
+        },
+        {
+          "type": "CHOOSE_ENGAGE"
+        },
+        {
+          "type": "SELECT_CARRIED_CARD",
+          "slotIndex": 0
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 2
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 1
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 3
+        },
+        {
+          "type": "CHOOSE_ENGAGE"
+        },
+        {
+          "type": "SELECT_CARRIED_CARD",
+          "slotIndex": 0
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 1
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 3
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 2
+        },
+        {
+          "type": "ENEMY_FIGHT_CHOICE",
+          "enemyMode": "weapon"
+        },
+        {
+          "type": "CHOOSE_ENGAGE"
+        },
+        {
+          "type": "SELECT_CARRIED_CARD",
+          "slotIndex": 0
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 1
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 2
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 3
+        }
+      ],
+      "checkpoints": [
+        {
+          "stepIndex": 0,
+          "stateHash": "a3ddeedd7aa6b7b154e6c59ce83034703b447d4678c557798fd7f98713b30f73"
+        },
+        {
+          "stepIndex": 9,
+          "stateHash": "2d9dda77fe4bdaad7c8d5427b999cf05684e34529ec912e9a8a7313f4098f82a"
+        },
+        {
+          "stepIndex": 19,
+          "stateHash": "eeba902b66a18164110d24fa54ca35bb375fb341698690ab805f1688c558f532"
+        }
+      ]
+    },
+    {
+      "header": {
+        "engineVersion": "0.1.0",
+        "contentVersion": "1.1.0",
+        "specVersion": "v1.1",
+        "createdAtUTC": "2025-12-27T00:00:00.000Z"
+      },
+      "seed": 10048,
+      "actions": [
+        {
+          "type": "START_RUN",
+          "seed": 10048,
+          "runLengthTarget": 7
+        },
+        {
+          "type": "SELECT_ATTUNEMENT",
+          "majorIds": []
+        },
+        {
+          "type": "CHOOSE_ENGAGE"
+        },
+        {
+          "type": "SELECT_CARRIED_CARD",
+          "slotIndex": 0
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 3
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 2
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 1
+        },
+        {
+          "type": "CHOOSE_ENGAGE"
+        },
+        {
+          "type": "SELECT_CARRIED_CARD",
+          "slotIndex": 0
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 3
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 1
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 2
+        }
+      ],
+      "checkpoints": [
+        {
+          "stepIndex": 0,
+          "stateHash": "ec5dc9e275b461601cb5fe8866d4ff1f466d11da029f60d9db0c88ba0f78c22a"
+        },
+        {
+          "stepIndex": 9,
+          "stateHash": "117b117eb83194a471d1edf8f7a252e940b23e230c3d716f875048ce5c77b1f4"
+        }
+      ]
+    },
+    {
+      "header": {
+        "engineVersion": "0.1.0",
+        "contentVersion": "1.1.0",
+        "specVersion": "v1.1",
+        "createdAtUTC": "2025-12-27T00:00:00.000Z"
+      },
+      "seed": 10049,
+      "actions": [
+        {
+          "type": "START_RUN",
+          "seed": 10049,
+          "runLengthTarget": 7
+        },
+        {
+          "type": "SELECT_ATTUNEMENT",
+          "majorIds": []
+        },
+        {
+          "type": "CHOOSE_ENGAGE"
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 0
+        },
+        {
+          "type": "BARGAIN_CHOICE",
+          "bargainChoice": "takeDamage"
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 1
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 2
+        },
+        {
+          "type": "CHOOSE_ENGAGE"
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 0
+        },
+        {
+          "type": "BARGAIN_CHOICE",
+          "bargainChoice": "pay"
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 1
+        }
+      ],
+      "checkpoints": [
+        {
+          "stepIndex": 0,
+          "stateHash": "e39273c549c8618b2c4a03d951432cff12d70953f48d5134edc1886b94be123c"
+        },
+        {
+          "stepIndex": 9,
+          "stateHash": "925c747040256108f1326d9003b8be402bfdb97c866b4d24f257c7aa6088c7e2"
+        }
+      ]
+    },
+    {
+      "header": {
+        "engineVersion": "0.1.0",
+        "contentVersion": "1.1.0",
+        "specVersion": "v1.1",
+        "createdAtUTC": "2025-12-27T00:00:00.000Z"
+      },
+      "seed": 10050,
+      "actions": [
+        {
+          "type": "START_RUN",
+          "seed": 10050,
+          "runLengthTarget": 7
+        },
+        {
+          "type": "SELECT_ATTUNEMENT",
+          "majorIds": []
+        },
+        {
+          "type": "USE_MAJOR_GIFT",
+          "majorId": "high_priestess",
+          "slotIndex": 0
+        },
+        {
+          "type": "CHOOSE_ENGAGE"
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 0
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 1
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 2
+        }
+      ],
+      "checkpoints": [
+        {
+          "stepIndex": 0,
+          "stateHash": "4d67ec9072e9b5da957b063681eed042784d133964014d31324fbf82dff68850"
+        }
+      ]
+    },
+    {
+      "header": {
+        "engineVersion": "0.1.0",
+        "contentVersion": "1.1.0",
+        "specVersion": "v1.1",
+        "createdAtUTC": "2025-12-27T00:00:00.000Z"
+      },
+      "seed": 10051,
+      "actions": [
+        {
+          "type": "START_RUN",
+          "seed": 10051,
+          "runLengthTarget": 7
+        },
+        {
+          "type": "SELECT_ATTUNEMENT",
+          "majorIds": []
+        },
+        {
+          "type": "USE_MAJOR_GIFT",
+          "majorId": "magician",
+          "slotIndex": 0
+        },
+        {
+          "type": "CHOOSE_ENGAGE"
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 0
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 1
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 2
+        }
+      ],
+      "checkpoints": [
+        {
+          "stepIndex": 0,
+          "stateHash": "a8557b66c918d2a0ac9fe56535a23b55167ca76fc46e4506362c44c36f48f0ae"
+        }
+      ]
+    },
+    {
+      "header": {
+        "engineVersion": "0.1.0",
+        "contentVersion": "1.1.0",
+        "specVersion": "v1.1",
+        "createdAtUTC": "2025-12-27T00:00:00.000Z"
+      },
+      "seed": 10052,
+      "actions": [
+        {
+          "type": "START_RUN",
+          "seed": 10052,
+          "runLengthTarget": 7
+        },
+        {
+          "type": "SELECT_ATTUNEMENT",
+          "majorIds": []
+        },
+        {
+          "type": "USE_MAJOR_GIFT",
+          "majorId": "chariot",
+          "optionId": "majors.chariot.leftToRight"
+        },
+        {
+          "type": "CHOOSE_ENGAGE"
+        },
+        {
+          "type": "SELECT_CARRIED_CARD",
+          "slotIndex": 0
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 1
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 2
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 3
+        },
+        {
+          "type": "CHOOSE_ENGAGE"
+        },
+        {
+          "type": "SELECT_CARRIED_CARD",
+          "slotIndex": 0
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 1
+        }
+      ],
+      "checkpoints": [
+        {
+          "stepIndex": 0,
+          "stateHash": "2c25d489481c9cbc4ac254db1fa29de16f95decbe33edafdbd7b5ed2d3b52d25"
+        },
+        {
+          "stepIndex": 9,
+          "stateHash": "3669cbb599acfd356978916ca56124b1f60258a3ce32be9c7c1f3ce52c73eb12"
+        }
+      ]
+    },
+    {
+      "header": {
+        "engineVersion": "0.1.0",
+        "contentVersion": "1.1.0",
+        "specVersion": "v1.1",
+        "createdAtUTC": "2025-12-27T00:00:00.000Z"
+      },
+      "seed": 10053,
+      "actions": [
+        {
+          "type": "START_RUN",
+          "seed": 10053,
+          "runLengthTarget": 7
+        },
+        {
+          "type": "SELECT_ATTUNEMENT",
+          "majorIds": []
+        },
+        {
+          "type": "BARGAIN_CHOICE",
+          "bargainChoice": "takeDamage"
+        },
+        {
+          "type": "CHOOSE_ENGAGE"
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 0
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 1
+        }
+      ],
+      "checkpoints": [
+        {
+          "stepIndex": 0,
+          "stateHash": "8e7f64a912b13ddd0b1217bbbe19e3bc3a8944612c115d96361357b0df2f716a"
+        }
+      ]
+    },
+    {
+      "header": {
+        "engineVersion": "0.1.0",
+        "contentVersion": "1.1.0",
+        "specVersion": "v1.1",
+        "createdAtUTC": "2025-12-27T00:00:00.000Z"
+      },
+      "seed": 10054,
+      "actions": [
+        {
+          "type": "START_RUN",
+          "seed": 10054,
+          "runLengthTarget": 7
+        },
+        {
+          "type": "SELECT_ATTUNEMENT",
+          "majorIds": []
+        },
+        {
+          "type": "CHOOSE_ENGAGE"
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 0
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 1
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 2
+        },
+        {
+          "type": "CHOOSE_ENGAGE"
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 0
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 1
+        }
+      ],
+      "checkpoints": [
+        {
+          "stepIndex": 0,
+          "stateHash": "11df2a73950fa4cbae4a13c0033826cb38afaa05c91f76272abfcebddffa7508"
+        }
+      ]
+    },
+    {
+      "header": {
+        "engineVersion": "0.1.0",
+        "contentVersion": "1.1.0",
+        "specVersion": "v1.1",
+        "createdAtUTC": "2025-12-27T00:00:00.000Z"
+      },
+      "seed": 10055,
+      "actions": [
+        {
+          "type": "START_RUN",
+          "seed": 10055,
+          "runLengthTarget": 7
+        },
+        {
+          "type": "SELECT_ATTUNEMENT",
+          "majorIds": []
+        },
+        {
+          "type": "USE_MAJOR_GIFT",
+          "majorId": "high_priestess",
+          "slotIndex": 0
+        },
+        {
+          "type": "CHOOSE_ENGAGE"
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 0
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 1
+        },
+        {
+          "type": "ENEMY_FIGHT_CHOICE",
+          "enemyMode": "weapon"
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 2
+        },
+        {
+          "type": "USE_MAJOR_GIFT",
+          "majorId": "high_priestess",
+          "slotIndex": 0
+        },
+        {
+          "type": "CHOOSE_ENGAGE"
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 0
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 1
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 2
+        }
+      ],
+      "checkpoints": [
+        {
+          "stepIndex": 0,
+          "stateHash": "78b51eab9434a243efbe1ba01ea024c613e048977706654fd624071358494a32"
+        },
+        {
+          "stepIndex": 9,
+          "stateHash": "8f4e115ebd49b3368e22c740d5a7e6f427a738685fbbe1bee0584947a567ad2c"
+        }
+      ]
+    },
+    {
+      "header": {
+        "engineVersion": "0.1.0",
+        "contentVersion": "1.1.0",
+        "specVersion": "v1.1",
+        "createdAtUTC": "2025-12-27T00:00:00.000Z"
+      },
+      "seed": 10056,
+      "actions": [
+        {
+          "type": "START_RUN",
+          "seed": 10056,
+          "runLengthTarget": 7
+        },
+        {
+          "type": "SELECT_ATTUNEMENT",
+          "majorIds": []
+        },
+        {
+          "type": "CHOOSE_ENGAGE"
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 0
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 0
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 1
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 2
+        },
+        {
+          "type": "CHOOSE_ENGAGE"
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 0
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 0
+        },
+        {
+          "type": "ENEMY_FIGHT_CHOICE",
+          "enemyMode": "weapon"
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 1
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 2
+        }
+      ],
+      "checkpoints": [
+        {
+          "stepIndex": 0,
+          "stateHash": "cbf662826fd28726c9d3534c0661f9354677d1512cbff9e46bf49a567211b262"
+        },
+        {
+          "stepIndex": 9,
+          "stateHash": "6c196e24afab4337da9af74071b194d18ab62abc26c0798676209f2d1665baf9"
+        }
+      ]
+    },
+    {
+      "header": {
+        "engineVersion": "0.1.0",
+        "contentVersion": "1.1.0",
+        "specVersion": "v1.1",
+        "createdAtUTC": "2025-12-27T00:00:00.000Z"
+      },
+      "seed": 10057,
+      "actions": [
+        {
+          "type": "START_RUN",
+          "seed": 10057,
+          "runLengthTarget": 7
+        },
+        {
+          "type": "SELECT_ATTUNEMENT",
+          "majorIds": []
+        },
+        {
+          "type": "CHOOSE_ENGAGE"
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 0
+        },
+        {
+          "type": "ACE_CHOICE",
+          "optionId": "exile_replace_free",
+          "slotIndex": 0
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 1
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 2
+        }
+      ],
+      "checkpoints": [
+        {
+          "stepIndex": 0,
+          "stateHash": "0332a78d2854e1ff4c0c9f495e85deb1d01cbaaba85887d897e0ab210ec1a027"
+        }
+      ]
+    },
+    {
+      "header": {
+        "engineVersion": "0.1.0",
+        "contentVersion": "1.1.0",
+        "specVersion": "v1.1",
+        "createdAtUTC": "2025-12-27T00:00:00.000Z"
+      },
+      "seed": 10058,
+      "actions": [
+        {
+          "type": "START_RUN",
+          "seed": 10058,
+          "runLengthTarget": 7
+        },
+        {
+          "type": "SELECT_ATTUNEMENT",
+          "majorIds": []
+        },
+        {
+          "type": "USE_MAJOR_GIFT",
+          "majorId": "tower",
+          "slotIndex": 0
+        },
+        {
+          "type": "CHOOSE_ENGAGE"
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 0
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 1
+        },
+        {
+          "type": "ENEMY_FIGHT_CHOICE",
+          "enemyMode": "weapon"
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 2
+        },
+        {
+          "type": "ENEMY_FIGHT_CHOICE",
+          "enemyMode": "weapon"
+        },
+        {
+          "type": "CHOOSE_ENGAGE"
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 0
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 1
+        }
+      ],
+      "checkpoints": [
+        {
+          "stepIndex": 0,
+          "stateHash": "23e0886f4b543ceeab9e17e764a0d4175de937198c77f03c7fa6312336fcc2bb"
+        },
+        {
+          "stepIndex": 9,
+          "stateHash": "945e73b307c064c4b2d63d2e04b8a2e935690f845e03abc33e913c740cb38f23"
+        }
+      ]
+    },
+    {
+      "header": {
+        "engineVersion": "0.1.0",
+        "contentVersion": "1.1.0",
+        "specVersion": "v1.1",
+        "createdAtUTC": "2025-12-27T00:00:00.000Z"
+      },
+      "seed": 10059,
+      "actions": [
+        {
+          "type": "START_RUN",
+          "seed": 10059,
+          "runLengthTarget": 7
+        },
+        {
+          "type": "SELECT_ATTUNEMENT",
+          "majorIds": []
+        },
+        {
+          "type": "USE_MAJOR_GIFT",
+          "majorId": "magician",
+          "slotIndex": 0
+        },
+        {
+          "type": "CHOOSE_ENGAGE"
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 0
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 1
+        }
+      ],
+      "checkpoints": [
+        {
+          "stepIndex": 0,
+          "stateHash": "17015b8316a44c06da5de6c824ef2b77f8a32a2b4116517f958e4a194d06f892"
+        }
+      ]
+    },
+    {
+      "header": {
+        "engineVersion": "0.1.0",
+        "contentVersion": "1.1.0",
+        "specVersion": "v1.1",
+        "createdAtUTC": "2025-12-27T00:00:00.000Z"
+      },
+      "seed": 10060,
+      "actions": [
+        {
+          "type": "START_RUN",
+          "seed": 10060,
+          "runLengthTarget": 7
+        },
+        {
+          "type": "SELECT_ATTUNEMENT",
+          "majorIds": []
+        },
+        {
+          "type": "CHOOSE_ENGAGE"
+        },
+        {
+          "type": "SELECT_CARRIED_CARD",
+          "slotIndex": 0
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 1
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 2
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 3
+        },
+        {
+          "type": "CHOOSE_ENGAGE"
+        },
+        {
+          "type": "SELECT_CARRIED_CARD",
+          "slotIndex": 0
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 1
+        },
+        {
+          "type": "ENEMY_FIGHT_CHOICE",
+          "enemyMode": "weapon"
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 2
+        }
+      ],
+      "checkpoints": [
+        {
+          "stepIndex": 0,
+          "stateHash": "4631147efe08bc9e198a486cc8273211312b9b25f6865ea812bab5dcedd53975"
+        },
+        {
+          "stepIndex": 9,
+          "stateHash": "fdda4370c5fabdde1d6dedddf139b88f8facaa1ae6e16e1a4bfe46d7c8340dc6"
+        }
+      ]
+    },
+    {
+      "header": {
+        "engineVersion": "0.1.0",
+        "contentVersion": "1.1.0",
+        "specVersion": "v1.1",
+        "createdAtUTC": "2025-12-27T00:00:00.000Z"
+      },
+      "seed": 10061,
+      "actions": [
+        {
+          "type": "START_RUN",
+          "seed": 10061,
+          "runLengthTarget": 7
+        },
+        {
+          "type": "SELECT_ATTUNEMENT",
+          "majorIds": []
+        },
+        {
+          "type": "CHOOSE_ENGAGE"
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 0
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 1
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 2
+        }
+      ],
+      "checkpoints": [
+        {
+          "stepIndex": 0,
+          "stateHash": "ffdd5fa15baf6f4e5bfa2ceba556bc7e176b11331e88a0f44b152b0c53205e4f"
+        }
+      ]
+    },
+    {
+      "header": {
+        "engineVersion": "0.1.0",
+        "contentVersion": "1.1.0",
+        "specVersion": "v1.1",
+        "createdAtUTC": "2025-12-27T00:00:00.000Z"
+      },
+      "seed": 10062,
+      "actions": [
+        {
+          "type": "START_RUN",
+          "seed": 10062,
+          "runLengthTarget": 7
+        },
+        {
+          "type": "SELECT_ATTUNEMENT",
+          "majorIds": []
+        },
+        {
+          "type": "USE_MAJOR_GIFT",
+          "majorId": "chariot",
+          "optionId": "majors.chariot.leftToRight"
+        },
+        {
+          "type": "CHOOSE_ENGAGE"
+        },
+        {
+          "type": "SELECT_CARRIED_CARD",
+          "slotIndex": 0
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 1
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 2
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 3
+        },
+        {
+          "type": "CHOOSE_ENGAGE"
+        },
+        {
+          "type": "SELECT_CARRIED_CARD",
+          "slotIndex": 0
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 1
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 2
+        }
+      ],
+      "checkpoints": [
+        {
+          "stepIndex": 0,
+          "stateHash": "436f53615a66c25f715852a5cbb78afe13b114d21b2cb3fed83c6110372195eb"
+        },
+        {
+          "stepIndex": 9,
+          "stateHash": "25af3503e8383415e06bcdb6e534a4e5a1096309a48fbd9d7bb6b6f38dba62ad"
+        }
+      ]
+    },
+    {
+      "header": {
+        "engineVersion": "0.1.0",
+        "contentVersion": "1.1.0",
+        "specVersion": "v1.1",
+        "createdAtUTC": "2025-12-27T00:00:00.000Z"
+      },
+      "seed": 10063,
+      "actions": [
+        {
+          "type": "START_RUN",
+          "seed": 10063,
+          "runLengthTarget": 7
+        },
+        {
+          "type": "SELECT_ATTUNEMENT",
+          "majorIds": []
+        },
+        {
+          "type": "CHOOSE_ENGAGE"
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 0
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 1
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 2
+        },
+        {
+          "type": "CHOOSE_ENGAGE"
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 0
+        }
+      ],
+      "checkpoints": [
+        {
+          "stepIndex": 0,
+          "stateHash": "fc31c6dedcd581e4e53c62772bf828b3eb62a9e1439f835b04b04f207e5ac8ac"
+        }
+      ]
+    },
+    {
+      "header": {
+        "engineVersion": "0.1.0",
+        "contentVersion": "1.1.0",
+        "specVersion": "v1.1",
+        "createdAtUTC": "2025-12-27T00:00:00.000Z"
+      },
+      "seed": 10064,
+      "actions": [
+        {
+          "type": "START_RUN",
+          "seed": 10064,
+          "runLengthTarget": 7
+        },
+        {
+          "type": "SELECT_ATTUNEMENT",
+          "majorIds": []
+        },
+        {
+          "type": "USE_MAJOR_GIFT",
+          "majorId": "chariot",
+          "optionId": "majors.chariot.leftToRight"
+        },
+        {
+          "type": "CHOOSE_ENGAGE"
+        },
+        {
+          "type": "SELECT_CARRIED_CARD",
+          "slotIndex": 0
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 1
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 2
+        }
+      ],
+      "checkpoints": [
+        {
+          "stepIndex": 0,
+          "stateHash": "7dff9cc014da46524714e87ebea4593b29746469bad0245818873cc74ab8b70c"
+        }
+      ]
+    },
+    {
+      "header": {
+        "engineVersion": "0.1.0",
+        "contentVersion": "1.1.0",
+        "specVersion": "v1.1",
+        "createdAtUTC": "2025-12-27T00:00:00.000Z"
+      },
+      "seed": 10065,
+      "actions": [
+        {
+          "type": "START_RUN",
+          "seed": 10065,
+          "runLengthTarget": 7
+        },
+        {
+          "type": "SELECT_ATTUNEMENT",
+          "majorIds": []
+        },
+        {
+          "type": "USE_MAJOR_GIFT",
+          "majorId": "devil",
+          "optionId": "majors.devil.exileOption"
+        },
+        {
+          "type": "USE_MAJOR_GIFT",
+          "majorId": "devil",
+          "slotIndex": 0
+        },
+        {
+          "type": "CHOOSE_ENGAGE"
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 0
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 1
+        }
+      ],
+      "checkpoints": [
+        {
+          "stepIndex": 0,
+          "stateHash": "b26215793ff147f97d7551eed7056fee3ea5f8288b4556f345dbd88968c6eb57"
+        }
+      ]
+    },
+    {
+      "header": {
+        "engineVersion": "0.1.0",
+        "contentVersion": "1.1.0",
+        "specVersion": "v1.1",
+        "createdAtUTC": "2025-12-27T00:00:00.000Z"
+      },
+      "seed": 10066,
+      "actions": [
+        {
+          "type": "START_RUN",
+          "seed": 10066,
+          "runLengthTarget": 7
+        },
+        {
+          "type": "SELECT_ATTUNEMENT",
+          "majorIds": []
+        },
+        {
+          "type": "CHOOSE_ENGAGE"
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 0
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 1
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 2
+        }
+      ],
+      "checkpoints": [
+        {
+          "stepIndex": 0,
+          "stateHash": "17904c26dbe731b498e0c286f8c6dc536456ffd883782a4ab8effed8e1e7c1ed"
+        }
+      ]
+    },
+    {
+      "header": {
+        "engineVersion": "0.1.0",
+        "contentVersion": "1.1.0",
+        "specVersion": "v1.1",
+        "createdAtUTC": "2025-12-27T00:00:00.000Z"
+      },
+      "seed": 10067,
+      "actions": [
+        {
+          "type": "START_RUN",
+          "seed": 10067,
+          "runLengthTarget": 7
+        },
+        {
+          "type": "SELECT_ATTUNEMENT",
+          "majorIds": []
+        },
+        {
+          "type": "CHOOSE_ENGAGE"
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 0
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 1
+        }
+      ],
+      "checkpoints": [
+        {
+          "stepIndex": 0,
+          "stateHash": "1187ac901c9ffeb17e73202e0b0b76cdc94800ce32b65a205e97999fbbf1a148"
+        }
+      ]
+    },
+    {
+      "header": {
+        "engineVersion": "0.1.0",
+        "contentVersion": "1.1.0",
+        "specVersion": "v1.1",
+        "createdAtUTC": "2025-12-27T00:00:00.000Z"
+      },
+      "seed": 10068,
+      "actions": [
+        {
+          "type": "START_RUN",
+          "seed": 10068,
+          "runLengthTarget": 7
+        },
+        {
+          "type": "SELECT_ATTUNEMENT",
+          "majorIds": []
+        },
+        {
+          "type": "CHOOSE_ENGAGE"
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 0
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 1
+        },
+        {
+          "type": "ACE_CHOICE",
+          "optionId": "exile_replace_free",
+          "slotIndex": 1
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 2
+        },
+        {
+          "type": "CHOOSE_ENGAGE"
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 0
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 1
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 2
+        },
+        {
+          "type": "CHOOSE_ENGAGE"
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 0
+        },
+        {
+          "type": "ENEMY_FIGHT_CHOICE",
+          "enemyMode": "weapon"
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 1
+        }
+      ],
+      "checkpoints": [
+        {
+          "stepIndex": 0,
+          "stateHash": "c997a98f4d385e27248621f0f54927699182a4c3f3be521804d1becd77fd3cc6"
+        },
+        {
+          "stepIndex": 9,
+          "stateHash": "2c3b9bc81007488d6bd806f646dedd856cbfe0be6f17c1a05ff7edbd3a937139"
+        }
+      ]
+    },
+    {
+      "header": {
+        "engineVersion": "0.1.0",
+        "contentVersion": "1.1.0",
+        "specVersion": "v1.1",
+        "createdAtUTC": "2025-12-27T00:00:00.000Z"
+      },
+      "seed": 10069,
+      "actions": [
+        {
+          "type": "START_RUN",
+          "seed": 10069,
+          "runLengthTarget": 7
+        },
+        {
+          "type": "SELECT_ATTUNEMENT",
+          "majorIds": []
+        },
+        {
+          "type": "CHOOSE_ENGAGE"
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 0
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 1
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 2
+        }
+      ],
+      "checkpoints": [
+        {
+          "stepIndex": 0,
+          "stateHash": "51e5dd77ba9722b20af44de8ff530c8905c4d959ddb71adf07d4521576d26127"
+        }
+      ]
+    },
+    {
+      "header": {
+        "engineVersion": "0.1.0",
+        "contentVersion": "1.1.0",
+        "specVersion": "v1.1",
+        "createdAtUTC": "2025-12-27T00:00:00.000Z"
+      },
+      "seed": 10070,
+      "actions": [
+        {
+          "type": "START_RUN",
+          "seed": 10070,
+          "runLengthTarget": 7
+        },
+        {
+          "type": "SELECT_ATTUNEMENT",
+          "majorIds": []
+        },
+        {
+          "type": "CHOOSE_ENGAGE"
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 0
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 1
+        },
+        {
+          "type": "ENEMY_FIGHT_CHOICE",
+          "enemyMode": "weapon"
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 2
+        },
+        {
+          "type": "ACE_CHOICE",
+          "optionId": "heal_to_full"
+        },
+        {
+          "type": "USE_MAJOR_GIFT",
+          "majorId": "star",
+          "slotIndex": 1
+        },
+        {
+          "type": "CHOOSE_ENGAGE"
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 0
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 1
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 2
+        },
+        {
+          "type": "CHOOSE_ENGAGE"
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 0
+        },
+        {
+          "type": "ACE_CHOICE",
+          "optionId": "exile_replace_free",
+          "slotIndex": 0
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 1
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 2
+        },
+        {
+          "type": "USE_MAJOR_GIFT",
+          "majorId": "star",
+          "slotIndex": 0
+        },
+        {
+          "type": "CHOOSE_ENGAGE"
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 0
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 1
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 2
+        },
+        {
+          "type": "USE_MAJOR_GIFT",
+          "majorId": "star",
+          "slotIndex": 0
+        },
+        {
+          "type": "CHOOSE_ENGAGE"
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 0
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 1
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 2
+        }
+      ],
+      "checkpoints": [
+        {
+          "stepIndex": 0,
+          "stateHash": "4e73237c94e6a166d8b8847ab53d4afa47332afcc381f987c9275490be102a34"
+        },
+        {
+          "stepIndex": 9,
+          "stateHash": "22270d838aa7b8d4376642e102e119e52b6fdf25b97b75ea74b45ed5ab623bf9"
+        },
+        {
+          "stepIndex": 19,
+          "stateHash": "cb3e2addd3c7bd3feb33a98f5cf90d225755fb1c9b276c65bf039af9334d2caf"
+        }
+      ]
+    },
+    {
+      "header": {
+        "engineVersion": "0.1.0",
+        "contentVersion": "1.1.0",
+        "specVersion": "v1.1",
+        "createdAtUTC": "2025-12-27T00:00:00.000Z"
+      },
+      "seed": 10071,
+      "actions": [
+        {
+          "type": "START_RUN",
+          "seed": 10071,
+          "runLengthTarget": 7
+        },
+        {
+          "type": "SELECT_ATTUNEMENT",
+          "majorIds": []
+        },
+        {
+          "type": "CHOOSE_ENGAGE"
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 0
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 1
+        }
+      ],
+      "checkpoints": [
+        {
+          "stepIndex": 0,
+          "stateHash": "b285a183f7eb7f57e4973dfacdd6680126bd184e93088c9d8992c85eb6675d03"
+        }
+      ]
+    },
+    {
+      "header": {
+        "engineVersion": "0.1.0",
+        "contentVersion": "1.1.0",
+        "specVersion": "v1.1",
+        "createdAtUTC": "2025-12-27T00:00:00.000Z"
+      },
+      "seed": 10072,
+      "actions": [
+        {
+          "type": "START_RUN",
+          "seed": 10072,
+          "runLengthTarget": 7
+        },
+        {
+          "type": "SELECT_ATTUNEMENT",
+          "majorIds": []
+        },
+        {
+          "type": "CHOOSE_ENGAGE"
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 0
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 1
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 2
+        }
+      ],
+      "checkpoints": [
+        {
+          "stepIndex": 0,
+          "stateHash": "cbbd6d803c87740b8bb7e55570207c7f1b36584e39dadcf01d69dc0cefe16a21"
+        }
+      ]
+    },
+    {
+      "header": {
+        "engineVersion": "0.1.0",
+        "contentVersion": "1.1.0",
+        "specVersion": "v1.1",
+        "createdAtUTC": "2025-12-27T00:00:00.000Z"
+      },
+      "seed": 10073,
+      "actions": [
+        {
+          "type": "START_RUN",
+          "seed": 10073,
+          "runLengthTarget": 7
+        },
+        {
+          "type": "SELECT_ATTUNEMENT",
+          "majorIds": []
+        },
+        {
+          "type": "BARGAIN_CHOICE",
+          "bargainChoice": "takeDamage"
+        },
+        {
+          "type": "CHOOSE_ENGAGE"
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 0
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 1
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 2
+        }
+      ],
+      "checkpoints": [
+        {
+          "stepIndex": 0,
+          "stateHash": "c4ab99bd1fd7d1074f0a45f16b367fff92d0f412ed1355f87a142f60cebb802d"
+        }
+      ]
+    },
+    {
+      "header": {
+        "engineVersion": "0.1.0",
+        "contentVersion": "1.1.0",
+        "specVersion": "v1.1",
+        "createdAtUTC": "2025-12-27T00:00:00.000Z"
+      },
+      "seed": 10074,
+      "actions": [
+        {
+          "type": "START_RUN",
+          "seed": 10074,
+          "runLengthTarget": 7
+        },
+        {
+          "type": "SELECT_ATTUNEMENT",
+          "majorIds": []
+        },
+        {
+          "type": "CHOOSE_ENGAGE"
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 0
+        },
+        {
+          "type": "BARGAIN_CHOICE",
+          "bargainChoice": "takeDamage"
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 1
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 2
+        }
+      ],
+      "checkpoints": [
+        {
+          "stepIndex": 0,
+          "stateHash": "d9727e0e9c3d18ce353a0e6a1cd28bdf55a8c107df3fd6163e0540524034cde7"
+        }
+      ]
+    },
+    {
+      "header": {
+        "engineVersion": "0.1.0",
+        "contentVersion": "1.1.0",
+        "specVersion": "v1.1",
+        "createdAtUTC": "2025-12-27T00:00:00.000Z"
+      },
+      "seed": 10075,
+      "actions": [
+        {
+          "type": "START_RUN",
+          "seed": 10075,
+          "runLengthTarget": 7
+        },
+        {
+          "type": "SELECT_ATTUNEMENT",
+          "majorIds": []
+        },
+        {
+          "type": "CHOOSE_ENGAGE"
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 0
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 1
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 2
+        }
+      ],
+      "checkpoints": [
+        {
+          "stepIndex": 0,
+          "stateHash": "7496c19807c5987a3bd5f91b8c8f88e210ff8daaeeae22b903d8b79481b0284f"
+        }
+      ]
+    },
+    {
+      "header": {
+        "engineVersion": "0.1.0",
+        "contentVersion": "1.1.0",
+        "specVersion": "v1.1",
+        "createdAtUTC": "2025-12-27T00:00:00.000Z"
+      },
+      "seed": 10076,
+      "actions": [
+        {
+          "type": "START_RUN",
+          "seed": 10076,
+          "runLengthTarget": 7
+        },
+        {
+          "type": "SELECT_ATTUNEMENT",
+          "majorIds": []
+        },
+        {
+          "type": "USE_MAJOR_GIFT",
+          "majorId": "magician",
+          "slotIndex": 0
+        },
+        {
+          "type": "CHOOSE_ENGAGE"
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 0
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 1
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 2
+        },
+        {
+          "type": "ACE_CHOICE",
+          "optionId": "gain5_take3"
+        },
+        {
+          "type": "USE_MAJOR_GIFT",
+          "majorId": "magician",
+          "slotIndex": 0
+        },
+        {
+          "type": "CHOOSE_ENGAGE"
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 0
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 1
+        }
+      ],
+      "checkpoints": [
+        {
+          "stepIndex": 0,
+          "stateHash": "9d3646686b323939e00b72eb4bfce4b3924da0e8bbc983ad3167720c1bfd411f"
+        },
+        {
+          "stepIndex": 9,
+          "stateHash": "d3eee0f0f04a8721854e74cfb311e6ae2991026e075fbf0df7a9ddbb9c2bbcc6"
+        }
+      ]
+    },
+    {
+      "header": {
+        "engineVersion": "0.1.0",
+        "contentVersion": "1.1.0",
+        "specVersion": "v1.1",
+        "createdAtUTC": "2025-12-27T00:00:00.000Z"
+      },
+      "seed": 10077,
+      "actions": [
+        {
+          "type": "START_RUN",
+          "seed": 10077,
+          "runLengthTarget": 7
+        },
+        {
+          "type": "SELECT_ATTUNEMENT",
+          "majorIds": []
+        },
+        {
+          "type": "CHOOSE_ENGAGE"
+        },
+        {
+          "type": "SELECT_CARRIED_CARD",
+          "slotIndex": 0
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 1
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 2
+        }
+      ],
+      "checkpoints": [
+        {
+          "stepIndex": 0,
+          "stateHash": "a5380124b8c17cfe0b99959d865ddfb9b8226f6b26e9b77b0966f469d3e87d9f"
+        }
+      ]
+    },
+    {
+      "header": {
+        "engineVersion": "0.1.0",
+        "contentVersion": "1.1.0",
+        "specVersion": "v1.1",
+        "createdAtUTC": "2025-12-27T00:00:00.000Z"
+      },
+      "seed": 10078,
+      "actions": [
+        {
+          "type": "START_RUN",
+          "seed": 10078,
+          "runLengthTarget": 7
+        },
+        {
+          "type": "SELECT_ATTUNEMENT",
+          "majorIds": []
+        },
+        {
+          "type": "CHOOSE_ENGAGE"
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 0
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 1
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 2
+        },
+        {
+          "type": "CHOOSE_ENGAGE"
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 0
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 1
+        },
+        {
+          "type": "ACE_CHOICE",
+          "optionId": "pay5_heal5"
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 2
+        },
+        {
+          "type": "CHOOSE_ENGAGE"
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 0
+        }
+      ],
+      "checkpoints": [
+        {
+          "stepIndex": 0,
+          "stateHash": "c0fedc8450790328404d78ea79d0ec0119cbcfc522585c7c15d008585a041d76"
+        },
+        {
+          "stepIndex": 9,
+          "stateHash": "966327b5a5a5a5ce7d5784e467ed464cd473955fa2df8559118b48680adf2e8b"
+        }
+      ]
+    },
+    {
+      "header": {
+        "engineVersion": "0.1.0",
+        "contentVersion": "1.1.0",
+        "specVersion": "v1.1",
+        "createdAtUTC": "2025-12-27T00:00:00.000Z"
+      },
+      "seed": 10079,
+      "actions": [
+        {
+          "type": "START_RUN",
+          "seed": 10079,
+          "runLengthTarget": 7
+        },
+        {
+          "type": "SELECT_ATTUNEMENT",
+          "majorIds": []
+        },
+        {
+          "type": "CHOOSE_ENGAGE"
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 0
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 1
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 2
+        }
+      ],
+      "checkpoints": [
+        {
+          "stepIndex": 0,
+          "stateHash": "2cda50e2a86fcbeb7be7d1dccbcf47c39ae23520dcd43dc863e02fe8fc9d1c05"
+        }
+      ]
+    },
+    {
+      "header": {
+        "engineVersion": "0.1.0",
+        "contentVersion": "1.1.0",
+        "specVersion": "v1.1",
+        "createdAtUTC": "2025-12-27T00:00:00.000Z"
+      },
+      "seed": 10080,
+      "actions": [
+        {
+          "type": "START_RUN",
+          "seed": 10080,
+          "runLengthTarget": 7
+        },
+        {
+          "type": "SELECT_ATTUNEMENT",
+          "majorIds": []
+        },
+        {
+          "type": "USE_MAJOR_GIFT",
+          "majorId": "judgement",
+          "slotIndex": 0
+        },
+        {
+          "type": "CHOOSE_ENGAGE"
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 0
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 1
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 2
+        },
+        {
+          "type": "CHOOSE_ENGAGE"
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 0
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 1
+        },
+        {
+          "type": "ACE_CHOICE",
+          "optionId": "exile_replace_free",
+          "slotIndex": 1
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 2
+        },
+        {
+          "type": "CUPS_8_10_CHOICE",
+          "cupsChoice": "heal"
+        },
+        {
+          "type": "USE_MAJOR_GIFT",
+          "majorId": "judgement",
+          "slotIndex": 0
+        },
+        {
+          "type": "CHOOSE_ENGAGE"
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 0
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 1
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 2
+        },
+        {
+          "type": "USE_MAJOR_GIFT",
+          "majorId": "judgement",
+          "slotIndex": 0
+        },
+        {
+          "type": "CHOOSE_ENGAGE"
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 0
+        }
+      ],
+      "checkpoints": [
+        {
+          "stepIndex": 0,
+          "stateHash": "5e8b66694ee97176bad6b20c85590db7dae03f3282c75f27e3ea3cbfd2e77476"
+        },
+        {
+          "stepIndex": 9,
+          "stateHash": "5683e5b4b6b3b696be70b02091c7a8089096f43dc8e2c468f7e159c292bb214f"
+        },
+        {
+          "stepIndex": 19,
+          "stateHash": "ea43af10022c14389402ac63d27dd3550b9d67945e1e6c94ecb76b09401659d1"
+        }
+      ]
+    },
+    {
+      "header": {
+        "engineVersion": "0.1.0",
+        "contentVersion": "1.1.0",
+        "specVersion": "v1.1",
+        "createdAtUTC": "2025-12-27T00:00:00.000Z"
+      },
+      "seed": 10081,
+      "actions": [
+        {
+          "type": "START_RUN",
+          "seed": 10081,
+          "runLengthTarget": 7
+        },
+        {
+          "type": "SELECT_ATTUNEMENT",
+          "majorIds": []
+        },
+        {
+          "type": "CHOOSE_ENGAGE"
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 0
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 0
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 1
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 2
+        },
+        {
+          "type": "CHOOSE_ENGAGE"
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 0
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 0
+        },
+        {
+          "type": "ENEMY_FIGHT_CHOICE",
+          "enemyMode": "weapon"
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 1
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 2
+        },
+        {
+          "type": "ENEMY_FIGHT_CHOICE",
+          "enemyMode": "weapon"
+        }
+      ],
+      "checkpoints": [
+        {
+          "stepIndex": 0,
+          "stateHash": "a7d25706368e57e06934434b5d0c65d4458b437b7835530860fc46f9e5493be9"
+        },
+        {
+          "stepIndex": 9,
+          "stateHash": "59932b840f86625a236d8d0ad1d65e462b32912f71a4db2947e1309f17a3df94"
+        }
+      ]
+    },
+    {
+      "header": {
+        "engineVersion": "0.1.0",
+        "contentVersion": "1.1.0",
+        "specVersion": "v1.1",
+        "createdAtUTC": "2025-12-27T00:00:00.000Z"
+      },
+      "seed": 10082,
+      "actions": [
+        {
+          "type": "START_RUN",
+          "seed": 10082,
+          "runLengthTarget": 7
+        },
+        {
+          "type": "SELECT_ATTUNEMENT",
+          "majorIds": []
+        },
+        {
+          "type": "CHOOSE_ENGAGE"
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 0
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 1
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 2
+        },
+        {
+          "type": "CHOOSE_ENGAGE"
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 0
+        }
+      ],
+      "checkpoints": [
+        {
+          "stepIndex": 0,
+          "stateHash": "5fa5e76ae0298b3c8ab67410195173d01bdeb7e0e2f104d191c14654e7fe0356"
+        }
+      ]
+    },
+    {
+      "header": {
+        "engineVersion": "0.1.0",
+        "contentVersion": "1.1.0",
+        "specVersion": "v1.1",
+        "createdAtUTC": "2025-12-27T00:00:00.000Z"
+      },
+      "seed": 10083,
+      "actions": [
+        {
+          "type": "START_RUN",
+          "seed": 10083,
+          "runLengthTarget": 7
+        },
+        {
+          "type": "SELECT_ATTUNEMENT",
+          "majorIds": []
+        },
+        {
+          "type": "CHOOSE_ENGAGE"
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 0
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 1
+        }
+      ],
+      "checkpoints": [
+        {
+          "stepIndex": 0,
+          "stateHash": "8c981f049290f49e5b0044d0656ce3903324016121d933c11f7fda6fb811e628"
+        }
+      ]
+    },
+    {
+      "header": {
+        "engineVersion": "0.1.0",
+        "contentVersion": "1.1.0",
+        "specVersion": "v1.1",
+        "createdAtUTC": "2025-12-27T00:00:00.000Z"
+      },
+      "seed": 10084,
+      "actions": [
+        {
+          "type": "START_RUN",
+          "seed": 10084,
+          "runLengthTarget": 7
+        },
+        {
+          "type": "SELECT_ATTUNEMENT",
+          "majorIds": []
+        },
+        {
+          "type": "CHOOSE_ENGAGE"
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 0
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 1
+        }
+      ],
+      "checkpoints": [
+        {
+          "stepIndex": 0,
+          "stateHash": "a265e18c7791ce9dd313a9aeec6e6e31ec0d9550aefd073dc44591a6985d1742"
+        }
+      ]
+    },
+    {
+      "header": {
+        "engineVersion": "0.1.0",
+        "contentVersion": "1.1.0",
+        "specVersion": "v1.1",
+        "createdAtUTC": "2025-12-27T00:00:00.000Z"
+      },
+      "seed": 10085,
+      "actions": [
+        {
+          "type": "START_RUN",
+          "seed": 10085,
+          "runLengthTarget": 7
+        },
+        {
+          "type": "SELECT_ATTUNEMENT",
+          "majorIds": []
+        },
+        {
+          "type": "USE_MAJOR_GIFT",
+          "majorId": "devil",
+          "optionId": "majors.devil.exileOption"
+        },
+        {
+          "type": "USE_MAJOR_GIFT",
+          "majorId": "devil",
+          "slotIndex": 0
+        },
+        {
+          "type": "CHOOSE_ENGAGE"
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 0
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 1
+        }
+      ],
+      "checkpoints": [
+        {
+          "stepIndex": 0,
+          "stateHash": "da2e4a883c273674261474c2e45ae29408b86f4ca9b8b691a613f0a0ac61a648"
+        }
+      ]
+    },
+    {
+      "header": {
+        "engineVersion": "0.1.0",
+        "contentVersion": "1.1.0",
+        "specVersion": "v1.1",
+        "createdAtUTC": "2025-12-27T00:00:00.000Z"
+      },
+      "seed": 10086,
+      "actions": [
+        {
+          "type": "START_RUN",
+          "seed": 10086,
+          "runLengthTarget": 7
+        },
+        {
+          "type": "SELECT_ATTUNEMENT",
+          "majorIds": []
+        },
+        {
+          "type": "CHOOSE_ENGAGE"
+        },
+        {
+          "type": "SELECT_CARRIED_CARD",
+          "slotIndex": 0
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 3
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 2
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 1
+        },
+        {
+          "type": "CHOOSE_ENGAGE"
+        },
+        {
+          "type": "SELECT_CARRIED_CARD",
+          "slotIndex": 0
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 2
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 1
+        }
+      ],
+      "checkpoints": [
+        {
+          "stepIndex": 0,
+          "stateHash": "29121e0579f916669eb4dab07f45a5d664172a0087f322fb11022a31023fd0d2"
+        },
+        {
+          "stepIndex": 9,
+          "stateHash": "c803583397cc86be89ec58313191f5d8699c641029903e948605e67e3bdfec29"
+        }
+      ]
+    },
+    {
+      "header": {
+        "engineVersion": "0.1.0",
+        "contentVersion": "1.1.0",
+        "specVersion": "v1.1",
+        "createdAtUTC": "2025-12-27T00:00:00.000Z"
+      },
+      "seed": 10087,
+      "actions": [
+        {
+          "type": "START_RUN",
+          "seed": 10087,
+          "runLengthTarget": 7
+        },
+        {
+          "type": "SELECT_ATTUNEMENT",
+          "majorIds": []
+        },
+        {
+          "type": "CHOOSE_ENGAGE"
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 0
+        },
+        {
+          "type": "CUPS_8_10_CHOICE",
+          "cupsChoice": "heal"
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 1
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 2
+        },
+        {
+          "type": "CHOOSE_ENGAGE"
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 0
+        },
+        {
+          "type": "ENEMY_FIGHT_CHOICE",
+          "enemyMode": "weapon"
+        }
+      ],
+      "checkpoints": [
+        {
+          "stepIndex": 0,
+          "stateHash": "08cfa721651de606d48497f8686890db73889c24ae23444c96eb7c54f0956105"
+        },
+        {
+          "stepIndex": 9,
+          "stateHash": "34983d0a56dd7268afdd1f7162ec3e7eb7b683bcaabc7cb10e69320eb1f8d8f9"
+        }
+      ]
+    },
+    {
+      "header": {
+        "engineVersion": "0.1.0",
+        "contentVersion": "1.1.0",
+        "specVersion": "v1.1",
+        "createdAtUTC": "2025-12-27T00:00:00.000Z"
+      },
+      "seed": 10088,
+      "actions": [
+        {
+          "type": "START_RUN",
+          "seed": 10088,
+          "runLengthTarget": 7
+        },
+        {
+          "type": "SELECT_ATTUNEMENT",
+          "majorIds": []
+        },
+        {
+          "type": "CHOOSE_ENGAGE"
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 0
+        },
+        {
+          "type": "BARGAIN_CHOICE",
+          "bargainChoice": "takeDamage"
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 1
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 2
+        }
+      ],
+      "checkpoints": [
+        {
+          "stepIndex": 0,
+          "stateHash": "9bb34b6bc6ec7733b8fd43ce980f0edb48b57dc4ec6f9124b1a29b060063f0a7"
+        }
+      ]
+    },
+    {
+      "header": {
+        "engineVersion": "0.1.0",
+        "contentVersion": "1.1.0",
+        "specVersion": "v1.1",
+        "createdAtUTC": "2025-12-27T00:00:00.000Z"
+      },
+      "seed": 10089,
+      "actions": [
+        {
+          "type": "START_RUN",
+          "seed": 10089,
+          "runLengthTarget": 7
+        },
+        {
+          "type": "SELECT_ATTUNEMENT",
+          "majorIds": []
+        },
+        {
+          "type": "USE_MAJOR_GIFT",
+          "majorId": "judgement",
+          "slotIndex": 0
+        },
+        {
+          "type": "CHOOSE_ENGAGE"
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 0
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 1
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 2
+        },
+        {
+          "type": "USE_MAJOR_GIFT",
+          "majorId": "judgement",
+          "slotIndex": 0
+        },
+        {
+          "type": "CHOOSE_ENGAGE"
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 0
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 1
+        }
+      ],
+      "checkpoints": [
+        {
+          "stepIndex": 0,
+          "stateHash": "64f731eaa2f61f999ec43290259c96caeadd61341dc4bf8395e5c507455bc6c4"
+        },
+        {
+          "stepIndex": 9,
+          "stateHash": "5c6e08c6026a6a9acdfc12bc33f45d927471192784f9a1960a25e552a79b2b48"
+        }
+      ]
+    },
+    {
+      "header": {
+        "engineVersion": "0.1.0",
+        "contentVersion": "1.1.0",
+        "specVersion": "v1.1",
+        "createdAtUTC": "2025-12-27T00:00:00.000Z"
+      },
+      "seed": 10090,
+      "actions": [
+        {
+          "type": "START_RUN",
+          "seed": 10090,
+          "runLengthTarget": 7
+        },
+        {
+          "type": "SELECT_ATTUNEMENT",
+          "majorIds": []
+        },
+        {
+          "type": "CHOOSE_ENGAGE"
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 0
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 1
+        },
+        {
+          "type": "SWORDS_AMBUSH_BLOCK_CHOICE",
+          "block": true
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 2
+        },
+        {
+          "type": "USE_MAJOR_GIFT",
+          "majorId": "judgement",
+          "slotIndex": 0
+        },
+        {
+          "type": "CHOOSE_ENGAGE"
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 0
+        },
+        {
+          "type": "ENEMY_FIGHT_CHOICE",
+          "enemyMode": "weapon"
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 1
+        },
+        {
+          "type": "ENEMY_FIGHT_CHOICE",
+          "enemyMode": "weapon"
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 2
+        }
+      ],
+      "checkpoints": [
+        {
+          "stepIndex": 0,
+          "stateHash": "877f572dd81319030a6d51b5b7380428f2efd0e4c1ad27544ee6e20b825b062c"
+        },
+        {
+          "stepIndex": 9,
+          "stateHash": "3732d4bfeab5e80e4302827367b335cfdae63cbcaeae6686200a9a711d503f12"
+        }
+      ]
+    },
+    {
+      "header": {
+        "engineVersion": "0.1.0",
+        "contentVersion": "1.1.0",
+        "specVersion": "v1.1",
+        "createdAtUTC": "2025-12-27T00:00:00.000Z"
+      },
+      "seed": 10091,
+      "actions": [
+        {
+          "type": "START_RUN",
+          "seed": 10091,
+          "runLengthTarget": 7
+        },
+        {
+          "type": "SELECT_ATTUNEMENT",
+          "majorIds": []
+        },
+        {
+          "type": "CHOOSE_ENGAGE"
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 0
+        },
+        {
+          "type": "ACE_CHOICE",
+          "optionId": "cheat_weapon_free"
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 1
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 2
+        },
+        {
+          "type": "CHOOSE_ENGAGE"
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 0
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 1
+        },
+        {
+          "type": "SWORDS_AMBUSH_BLOCK_CHOICE",
+          "block": true
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 2
+        },
+        {
+          "type": "CHOOSE_ENGAGE"
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 0
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 1
+        },
+        {
+          "type": "ENEMY_FIGHT_CHOICE",
+          "enemyMode": "weapon"
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 2
+        },
+        {
+          "type": "CHOOSE_ENGAGE"
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 0
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 1
+        }
+      ],
+      "checkpoints": [
+        {
+          "stepIndex": 0,
+          "stateHash": "d1eac96349c4890a6bbd81f434b2f35bd5cfa6e1389659d832611705648285e2"
+        },
+        {
+          "stepIndex": 9,
+          "stateHash": "9f0b1ac438239623fc27557bfacc59b275504db114dbdf400630b693bf295a2a"
+        },
+        {
+          "stepIndex": 19,
+          "stateHash": "16ad4e60b6290c0e15e63712509f0fd28594964dfc4c68525cb57228ad070f24"
+        }
+      ]
+    },
+    {
+      "header": {
+        "engineVersion": "0.1.0",
+        "contentVersion": "1.1.0",
+        "specVersion": "v1.1",
+        "createdAtUTC": "2025-12-27T00:00:00.000Z"
+      },
+      "seed": 10092,
+      "actions": [
+        {
+          "type": "START_RUN",
+          "seed": 10092,
+          "runLengthTarget": 7
+        },
+        {
+          "type": "SELECT_ATTUNEMENT",
+          "majorIds": []
+        },
+        {
+          "type": "BARGAIN_CHOICE",
+          "bargainChoice": "takeDamage"
+        },
+        {
+          "type": "CHOOSE_ENGAGE"
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 0
+        },
+        {
+          "type": "ACE_CHOICE",
+          "optionId": "exile_replace_free",
+          "slotIndex": 0
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 1
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 2
+        },
+        {
+          "type": "CHOOSE_ENGAGE"
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 0
+        }
+      ],
+      "checkpoints": [
+        {
+          "stepIndex": 0,
+          "stateHash": "6d55a37f16fa187cf28f299ea35dca5fbacc3d11bd09980c46c98075bb514bb6"
+        },
+        {
+          "stepIndex": 9,
+          "stateHash": "51ebcf381f0b27e3366e1525fe554f89b33be9498b536005a0d6096eef74c24d"
+        }
+      ]
+    },
+    {
+      "header": {
+        "engineVersion": "0.1.0",
+        "contentVersion": "1.1.0",
+        "specVersion": "v1.1",
+        "createdAtUTC": "2025-12-27T00:00:00.000Z"
+      },
+      "seed": 10093,
+      "actions": [
+        {
+          "type": "START_RUN",
+          "seed": 10093,
+          "runLengthTarget": 7
+        },
+        {
+          "type": "SELECT_ATTUNEMENT",
+          "majorIds": []
+        },
+        {
+          "type": "CHOOSE_ENGAGE"
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 0
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 1
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 2
+        },
+        {
+          "type": "CHOOSE_ENGAGE"
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 0
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 1
+        },
+        {
+          "type": "ACE_CHOICE",
+          "optionId": "cheat_weapon_free"
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 2
+        },
+        {
+          "type": "CHOOSE_ENGAGE"
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 0
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 1
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 2
+        },
+        {
+          "type": "ENEMY_FIGHT_CHOICE",
+          "enemyMode": "weapon"
+        },
+        {
+          "type": "CHOOSE_ENGAGE"
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 0
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 1
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 2
+        }
+      ],
+      "checkpoints": [
+        {
+          "stepIndex": 0,
+          "stateHash": "fa691ebb61c196dd777f465b3a4bf57bf21dc5aee9f4a713d51641adb7f76eab"
+        },
+        {
+          "stepIndex": 9,
+          "stateHash": "f309a1a92e53b38f7a6a09107f5009f9ca2f087cdad121046bd79ab125be5d4c"
+        },
+        {
+          "stepIndex": 19,
+          "stateHash": "88cfdd1c93ec6e7181c4dc7eee2a0458be526e16531536772b3e6b8c25d55d6e"
+        }
+      ]
+    },
+    {
+      "header": {
+        "engineVersion": "0.1.0",
+        "contentVersion": "1.1.0",
+        "specVersion": "v1.1",
+        "createdAtUTC": "2025-12-27T00:00:00.000Z"
+      },
+      "seed": 10094,
+      "actions": [
+        {
+          "type": "START_RUN",
+          "seed": 10094,
+          "runLengthTarget": 7
+        },
+        {
+          "type": "SELECT_ATTUNEMENT",
+          "majorIds": []
+        },
+        {
+          "type": "CHOOSE_ENGAGE"
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 0
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 1
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 2
+        },
+        {
+          "type": "USE_MAJOR_GIFT",
+          "majorId": "judgement",
+          "slotIndex": 0
+        },
+        {
+          "type": "CHOOSE_ENGAGE"
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 0
+        }
+      ],
+      "checkpoints": [
+        {
+          "stepIndex": 0,
+          "stateHash": "66afe23ad18edf6066a347efa37265034ee1ff25fac6fcc01313af5ec556fdb4"
+        }
+      ]
+    },
+    {
+      "header": {
+        "engineVersion": "0.1.0",
+        "contentVersion": "1.1.0",
+        "specVersion": "v1.1",
+        "createdAtUTC": "2025-12-27T00:00:00.000Z"
+      },
+      "seed": 10095,
+      "actions": [
+        {
+          "type": "START_RUN",
+          "seed": 10095,
+          "runLengthTarget": 7
+        },
+        {
+          "type": "SELECT_ATTUNEMENT",
+          "majorIds": []
+        },
+        {
+          "type": "BARGAIN_CHOICE",
+          "bargainChoice": "takeDamage"
+        },
+        {
+          "type": "CHOOSE_ENGAGE"
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 0
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 1
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 2
+        },
+        {
+          "type": "CHOOSE_ENGAGE"
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 0
+        },
+        {
+          "type": "ENEMY_FIGHT_CHOICE",
+          "enemyMode": "weapon"
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 1
+        },
+        {
+          "type": "ACE_CHOICE",
+          "optionId": "heal_to_full"
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 2
+        },
+        {
+          "type": "CHOOSE_ENGAGE"
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 0
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 1
+        },
+        {
+          "type": "ENEMY_FIGHT_CHOICE",
+          "enemyMode": "weapon"
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 2
+        },
+        {
+          "type": "CHOOSE_ENGAGE"
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 0
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 1
+        }
+      ],
+      "checkpoints": [
+        {
+          "stepIndex": 0,
+          "stateHash": "553d201436d9cd385f00f644bbf35a2b0a470d73fc7c253dca094a76ae68319e"
+        },
+        {
+          "stepIndex": 9,
+          "stateHash": "a695f2d93de2d3c62a256cf09f383b02251c15cc343595f37199057aae661758"
+        },
+        {
+          "stepIndex": 19,
+          "stateHash": "90e17a742a419d352ced3c307b5a118b3ce1502d9d2152429e23de9a0d4ed7b2"
+        }
+      ]
+    },
+    {
+      "header": {
+        "engineVersion": "0.1.0",
+        "contentVersion": "1.1.0",
+        "specVersion": "v1.1",
+        "createdAtUTC": "2025-12-27T00:00:00.000Z"
+      },
+      "seed": 10096,
+      "actions": [
+        {
+          "type": "START_RUN",
+          "seed": 10096,
+          "runLengthTarget": 7
+        },
+        {
+          "type": "SELECT_ATTUNEMENT",
+          "majorIds": []
+        },
+        {
+          "type": "CHOOSE_ENGAGE"
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 0
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 1
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 2
+        },
+        {
+          "type": "CHOOSE_ENGAGE"
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 0
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 1
+        },
+        {
+          "type": "ENEMY_FIGHT_CHOICE",
+          "enemyMode": "weapon"
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 2
+        }
+      ],
+      "checkpoints": [
+        {
+          "stepIndex": 0,
+          "stateHash": "554dea601220e42ac12f302553457fbb3eb959d89233a13b548980652632a3a1"
+        },
+        {
+          "stepIndex": 9,
+          "stateHash": "9e02e9e6c53f4d3d6df0182befea3a598c8fad3fc6b468e36c2e045293fe1df3"
+        }
+      ]
+    },
+    {
+      "header": {
+        "engineVersion": "0.1.0",
+        "contentVersion": "1.1.0",
+        "specVersion": "v1.1",
+        "createdAtUTC": "2025-12-27T00:00:00.000Z"
+      },
+      "seed": 10097,
+      "actions": [
+        {
+          "type": "START_RUN",
+          "seed": 10097,
+          "runLengthTarget": 7
+        },
+        {
+          "type": "SELECT_ATTUNEMENT",
+          "majorIds": []
+        },
+        {
+          "type": "CHOOSE_ENGAGE"
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 0
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 1
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 2
+        },
+        {
+          "type": "CHOOSE_ENGAGE"
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 0
+        }
+      ],
+      "checkpoints": [
+        {
+          "stepIndex": 0,
+          "stateHash": "428b6dc869d9888b9678358f636d6dfc2a1dd075efe8d57558e4e2fdbe3d1767"
+        }
+      ]
+    },
+    {
+      "header": {
+        "engineVersion": "0.1.0",
+        "contentVersion": "1.1.0",
+        "specVersion": "v1.1",
+        "createdAtUTC": "2025-12-27T00:00:00.000Z"
+      },
+      "seed": 10098,
+      "actions": [
+        {
+          "type": "START_RUN",
+          "seed": 10098,
+          "runLengthTarget": 7
+        },
+        {
+          "type": "SELECT_ATTUNEMENT",
+          "majorIds": []
+        },
+        {
+          "type": "CHOOSE_ENGAGE"
+        },
+        {
+          "type": "SELECT_CARRIED_CARD",
+          "slotIndex": 0
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 2
+        },
+        {
+          "type": "ACE_CHOICE",
+          "optionId": "cheat_weapon_free"
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 3
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 1
+        },
+        {
+          "type": "CHOOSE_ENGAGE"
+        },
+        {
+          "type": "SELECT_CARRIED_CARD",
+          "slotIndex": 0
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 1
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 2
+        }
+      ],
+      "checkpoints": [
+        {
+          "stepIndex": 0,
+          "stateHash": "302576f1188c8d6d4ffcf3a270a31beafe68687bc8f5b808b8de18cfe713ce70"
+        },
+        {
+          "stepIndex": 9,
+          "stateHash": "2f7c8b0bd7a0d764549570688582b6d0c15bcd9dfc8ec1afe32530a4dca14fca"
+        }
+      ]
+    },
+    {
+      "header": {
+        "engineVersion": "0.1.0",
+        "contentVersion": "1.1.0",
+        "specVersion": "v1.1",
+        "createdAtUTC": "2025-12-27T00:00:00.000Z"
+      },
+      "seed": 10099,
+      "actions": [
+        {
+          "type": "START_RUN",
+          "seed": 10099,
+          "runLengthTarget": 7
+        },
+        {
+          "type": "SELECT_ATTUNEMENT",
+          "majorIds": []
+        },
+        {
+          "type": "USE_MAJOR_GIFT",
+          "majorId": "devil",
+          "optionId": "majors.devil.exileOption"
+        },
+        {
+          "type": "USE_MAJOR_GIFT",
+          "majorId": "devil",
+          "slotIndex": 0
+        },
+        {
+          "type": "CHOOSE_ENGAGE"
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 0
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 1
+        }
+      ],
+      "checkpoints": [
+        {
+          "stepIndex": 0,
+          "stateHash": "dbb6943283b33662237e543fec4edee6b53858178648afdb475ee129b0113425"
+        }
+      ]
+    },
+    {
+      "header": {
+        "engineVersion": "0.1.0",
+        "contentVersion": "1.1.0",
+        "specVersion": "v1.1",
+        "createdAtUTC": "2025-12-27T00:00:00.000Z"
+      },
+      "seed": 10100,
+      "actions": [
+        {
+          "type": "START_RUN",
+          "seed": 10100,
+          "runLengthTarget": 7
+        },
+        {
+          "type": "SELECT_ATTUNEMENT",
+          "majorIds": []
+        },
+        {
+          "type": "USE_MAJOR_GIFT",
+          "majorId": "high_priestess",
+          "slotIndex": 0
+        },
+        {
+          "type": "CHOOSE_ENGAGE"
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 0
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 1
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 2
+        },
+        {
+          "type": "USE_MAJOR_GIFT",
+          "majorId": "high_priestess",
+          "slotIndex": 0
+        },
+        {
+          "type": "CHOOSE_ENGAGE"
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 0
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 1
+        },
+        {
+          "type": "CUPS_8_10_CHOICE",
+          "cupsChoice": "heal"
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 2
+        },
+        {
+          "type": "ACE_CHOICE",
+          "optionId": "pay5_heal5"
+        },
+        {
+          "type": "USE_MAJOR_GIFT",
+          "majorId": "high_priestess",
+          "slotIndex": 0
+        },
+        {
+          "type": "CHOOSE_ENGAGE"
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 0
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 1
+        }
+      ],
+      "checkpoints": [
+        {
+          "stepIndex": 0,
+          "stateHash": "55697fcb5ff737e5e5a1b914b23e5200c52727ca87f662b4c1d9a8bc53ae7c82"
+        },
+        {
+          "stepIndex": 9,
+          "stateHash": "83a823c7c4377ea94e2d2c4ef2fa49669b85544db94395c1368b5f5f134cf209"
+        }
+      ]
+    },
+    {
+      "header": {
+        "engineVersion": "0.1.0",
+        "contentVersion": "1.1.0",
+        "specVersion": "v1.1",
+        "createdAtUTC": "2025-12-27T00:00:00.000Z"
+      },
+      "seed": 10101,
+      "actions": [
+        {
+          "type": "START_RUN",
+          "seed": 10101,
+          "runLengthTarget": 7
+        },
+        {
+          "type": "SELECT_ATTUNEMENT",
+          "majorIds": []
+        },
+        {
+          "type": "CHOOSE_ENGAGE"
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 0
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 1
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 2
+        }
+      ],
+      "checkpoints": [
+        {
+          "stepIndex": 0,
+          "stateHash": "d54aee1e6ca3a079b4ee0767aabc1506cc259da9b0435804044c73ed4a8d5b8c"
+        }
+      ]
+    },
+    {
+      "header": {
+        "engineVersion": "0.1.0",
+        "contentVersion": "1.1.0",
+        "specVersion": "v1.1",
+        "createdAtUTC": "2025-12-27T00:00:00.000Z"
+      },
+      "seed": 10102,
+      "actions": [
+        {
+          "type": "START_RUN",
+          "seed": 10102,
+          "runLengthTarget": 7
+        },
+        {
+          "type": "SELECT_ATTUNEMENT",
+          "majorIds": []
+        },
+        {
+          "type": "CHOOSE_ENGAGE"
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 0
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 1
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 2
+        },
+        {
+          "type": "CHOOSE_ENGAGE"
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 0
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 1
+        }
+      ],
+      "checkpoints": [
+        {
+          "stepIndex": 0,
+          "stateHash": "98697df774d6a9b5ec39e67b1f1040a75ead47feddeafa4dcf7303d1b22b12f5"
+        }
+      ]
+    },
+    {
+      "header": {
+        "engineVersion": "0.1.0",
+        "contentVersion": "1.1.0",
+        "specVersion": "v1.1",
+        "createdAtUTC": "2025-12-27T00:00:00.000Z"
+      },
+      "seed": 10103,
+      "actions": [
+        {
+          "type": "START_RUN",
+          "seed": 10103,
+          "runLengthTarget": 7
+        },
+        {
+          "type": "SELECT_ATTUNEMENT",
+          "majorIds": []
+        },
+        {
+          "type": "CHOOSE_ENGAGE"
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 0
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 0
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 1
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 2
+        }
+      ],
+      "checkpoints": [
+        {
+          "stepIndex": 0,
+          "stateHash": "3672c206a9de3295a3f2baa578612a5ad2d59094bda1b0d7ca09dea2c80c4f62"
+        }
+      ]
+    },
+    {
+      "header": {
+        "engineVersion": "0.1.0",
+        "contentVersion": "1.1.0",
+        "specVersion": "v1.1",
+        "createdAtUTC": "2025-12-27T00:00:00.000Z"
+      },
+      "seed": 10104,
+      "actions": [
+        {
+          "type": "START_RUN",
+          "seed": 10104,
+          "runLengthTarget": 7
+        },
+        {
+          "type": "SELECT_ATTUNEMENT",
+          "majorIds": []
+        },
+        {
+          "type": "CHOOSE_ENGAGE"
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 0
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 1
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 2
+        },
+        {
+          "type": "CHOOSE_ENGAGE"
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 0
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 1
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 2
+        },
+        {
+          "type": "CHOOSE_ENGAGE"
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 0
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 1
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 2
+        },
+        {
+          "type": "CUPS_8_10_CHOICE",
+          "cupsChoice": "heal"
+        },
+        {
+          "type": "CHOOSE_ENGAGE"
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 0
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 1
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 2
+        },
+        {
+          "type": "CHOOSE_ENGAGE"
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 0
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 1
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 2
+        }
+      ],
+      "checkpoints": [
+        {
+          "stepIndex": 0,
+          "stateHash": "adbfe0bd9de7943a970705be8f705c436d5323d0a3b4e4655c97f3a81f3a7c0c"
+        },
+        {
+          "stepIndex": 9,
+          "stateHash": "bfcbde2f329740098901809a03a2f9d72642e71c4ad9ee37701aae350af0d9c1"
+        },
+        {
+          "stepIndex": 19,
+          "stateHash": "8b2c99e2677499a9521998cdf892958faacc29e271765ed0d1e4f1ff972882c7"
+        }
+      ]
+    },
+    {
+      "header": {
+        "engineVersion": "0.1.0",
+        "contentVersion": "1.1.0",
+        "specVersion": "v1.1",
+        "createdAtUTC": "2025-12-27T00:00:00.000Z"
+      },
+      "seed": 10105,
+      "actions": [
+        {
+          "type": "START_RUN",
+          "seed": 10105,
+          "runLengthTarget": 7
+        },
+        {
+          "type": "SELECT_ATTUNEMENT",
+          "majorIds": []
+        },
+        {
+          "type": "CHOOSE_ENGAGE"
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 0
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 1
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 2
+        },
+        {
+          "type": "CHOOSE_ENGAGE"
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 0
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 1
+        },
+        {
+          "type": "SWORDS_AMBUSH_BLOCK_CHOICE",
+          "block": true
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 2
+        },
+        {
+          "type": "CUPS_8_10_CHOICE",
+          "cupsChoice": "heal"
+        },
+        {
+          "type": "CHOOSE_ENGAGE"
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 0
+        },
+        {
+          "type": "ACE_CHOICE",
+          "optionId": "pay5_heal5"
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 1
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 2
+        },
+        {
+          "type": "ENEMY_FIGHT_CHOICE",
+          "enemyMode": "weapon"
+        },
+        {
+          "type": "CHOOSE_ENGAGE"
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 0
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 1
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 2
+        },
+        {
+          "type": "SWORDS_AMBUSH_BLOCK_CHOICE",
+          "block": true
+        },
+        {
+          "type": "CHOOSE_ENGAGE"
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 0
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 1
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 2
+        },
+        {
+          "type": "ENEMY_FIGHT_CHOICE",
+          "enemyMode": "weapon"
+        },
+        {
+          "type": "CHOOSE_ENGAGE"
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 0
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 1
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 2
+        }
+      ],
+      "checkpoints": [
+        {
+          "stepIndex": 0,
+          "stateHash": "7ceeae136434b95bc137de7a157493c4de5dc3a5c0bc8cd97a6e35a480941abc"
+        },
+        {
+          "stepIndex": 9,
+          "stateHash": "2ec4a43a1f77c916561f5c5dcbcae6255712570232019159fab2288a14383003"
+        },
+        {
+          "stepIndex": 19,
+          "stateHash": "fbe721dcede901634076c8a0766c6cf24e27a7eaaddf6487f0d84754aa7d882a"
+        },
+        {
+          "stepIndex": 29,
+          "stateHash": "a533bb6d2d5fb3d20f0f2f3e0438d45ffc980b03f26d8932234dae221b8bdf15"
+        }
+      ]
+    },
+    {
+      "header": {
+        "engineVersion": "0.1.0",
+        "contentVersion": "1.1.0",
+        "specVersion": "v1.1",
+        "createdAtUTC": "2025-12-27T00:00:00.000Z"
+      },
+      "seed": 10106,
+      "actions": [
+        {
+          "type": "START_RUN",
+          "seed": 10106,
+          "runLengthTarget": 7
+        },
+        {
+          "type": "SELECT_ATTUNEMENT",
+          "majorIds": []
+        },
+        {
+          "type": "USE_MAJOR_GIFT",
+          "majorId": "high_priestess",
+          "slotIndex": 0
+        },
+        {
+          "type": "CHOOSE_ENGAGE"
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 0
+        },
+        {
+          "type": "CUPS_8_10_CHOICE",
+          "cupsChoice": "heal"
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 1
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 2
+        }
+      ],
+      "checkpoints": [
+        {
+          "stepIndex": 0,
+          "stateHash": "a4e4ba9745f54f76b9995d23494781aca4c2385b05d62d5023f9020afaf5e44f"
+        }
+      ]
+    },
+    {
+      "header": {
+        "engineVersion": "0.1.0",
+        "contentVersion": "1.1.0",
+        "specVersion": "v1.1",
+        "createdAtUTC": "2025-12-27T00:00:00.000Z"
+      },
+      "seed": 10107,
+      "actions": [
+        {
+          "type": "START_RUN",
+          "seed": 10107,
+          "runLengthTarget": 7
+        },
+        {
+          "type": "SELECT_ATTUNEMENT",
+          "majorIds": []
+        },
+        {
+          "type": "USE_MAJOR_GIFT",
+          "majorId": "star",
+          "slotIndex": 1
+        },
+        {
+          "type": "CHOOSE_ENGAGE"
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 0
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 1
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 2
+        },
+        {
+          "type": "USE_MAJOR_GIFT",
+          "majorId": "star",
+          "slotIndex": 1
+        },
+        {
+          "type": "CHOOSE_ENGAGE"
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 0
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 1
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 2
+        },
+        {
+          "type": "USE_MAJOR_GIFT",
+          "majorId": "star",
+          "slotIndex": 0
+        },
+        {
+          "type": "CHOOSE_ENGAGE"
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 0
+        },
+        {
+          "type": "ENEMY_FIGHT_CHOICE",
+          "enemyMode": "weapon"
+        }
+      ],
+      "checkpoints": [
+        {
+          "stepIndex": 0,
+          "stateHash": "d7b941e455caa17eae6ab166ca26cb55a6435b19b382e792ffd474ca768b8da4"
+        },
+        {
+          "stepIndex": 9,
+          "stateHash": "943441f01c9c7d75d4296427769548ca23c9f2a4ee86f1825b3cd80aa5ae22be"
+        }
+      ]
+    },
+    {
+      "header": {
+        "engineVersion": "0.1.0",
+        "contentVersion": "1.1.0",
+        "specVersion": "v1.1",
+        "createdAtUTC": "2025-12-27T00:00:00.000Z"
+      },
+      "seed": 10108,
+      "actions": [
+        {
+          "type": "START_RUN",
+          "seed": 10108,
+          "runLengthTarget": 7
+        },
+        {
+          "type": "SELECT_ATTUNEMENT",
+          "majorIds": []
+        },
+        {
+          "type": "USE_MAJOR_GIFT",
+          "majorId": "judgement",
+          "slotIndex": 0
+        },
+        {
+          "type": "CHOOSE_ENGAGE"
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 0
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 1
+        }
+      ],
+      "checkpoints": [
+        {
+          "stepIndex": 0,
+          "stateHash": "6d733f341e6b13ea7b2b7520403b95d5cc51be4280a83040bbe5199bddebdf1b"
+        }
+      ]
+    },
+    {
+      "header": {
+        "engineVersion": "0.1.0",
+        "contentVersion": "1.1.0",
+        "specVersion": "v1.1",
+        "createdAtUTC": "2025-12-27T00:00:00.000Z"
+      },
+      "seed": 10109,
+      "actions": [
+        {
+          "type": "START_RUN",
+          "seed": 10109,
+          "runLengthTarget": 7
+        },
+        {
+          "type": "SELECT_ATTUNEMENT",
+          "majorIds": []
+        },
+        {
+          "type": "USE_MAJOR_GIFT",
+          "majorId": "star",
+          "slotIndex": 0
+        },
+        {
+          "type": "CHOOSE_ENGAGE"
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 0
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 1
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 2
+        }
+      ],
+      "checkpoints": [
+        {
+          "stepIndex": 0,
+          "stateHash": "3b15afd487a1f3446fb582aab2f6f8ac877fb22b2e7d93e5172bc62c50e5e44a"
+        }
+      ]
+    },
+    {
+      "header": {
+        "engineVersion": "0.1.0",
+        "contentVersion": "1.1.0",
+        "specVersion": "v1.1",
+        "createdAtUTC": "2025-12-27T00:00:00.000Z"
+      },
+      "seed": 10110,
+      "actions": [
+        {
+          "type": "START_RUN",
+          "seed": 10110,
+          "runLengthTarget": 7
+        },
+        {
+          "type": "SELECT_ATTUNEMENT",
+          "majorIds": []
+        },
+        {
+          "type": "CHOOSE_ENGAGE"
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 0
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 0
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 1
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 2
+        }
+      ],
+      "checkpoints": [
+        {
+          "stepIndex": 0,
+          "stateHash": "3416ced4515c2f031ea6c389aa0ff214eb168b797408ef84fa0523a4134d02a7"
+        }
+      ]
+    },
+    {
+      "header": {
+        "engineVersion": "0.1.0",
+        "contentVersion": "1.1.0",
+        "specVersion": "v1.1",
+        "createdAtUTC": "2025-12-27T00:00:00.000Z"
+      },
+      "seed": 10111,
+      "actions": [
+        {
+          "type": "START_RUN",
+          "seed": 10111,
+          "runLengthTarget": 7
+        },
+        {
+          "type": "SELECT_ATTUNEMENT",
+          "majorIds": []
+        },
+        {
+          "type": "CHOOSE_ENGAGE"
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 0
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 1
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 2
+        },
+        {
+          "type": "CHOOSE_ENGAGE"
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 0
+        },
+        {
+          "type": "ENEMY_FIGHT_CHOICE",
+          "enemyMode": "weapon"
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 1
+        }
+      ],
+      "checkpoints": [
+        {
+          "stepIndex": 0,
+          "stateHash": "4b24203821c7e3c89f61f82ffaef4d9b5a970666d90fa7246c795fa56dbbdaa8"
+        },
+        {
+          "stepIndex": 9,
+          "stateHash": "50896035e5bbddf6af914688a408e6acfd5d09b89b10d57c3fb80185c2b24162"
+        }
+      ]
+    },
+    {
+      "header": {
+        "engineVersion": "0.1.0",
+        "contentVersion": "1.1.0",
+        "specVersion": "v1.1",
+        "createdAtUTC": "2025-12-27T00:00:00.000Z"
+      },
+      "seed": 10112,
+      "actions": [
+        {
+          "type": "START_RUN",
+          "seed": 10112,
+          "runLengthTarget": 7
+        },
+        {
+          "type": "SELECT_ATTUNEMENT",
+          "majorIds": []
+        },
+        {
+          "type": "USE_MAJOR_GIFT",
+          "majorId": "chariot",
+          "optionId": "majors.chariot.leftToRight"
+        },
+        {
+          "type": "CHOOSE_ENGAGE"
+        },
+        {
+          "type": "SELECT_CARRIED_CARD",
+          "slotIndex": 0
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 1
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 2
+        }
+      ],
+      "checkpoints": [
+        {
+          "stepIndex": 0,
+          "stateHash": "87d02579d2a02f10601d584c8dbe30be740df6b3cfd14b7303bf94d15cc23e3a"
+        }
+      ]
+    },
+    {
+      "header": {
+        "engineVersion": "0.1.0",
+        "contentVersion": "1.1.0",
+        "specVersion": "v1.1",
+        "createdAtUTC": "2025-12-27T00:00:00.000Z"
+      },
+      "seed": 10113,
+      "actions": [
+        {
+          "type": "START_RUN",
+          "seed": 10113,
+          "runLengthTarget": 7
+        },
+        {
+          "type": "SELECT_ATTUNEMENT",
+          "majorIds": []
+        },
+        {
+          "type": "CHOOSE_ENGAGE"
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 0
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 1
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 2
+        },
+        {
+          "type": "CHOOSE_ENGAGE"
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 0
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 1
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 2
+        }
+      ],
+      "checkpoints": [
+        {
+          "stepIndex": 0,
+          "stateHash": "7001697a0716f1853d9aaac1986497af52d17947122a34a04ee9e8564c88e703"
+        },
+        {
+          "stepIndex": 9,
+          "stateHash": "f0e537d711c750a9fe713875c04e507f70ab8ed865748e5cbf3601946023b137"
+        }
+      ]
+    },
+    {
+      "header": {
+        "engineVersion": "0.1.0",
+        "contentVersion": "1.1.0",
+        "specVersion": "v1.1",
+        "createdAtUTC": "2025-12-27T00:00:00.000Z"
+      },
+      "seed": 10114,
+      "actions": [
+        {
+          "type": "START_RUN",
+          "seed": 10114,
+          "runLengthTarget": 7
+        },
+        {
+          "type": "SELECT_ATTUNEMENT",
+          "majorIds": []
+        },
+        {
+          "type": "USE_MAJOR_GIFT",
+          "majorId": "devil",
+          "optionId": "majors.devil.exileOption"
+        },
+        {
+          "type": "USE_MAJOR_GIFT",
+          "majorId": "devil",
+          "slotIndex": 0
+        },
+        {
+          "type": "CHOOSE_ENGAGE"
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 0
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 1
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 2
+        },
+        {
+          "type": "USE_MAJOR_GIFT",
+          "majorId": "devil",
+          "optionId": "majors.devil.exileOption"
+        },
+        {
+          "type": "USE_MAJOR_GIFT",
+          "majorId": "devil",
+          "slotIndex": 0
+        },
+        {
+          "type": "CHOOSE_ENGAGE"
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 0
+        }
+      ],
+      "checkpoints": [
+        {
+          "stepIndex": 0,
+          "stateHash": "9b6fb33efd29ded6ca250c1b615f16d9e19f3568daba55e8b08cb17c2ee2ab30"
+        },
+        {
+          "stepIndex": 9,
+          "stateHash": "e0aeddf87f8a8f16a815b0bb9b82d3ed99bde3f7bd16c1f55b26945c40547592"
+        }
+      ]
+    },
+    {
+      "header": {
+        "engineVersion": "0.1.0",
+        "contentVersion": "1.1.0",
+        "specVersion": "v1.1",
+        "createdAtUTC": "2025-12-27T00:00:00.000Z"
+      },
+      "seed": 10115,
+      "actions": [
+        {
+          "type": "START_RUN",
+          "seed": 10115,
+          "runLengthTarget": 7
+        },
+        {
+          "type": "SELECT_ATTUNEMENT",
+          "majorIds": []
+        },
+        {
+          "type": "CHOOSE_ENGAGE"
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 0
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 0
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 1
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 2
+        },
+        {
+          "type": "CHOOSE_ENGAGE"
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 0
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 0
+        }
+      ],
+      "checkpoints": [
+        {
+          "stepIndex": 0,
+          "stateHash": "2851c0a5f538e68603cda5962b4c3327a5bdbaa7e3c30c2fad359bc3a201d5d0"
+        },
+        {
+          "stepIndex": 9,
+          "stateHash": "a8577ccd2961e506ab7f0a4721c8a196909488c1864e23aa2b1292d310d88c6d"
+        }
+      ]
+    },
+    {
+      "header": {
+        "engineVersion": "0.1.0",
+        "contentVersion": "1.1.0",
+        "specVersion": "v1.1",
+        "createdAtUTC": "2025-12-27T00:00:00.000Z"
+      },
+      "seed": 10116,
+      "actions": [
+        {
+          "type": "START_RUN",
+          "seed": 10116,
+          "runLengthTarget": 7
+        },
+        {
+          "type": "SELECT_ATTUNEMENT",
+          "majorIds": []
+        },
+        {
+          "type": "CHOOSE_ENGAGE"
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 0
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 1
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 2
+        },
+        {
+          "type": "CHOOSE_ENGAGE"
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 0
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 1
+        },
+        {
+          "type": "CUPS_8_10_CHOICE",
+          "cupsChoice": "heal"
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 2
+        },
+        {
+          "type": "CHOOSE_ENGAGE"
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 0
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 1
+        },
+        {
+          "type": "ENEMY_FIGHT_CHOICE",
+          "enemyMode": "weapon"
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 2
+        }
+      ],
+      "checkpoints": [
+        {
+          "stepIndex": 0,
+          "stateHash": "f9494b54bb1105d160e8a474b70ebc31b66467552245661b2cd66e9f0ae382e7"
+        },
+        {
+          "stepIndex": 9,
+          "stateHash": "0e7d09e94f9390708c2f39c0ad2e7b46ff6a03bb35db5680462e56b070c6ab70"
+        }
+      ]
+    },
+    {
+      "header": {
+        "engineVersion": "0.1.0",
+        "contentVersion": "1.1.0",
+        "specVersion": "v1.1",
+        "createdAtUTC": "2025-12-27T00:00:00.000Z"
+      },
+      "seed": 10117,
+      "actions": [
+        {
+          "type": "START_RUN",
+          "seed": 10117,
+          "runLengthTarget": 7
+        },
+        {
+          "type": "SELECT_ATTUNEMENT",
+          "majorIds": []
+        },
+        {
+          "type": "CHOOSE_ENGAGE"
+        },
+        {
+          "type": "SELECT_CARRIED_CARD",
+          "slotIndex": 0
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 1
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 2
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 3
+        },
+        {
+          "type": "CHOOSE_ENGAGE"
+        },
+        {
+          "type": "SELECT_CARRIED_CARD",
+          "slotIndex": 0
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 1
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 2
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 3
+        }
+      ],
+      "checkpoints": [
+        {
+          "stepIndex": 0,
+          "stateHash": "fa84e4149ad8ddb19c4e70d14cdb3606161be8398582966a59c20eb819bd25c8"
+        },
+        {
+          "stepIndex": 9,
+          "stateHash": "bfd8cba84e2f906b5c7ae636bcc6c6e0eee47cffd5e196060227026a233a9ee3"
+        }
+      ]
+    },
+    {
+      "header": {
+        "engineVersion": "0.1.0",
+        "contentVersion": "1.1.0",
+        "specVersion": "v1.1",
+        "createdAtUTC": "2025-12-27T00:00:00.000Z"
+      },
+      "seed": 10118,
+      "actions": [
+        {
+          "type": "START_RUN",
+          "seed": 10118,
+          "runLengthTarget": 7
+        },
+        {
+          "type": "SELECT_ATTUNEMENT",
+          "majorIds": []
+        },
+        {
+          "type": "CHOOSE_ENGAGE"
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 0
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 1
+        }
+      ],
+      "checkpoints": [
+        {
+          "stepIndex": 0,
+          "stateHash": "67ca47d76f6c177b81f329542a5c6fa55bdc8d276323d0f62ae8cf7203756ce3"
+        }
+      ]
+    },
+    {
+      "header": {
+        "engineVersion": "0.1.0",
+        "contentVersion": "1.1.0",
+        "specVersion": "v1.1",
+        "createdAtUTC": "2025-12-27T00:00:00.000Z"
+      },
+      "seed": 10119,
+      "actions": [
+        {
+          "type": "START_RUN",
+          "seed": 10119,
+          "runLengthTarget": 7
+        },
+        {
+          "type": "SELECT_ATTUNEMENT",
+          "majorIds": []
+        },
+        {
+          "type": "USE_MAJOR_GIFT",
+          "majorId": "devil",
+          "optionId": "majors.devil.exileOption"
+        },
+        {
+          "type": "USE_MAJOR_GIFT",
+          "majorId": "devil",
+          "slotIndex": 0
+        },
+        {
+          "type": "CHOOSE_ENGAGE"
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 0
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 1
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 2
+        },
+        {
+          "type": "USE_MAJOR_GIFT",
+          "majorId": "devil",
+          "optionId": "majors.devil.exileOption"
+        },
+        {
+          "type": "USE_MAJOR_GIFT",
+          "majorId": "devil",
+          "slotIndex": 0
+        },
+        {
+          "type": "CHOOSE_ENGAGE"
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 0
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 1
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 2
+        },
+        {
+          "type": "USE_MAJOR_GIFT",
+          "majorId": "devil",
+          "optionId": "majors.devil.exileOption"
+        },
+        {
+          "type": "USE_MAJOR_GIFT",
+          "majorId": "devil",
+          "slotIndex": 0
+        },
+        {
+          "type": "CHOOSE_ENGAGE"
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 0
+        },
+        {
+          "type": "CUPS_8_10_CHOICE",
+          "cupsChoice": "heal"
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 1
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 2
+        },
+        {
+          "type": "ENEMY_FIGHT_CHOICE",
+          "enemyMode": "weapon"
+        },
+        {
+          "type": "USE_MAJOR_GIFT",
+          "majorId": "devil",
+          "optionId": "majors.devil.exileOption"
+        },
+        {
+          "type": "USE_MAJOR_GIFT",
+          "majorId": "devil",
+          "slotIndex": 0
+        },
+        {
+          "type": "CHOOSE_ENGAGE"
+        },
+        {
+          "type": "COMMIT_RESOLVE",
+          "slotIndex": 0
+        }
+      ],
+      "checkpoints": [
+        {
+          "stepIndex": 0,
+          "stateHash": "1d3c910ab63335ff733cd2088e67f196b06ec622d32c0e8ca5e0845c6b7a5865"
+        },
+        {
+          "stepIndex": 9,
+          "stateHash": "c8f573fdff7f2a4093745617f6fd6671c7870a63bca9a3f415a22d34c4fdf35c"
+        },
+        {
+          "stepIndex": 19,
+          "stateHash": "6c8a457744ab6befec1ef0cec65a2d35a51558e0edcabe7ba2c7e3baca121fa0"
+        }
+      ]
+    }
+  ]
+}

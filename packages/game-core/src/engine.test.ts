@@ -1,11 +1,20 @@
-import { describe, expect, it } from "vitest";
+import { readFileSync } from "node:fs";
 
+import { beforeAll, describe, expect, it } from "vitest";
+
+import { loadContent } from "./content.js";
 import { applyAction, createRun, getLegalActions } from "./engine.js";
 import type { CardId, MinorCard, RunState } from "./types.js";
 
 function makeCard(id: CardId, suit: MinorCard["suit"], rank: MinorCard["rank"], orientation: MinorCard["orientation"]): MinorCard {
   return { id, suit, rank, orientation };
 }
+
+beforeAll(() => {
+  const majors = JSON.parse(readFileSync(new URL("../../game-data/content/majors.json", import.meta.url), "utf8"));
+  const strings = JSON.parse(readFileSync(new URL("../../game-data/content/strings.en.json", import.meta.url), "utf8"));
+  loadContent({ majors, strings });
+});
 
 function baseState(overrides: Partial<RunState>): RunState {
   const state = createRun({ seed: 1, runLengthTarget: 7 });
@@ -23,6 +32,8 @@ function withRoom(
   deck: CardId[] = []
 ): RunState {
   const s = baseState(overrides);
+  // Stabilize unit tests: majors/shadows are covered separately in Phase D replay tests.
+  s.floor.activeMajorId = "magician";
   const minors: Record<string, MinorCard> = {};
   for (const c of cards) minors[c.id] = c;
   s.decks.cards.minors = minors;
@@ -174,9 +185,15 @@ describe("Phase B engine (rooms + minors)", () => {
 
   it("can auto-simulate several rooms deterministically without crashing", () => {
     let s = createRun({ seed: 42, runLengthTarget: 7 });
+    s.floor.activeMajorId = "magician";
+    s.player.hp = 999;
+    s.player.maxHp = 999;
+    s.player.gold = 999;
+    s.player.fate = 10;
 
     let steps = 0;
     let roomsCompleted = 0;
+    let lastEngagedRoomsCompleted = s.floor.engagedRoomsCompleted;
     while (steps < 500 && roomsCompleted < 5) {
       const legal = getLegalActions(s);
       if (legal.length === 0) throw new Error(`No legal actions at phase=${s.phase}`);
@@ -190,11 +207,13 @@ describe("Phase B engine (rooms + minors)", () => {
       const fightWeapon = legal.find((a) => a.type === "ENEMY_FIGHT_CHOICE" && a.enemyMode === "weapon");
       if (fightWeapon) chosen = fightWeapon;
 
-      const prevPhase = s.phase;
       s = step(s, chosen);
       steps += 1;
 
-      if (prevPhase === "PreResolveWindow" && s.phase === "RoomChoice") roomsCompleted += 1;
+      if (s.floor.engagedRoomsCompleted > lastEngagedRoomsCompleted) {
+        roomsCompleted += s.floor.engagedRoomsCompleted - lastEngagedRoomsCompleted;
+        lastEngagedRoomsCompleted = s.floor.engagedRoomsCompleted;
+      }
       if (s.phase === "RunDefeat") break;
     }
 

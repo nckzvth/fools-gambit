@@ -109,12 +109,18 @@ export type FloorState = {
   bossRoomsRequired: number;
   bossRoomsCompleted: number;
   bossDeck: CardId[] | null;
+  params: {
+    chariotDirection: "LEFT_TO_RIGHT" | "RIGHT_TO_LEFT" | null;
+  };
 };
 
 export type RoomState = {
   slots: [CardId | null, CardId | null, CardId | null, CardId | null];
   resolvedMask: [boolean, boolean, boolean, boolean];
+  // Slot index of the carried-in card from the previous room (persists through RoomReveal/RoomChoice/Engage).
   carriedIndex: number | null;
+  // When an Order constraint requires "choose carried first", this is the chosen slot to carry into the next room.
+  carryChoiceIndex: number | null;
   leapUsed: boolean;
   healingUsedThisRoom: boolean;
   pendingCleanses: [boolean, boolean, boolean, boolean];
@@ -144,7 +150,7 @@ export type RunState = {
   rules: { weaponRestrictionMode: WeaponRestrictionMode; orderConstraint: OrderConstraintState };
   debug?: {
     pendingResolution?: { slotIndex: number; cardId: CardId };
-    pendingPrompt?: { kind: "ACE" | "ENEMY_FIGHT" | "SWORDS_AMBUSH_BLOCK" | "CUPS_8_10"; cardId: CardId };
+    pendingPrompt?: PendingPrompt;
   };
 };
 
@@ -153,9 +159,20 @@ export type EngineConfig = {
   runLengthTarget: 7 | 14 | 21;
 };
 
+export type PendingPrompt =
+  | { kind: "ACE"; cardId: CardId }
+  | { kind: "ENEMY_FIGHT"; cardId: CardId }
+  | { kind: "SWORDS_AMBUSH_BLOCK"; cardId: CardId }
+  | { kind: "CUPS_8_10"; cardId: CardId }
+  | { kind: "MAJOR_CHOICE"; majorId: MajorId; promptKey: string; optionIds: string[] }
+  | { kind: "MAJOR_BARGAIN"; majorId: MajorId; promptKey: string; options: ("pay" | "takeDamage")[] }
+  | { kind: "MAJOR_REORDER_TOP3"; majorId: MajorId }
+  | { kind: "MAJOR_REORDER_ROOM4"; majorId: MajorId };
+
 export type LegalAction =
   | { type: "CHOOSE_FLEE" }
   | { type: "CHOOSE_ENGAGE" }
+  | { type: "SELECT_ATTUNEMENT"; majorIds: MajorId[] }
   | { type: "SELECT_CARRIED_CARD"; slotIndex: number }
   | { type: "USE_LEAP_OF_FAITH"; slotIndex: number }
   | { type: "SPEND_FATE_REROLL"; slotIndex: number }
@@ -164,14 +181,19 @@ export type LegalAction =
   | { type: "SPEND_FATE_CHEAT_WEAPON" }
   | { type: "USE_SPELL_CLEANSE"; slotIndex: number }
   | { type: "USE_SPELL_REROLL"; slotIndex: number }
+  | { type: "USE_MAJOR_GIFT"; majorId: MajorId; optionId?: string; slotIndex?: number }
   | { type: "COMMIT_RESOLVE"; slotIndex: number }
   | { type: "ACE_CHOICE"; optionId: string; slotIndex?: number }
   | { type: "ENEMY_FIGHT_CHOICE"; enemyMode: "barehand" | "weapon" }
   | { type: "SWORDS_AMBUSH_BLOCK_CHOICE"; block: boolean }
-  | { type: "CUPS_8_10_CHOICE"; cupsChoice: "heal" | "equipArmor" };
+  | { type: "CUPS_8_10_CHOICE"; cupsChoice: "heal" | "equipArmor" }
+  | { type: "BARGAIN_CHOICE"; bargainChoice: "pay" | "takeDamage" }
+  | { type: "REORDER_TOP3"; order: number[] }
+  | { type: "REORDER_ROOM4"; order: number[] };
 
 export type GameEvent =
   | { type: "ROOM_REVEALED"; slots: (CardId | null)[] }
+  | { type: "PEEK_TOP_N"; n: number; cardIds: CardId[] }
   | { type: "PLAYER_HP_CHANGED"; delta: number; hp: number }
   | { type: "PLAYER_GOLD_CHANGED"; delta: number; gold: number }
   | { type: "PLAYER_FATE_CHANGED"; delta: number; fate: number }

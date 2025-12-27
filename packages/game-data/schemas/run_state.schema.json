@@ -316,7 +316,8 @@
         "bossMode",
         "bossRoomsRequired",
         "bossRoomsCompleted",
-        "bossDeck"
+        "bossDeck",
+        "params"
       ],
       "properties": {
         "floorNumber": { "type": "integer", "minimum": 1, "maximum": 21 },
@@ -336,6 +337,15 @@
           "type": ["array", "null"],
           "items": { "$ref": "#/$defs/CardId" },
           "description": "Null until boss starts; otherwise a shuffled deck built from floorDiscard."
+        },
+
+        "params": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["chariotDirection"],
+          "properties": {
+            "chariotDirection": { "type": ["string", "null"], "enum": ["LEFT_TO_RIGHT", "RIGHT_TO_LEFT", null] }
+          }
         }
       }
     },
@@ -375,6 +385,7 @@
         "slots",
         "resolvedMask",
         "carriedIndex",
+        "carryChoiceIndex",
         "leapUsed",
         "healingUsedThisRoom",
         "pendingCleanses",
@@ -385,6 +396,7 @@
         "slots": { "$ref": "#/$defs/RoomSlots" },
         "resolvedMask": { "$ref": "#/$defs/ResolvedMask" },
         "carriedIndex": { "type": ["integer", "null"], "minimum": 0, "maximum": 3 },
+        "carryChoiceIndex": { "type": ["integer", "null"], "minimum": 0, "maximum": 3 },
 
         "leapUsed": { "type": "boolean" },
         "healingUsedThisRoom": { "type": "boolean" },

@@ -20,8 +20,8 @@ export function computeEnemyValue(card: MinorCard, effectiveOrientation: Orienta
 
 export function computeEffectiveOrientation(state: RunState, slotIndex: number, card: MinorCard): Orientation {
   let eff: Orientation = card.orientation;
+  if (state.floor.bossMode && isNumbered(card.rank)) eff = "reversed";
   if (state.room.pendingCleanses[slotIndex]) eff = "upright";
-  // Boss corruption applied in Phase C (numbered minors forced reversed).
   return eff;
 }
 

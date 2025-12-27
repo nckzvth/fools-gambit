@@ -9,6 +9,7 @@
   },
   "scripts": {
     "build": "tsc -p tsconfig.json",
+    "generate:replays": "node ./scripts/generate-replay-corpus.mjs",
     "test": "vitest run"
   }
 }

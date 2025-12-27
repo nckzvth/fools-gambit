@@ -11,21 +11,91 @@
         padding: 0;
         height: 100%;
         background: #0f1117;
+        overflow: hidden;
       }
       #app {
         height: 100%;
-        display: grid;
-        grid-template-rows: auto 1fr;
+        position: relative;
       }
-      header {
-        padding: 12px 16px;
-        color: #e6e6e6;
+      #stage {
+        position: relative;
+        overflow: hidden;
+        width: 100%;
+        height: 100%;
+      }
+      #overlay {
+        position: absolute;
+        inset: 0;
+        pointer-events: none;
         font-family:
           system-ui,
           -apple-system,
           Segoe UI,
           Roboto,
           sans-serif;
+        color: #e6e6e6;
+      }
+      #topbar {
+        pointer-events: auto;
+        position: absolute;
+        top: 12px;
+        left: 12px;
+        right: 12px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 12px;
+      }
+      #topbar .title {
+        font-weight: 650;
+        opacity: 0.9;
+      }
+      #topbar button,
+      #topbar input,
+      #topbar select {
+        font: inherit;
+        border-radius: 10px;
+        border: 1px solid #2a2f3a;
+        background: #0b0f18;
+        color: #e6e6e6;
+        padding: 8px 10px;
+        cursor: pointer;
+      }
+      #topbar button:disabled {
+        opacity: 0.4;
+        cursor: not-allowed;
+      }
+      #logPanel {
+        pointer-events: auto;
+        position: absolute;
+        right: 12px;
+        bottom: 12px;
+        width: min(520px, calc(100vw - 24px));
+        max-height: min(360px, calc(100vh - 24px));
+        border: 1px solid #2a2f3a;
+        border-radius: 12px;
+        background: rgba(11, 15, 24, 0.92);
+        overflow: hidden;
+        display: none;
+      }
+      #logPanelHeader {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px 12px;
+        border-bottom: 1px solid #2a2f3a;
+        font-weight: 650;
+      }
+      #logPanelBody {
+        font-family:
+          ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New",
+          monospace;
+        font-size: 12px;
+        white-space: pre-wrap;
+        color: #c9cbd1;
+        padding: 10px 12px;
+        overflow: auto;
+        max-height: 320px;
       }
       canvas {
         display: block;
@@ -34,8 +104,41 @@
   </head>
   <body>
     <div id="app">
-      <header>Fool’s Gambit — Web Prototype</header>
       <div id="stage"></div>
+      <div id="overlay">
+        <div id="topbar">
+          <div class="title">Fool’s Gambit</div>
+          <div style="display: flex; gap: 8px; align-items: center; flex-wrap: wrap">
+            <label
+              >Seed <input id="seedInput" type="number" value="1" style="width: 110px"
+            /></label>
+            <label>
+              Run
+              <select id="runLengthSelect">
+                <option value="7">7</option>
+                <option value="14">14</option>
+                <option value="21">21</option>
+              </select>
+            </label>
+            <button id="newRunBtn">New run</button>
+            <button id="resumeBtn" disabled>Resume</button>
+            <button id="exportBtn" disabled>Export log</button>
+            <label style="display: inline-flex; align-items: center; gap: 8px">
+              Import
+              <input id="importInput" type="file" accept="application/json" />
+            </label>
+            <button id="toggleLogBtn">Log</button>
+          </div>
+        </div>
+
+        <div id="logPanel">
+          <div id="logPanelHeader">
+            <div>Log</div>
+            <button id="closeLogBtn">Close</button>
+          </div>
+          <div id="logPanelBody"></div>
+        </div>
+      </div>
     </div>
     <script type="module" src="./main.ts"></script>
   </body>
