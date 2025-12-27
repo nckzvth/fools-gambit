@@ -1,0 +1,9 @@
+{
+  "name": "@fg/game-data",
+  "version": "0.1.0",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "validate:content": "node ./scripts/validate-content.mjs"
+  }
+}

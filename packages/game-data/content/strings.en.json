@@ -1,0 +1,91 @@
+{
+  "majors.magician.name": "The Magician",
+  "majors.magician.shadow": "Shadow: After revealing 4 cards, you must reroll 1 card (choose).",
+  "majors.magician.gift": "Gift: Reroll 1 revealed card for free.",
+
+  "majors.high_priestess.name": "The High Priestess",
+  "majors.high_priestess.shadow": "Shadow: After revealing 4 cards, you must exile + replace 1 card (choose).",
+  "majors.high_priestess.gift": "Gift: Peek the top 3 cards of the Minor deck and reorder them.",
+
+  "majors.empress.name": "The Empress",
+  "majors.empress.shadow": "Shadow: At floor start, bargain: pay 5 Gold or take 3 damage.",
+  "majors.empress.gift": "Gift: Bargain: pay 5 Gold to heal 5, or take 3 damage to gain 5 Gold.",
+
+  "majors.emperor.name": "The Emperor",
+  "majors.emperor.shadow": "Shadow (Order): In engaged rooms, choose carried card first, then resolve remaining cards left-to-right.",
+  "majors.emperor.gift": "Gift: Cheat-weapon for your next enemy fight.",
+
+  "majors.hierophant.name": "The Hierophant",
+  "majors.hierophant.shadow": "Shadow (Order): In engaged rooms, choose carried card first, then resolve remaining cards in suit order (Cups → Pentacles → Swords → Wands).",
+  "majors.hierophant.gift": "Gift: Cleanse 1 revealed card for free.",
+
+  "majors.lovers.name": "The Lovers",
+  "majors.lovers.shadow": "Shadow: Once per room, Fate cleanse is disabled.",
+  "majors.lovers.gift": "Gift: Exile + replace 1 revealed card for free.",
+
+  "majors.chariot.name": "The Chariot",
+  "majors.chariot.shadow": "Shadow (Order): At floor start, choose a direction. In engaged rooms, choose carried card first, then resolve remaining cards in that direction.",
+  "majors.chariot.gift": "Gift: Exile + replace 1 revealed card for free.",
+  "majors.chariot.directionPrompt": "Choose a direction for this floor:",
+  "majors.chariot.leftToRight": "Left to right",
+  "majors.chariot.rightToLeft": "Right to left",
+
+  "majors.strength.name": "Strength",
+  "majors.strength.shadow": "Shadow: This floor, weapon restriction is strict (must be strictly lower, not equal).",
+  "majors.strength.gift": "Gift: Cheat-weapon for one enemy fight.",
+
+  "majors.hermit.name": "The Hermit",
+  "majors.hermit.shadow": "Shadow: After revealing 4 cards, you must peek top 3 Minor cards (no reorder).",
+  "majors.hermit.gift": "Gift: Peek the top 3 Minor cards and reorder them.",
+
+  "majors.wheel.name": "Wheel of Fortune",
+  "majors.wheel.shadow": "Shadow: After revealing 4 cards, reroll 1 random card.",
+  "majors.wheel.gift": "Gift: Reroll 1 revealed card for free.",
+
+  "majors.justice.name": "Justice",
+  "majors.justice.shadow": "Shadow (Order): In engaged rooms, choose carried card first, then resolve remaining cards in ascending value order.",
+  "majors.justice.gift": "Gift: Cleanse 1 revealed card for free.",
+
+  "majors.hanged_man.name": "The Hanged Man",
+  "majors.hanged_man.shadow": "Shadow: Once per room, the first card you would resolve is exiled + replaced instead.",
+  "majors.hanged_man.gift": "Gift: Exile + replace 1 revealed card for free.",
+
+  "majors.death.name": "Death",
+  "majors.death.shadow": "Shadow: After revealing 4 cards, exile + replace 1 random card.",
+  "majors.death.gift": "Gift: Exile + replace 1 revealed card for free.",
+
+  "majors.temperance.name": "Temperance",
+  "majors.temperance.shadow": "Shadow: Once per room, Fate reroll is disabled.",
+  "majors.temperance.gift": "Gift: Bargain: pay 5 Gold to heal 5, or take 3 damage to gain 5 Gold.",
+
+  "majors.devil.name": "The Devil",
+  "majors.devil.shadow": "Shadow: After revealing 4 cards, choose: exile + replace 1 card, or bargain (take 3 damage to gain 5 Gold).",
+  "majors.devil.gift": "Gift: Strong bargain: pay 8 Gold to heal 8, or take 4 damage to gain 8 Gold.",
+  "majors.devil.shadowPrompt": "Choose the Devil's demand:",
+  "majors.devil.exileOption": "Exile + replace a card",
+  "majors.devil.bargainOption": "Bargain: take 3 damage to gain 5 Gold",
+
+  "majors.tower.name": "The Tower",
+  "majors.tower.shadow": "Shadow: After revealing 4 cards, reroll the highest-value card (choose among ties).",
+  "majors.tower.gift": "Gift: Reroll 1 revealed card for free.",
+
+  "majors.star.name": "The Star",
+  "majors.star.shadow": "Shadow: After revealing 4 cards, if any are reversed, you must cleanse 1 of them.",
+  "majors.star.gift": "Gift: Cleanse 1 revealed card for free.",
+
+  "majors.moon.name": "The Moon",
+  "majors.moon.shadow": "Shadow: After revealing 4 cards, reroll the leftmost card.",
+  "majors.moon.gift": "Gift: Peek the top 3 Minor cards and reorder them.",
+
+  "majors.sun.name": "The Sun",
+  "majors.sun.shadow": "Shadow: After resolving your first card, bargain: pay 2 Gold or take 1 damage.",
+  "majors.sun.gift": "Gift: Bargain: pay 5 Gold to heal 5, or take 3 damage to gain 5 Gold.",
+
+  "majors.judgement.name": "Judgement",
+  "majors.judgement.shadow": "Shadow: After revealing 4 cards, if any enemy is present, you must exile + replace 1 card of your choice.",
+  "majors.judgement.gift": "Gift: Exile + replace 1 revealed card for free.",
+
+  "majors.world.name": "The World",
+  "majors.world.shadow": "Shadow: After revealing 4 cards, reorder room cards by value (low to high).",
+  "majors.world.gift": "Gift: Reorder the 4 revealed room cards however you like."
+}

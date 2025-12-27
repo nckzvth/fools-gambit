@@ -1,0 +1,25 @@
+{
+  "name": "fools-gambit",
+  "private": true,
+  "version": "0.1.0",
+  "workspaces": [
+    "packages/*",
+    "apps/*"
+  ],
+  "scripts": {
+    "typecheck": "tsc -b",
+    "lint": "eslint .",
+    "format": "prettier -w .",
+    "test": "vitest run",
+    "validate:content": "node ./packages/game-data/scripts/validate-content.mjs"
+  },
+  "devDependencies": {
+    "@types/node": "^25.0.3",
+    "ajv": "^8.17.1",
+    "ajv-formats": "^3.0.1",
+    "eslint": "^9.39.2",
+    "prettier": "^3.7.4",
+    "typescript": "^5.9.3",
+    "vitest": "^4.0.16"
+  }
+}

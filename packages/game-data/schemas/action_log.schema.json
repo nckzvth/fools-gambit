@@ -1,0 +1,87 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://foolsgambit.dev/schemas/action_log.schema.json",
+  "title": "Fool's Gambit - Action Log",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["header", "seed", "actions"],
+  "properties": {
+    "header": { "$ref": "#/$defs/Header" },
+    "seed": { "type": "integer" },
+    "actions": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/Action" }
+    },
+    "checkpoints": {
+      "type": "array",
+      "description": "Optional parity checkpoints for fast comparison. Hash excludes any nondeterministic fields by rule (see hashing section).",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["stepIndex", "stateHash"],
+        "properties": {
+          "stepIndex": { "type": "integer", "minimum": 0 },
+          "stateHash": { "type": "string" }
+        }
+      }
+    }
+  },
+  "$defs": {
+    "Header": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["engineVersion", "contentVersion", "saveVersion", "specVersion"],
+      "properties": {
+        "engineVersion": { "type": "string" },
+        "contentVersion": { "type": "string" },
+        "saveVersion": { "type": "integer", "minimum": 1 },
+        "specVersion": { "type": "string", "const": "v1.1" }
+      }
+    },
+
+    "ActionType": {
+      "type": "string",
+      "enum": [
+        "START_RUN",
+        "START_FLOOR",
+        "SELECT_ATTUNEMENT",
+
+        "CHOOSE_FLEE",
+        "CHOOSE_ENGAGE",
+        "SELECT_CARRIED_CARD",
+
+        "USE_LEAP_OF_FAITH",
+        "SPEND_FATE_REROLL",
+        "SPEND_FATE_CLEANSE",
+        "SPEND_FATE_EXILE_REPLACE",
+        "SPEND_FATE_CHEAT_WEAPON",
+
+        "USE_SPELL_CLEANSE",
+        "USE_SPELL_REROLL",
+        "USE_MAJOR_GIFT",
+
+        "COMMIT_RESOLVE",
+
+        "ACE_CHOICE",
+        "ENEMY_FIGHT_CHOICE",
+        "SWORDS_AMBUSH_BLOCK_CHOICE",
+        "CUPS_8_10_CHOICE",
+        "BARGAIN_CHOICE"
+      ]
+    },
+
+    "Action": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["type"],
+      "properties": {
+        "type": { "$ref": "#/$defs/ActionType" },
+        "slotIndex": { "type": "integer", "minimum": 0, "maximum": 3 },
+        "majorIds": { "type": "array", "items": { "type": "string" }, "maxItems": 3 },
+        "majorId": { "type": "string" },
+        "choice": { "type": "string" },
+        "mode": { "type": "string" }
+      }
+    }
+  }
+}

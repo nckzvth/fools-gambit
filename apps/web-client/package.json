@@ -1,0 +1,13 @@
+{
+  "name": "@fg/web-client",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "echo \"(setup Vite later)\"",
+    "build": "echo \"(setup Vite later)\""
+  },
+  "dependencies": {
+    "@fg/game-core": "0.1.0"
+  }
+}
